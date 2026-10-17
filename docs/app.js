@@ -40,6 +40,9 @@ async function init() {
   document.title = `${meta.model} workshop manual`;
   $("#model").dataset.label = $("#model-wide").dataset.label = `${meta.model} workshop manual`;
 
+  const theme = store.get("theme") || "system";
+  applyTheme(theme);
+  $("#theme").value = theme;
   Object.assign(state, store.get("filters") || {});
   readHash();
   buildFilters();
@@ -125,6 +128,9 @@ function bindEvents() {
     refresh();
   });
   $("#menu").addEventListener("click", () => document.body.classList.toggle("nav-open"));
+  $("#theme").addEventListener("change", (e) => { applyTheme(e.target.value); store.set("theme", e.target.value); });
+  let resizeTimer;
+  window.addEventListener("resize", () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(() => fitFigures($("#page")), 150); });
 
   $("#tree").addEventListener("click", (e) => {
     const twisty = e.target.closest(".twisty");
@@ -170,14 +176,7 @@ function bindEvents() {
       details.dataset.loaded = "1";
       renderBody($(".sub-body", details), byId.get(details.dataset.id));
     }
-    if (details.matches("details.op") && details.open && !details.dataset.loaded) {
-      details.dataset.loaded = "1";
-      const target = byId.get(details.dataset.id);
-      const body = $(".op-body", details);
-      if (!target) body.innerHTML = `<p class="missing">Procedure not found.</p>`;
-      else if (!target.visible) body.innerHTML = `<p class="missing">Not available for the selected engine or production period.</p>`;
-      else renderBody(body, target);
-    }
+    if (details.open) fitFigures(details);
   }, true);
 
   bindViewer();
@@ -287,38 +286,133 @@ function content(node) {
   return contentCache.get(node.id);
 }
 
+// ---------- procedure bodies ----------
+// A procedure has a Removing part and a Refitting part, each shown as its own collapsible section.
+// Operations listed in a part are expanded where they are first called, once per part, so nothing is
+// removed or refitted twice. Later calls become a one-line reference.
+
+const phaseCache = new Map();
+
+// Stored block HTML -> { removal, refit, raw } for the selected engine and period.
+function phaseHtml(node) {
+  if (!phaseCache.has(node.id)) {
+    phaseCache.set(node.id, content(node).then((blocks) => {
+      const parts = { removal: "", refit: "", raw: "" };
+      for (const [e, d, o, html] of blocks) {
+        if (!fits(e, d)) continue;
+        parts.raw += html;
+        const root = document.createElement("div");
+        root.innerHTML = html;
+        const split = { removal: "", refit: "" };
+        let phase = "removal";
+        for (const el of [...root.children]) {
+          if (el.matches('h3[data-step="refitting"]')) phase = "refit";
+          else if (!el.matches('h3[data-step="removing"], a.jump')) split[phase] += el.outerHTML;
+        }
+        for (const key of ["removal", "refit"]) {
+          if (split[key]) parts[key] += `<section class="block ${optionClass(o)}">${chips({ e, d, o }, node)}${split[key]}</section>`;
+        }
+      }
+      return parts;
+    }));
+  }
+  return phaseCache.get(node.id);
+}
+
+// A paragraph that holds only an "Op." link is a call to another procedure.
+function opLinkId(p) {
+  const links = p.querySelectorAll("a");
+  const a = links[0];
+  if (links.length !== 1 || p.textContent.trim() !== a.textContent.trim()) return null;
+  const href = a.getAttribute("href") || "";
+  return href.startsWith("#/") && a.textContent.trim().startsWith("Op.") ? href.slice(2) : null;
+}
+
+function opTools(id) {
+  return `<span class="op-tools"><a class="op-page" href="#/${id}" title="Open as page" aria-label="Open as page">&#8599;</a>` +
+    `<a class="op-tab" href="#/${id}" title="Open in new tab" aria-label="Open in new tab">&#10697;</a></span>`;
+}
+
+function opDetails(id, title, phase, bodyHtml, extra = "") {
+  const details = document.createElement("details");
+  details.className = `op ${extra}`.trim();
+  details.dataset.id = id;
+  details.innerHTML = `<summary><span class="op-title">${title}</span><span class="op-phase">${phase}</span>${opTools(id)}</summary>` +
+    `<div class="op-body">${bodyHtml}</div>`;
+  return details;
+}
+
+// Expand the calls in one part (removal or refit) of `container`, depth first.
+async function expandOps(container, phase, state, owner) {
+  const label = phase === "removal" ? "removing" : "refitting";
+  for (const p of [...container.querySelectorAll("p")]) {
+    if (p.closest("td, th")) continue;
+    const id = opLinkId(p);
+    const target = id && byId.get(id);
+    if (!target || id === owner.id) continue;
+    const title = esc(p.textContent.trim());
+    if (state[phase].has(id)) {
+      const seen = document.createElement("p");
+      seen.className = "op-seen";
+      seen.innerHTML = `<span class="op-title">${title}</span>${opTools(id)}<small>already ${label} above</small>`;
+      p.replaceWith(seen);
+      continue;
+    }
+    state[phase].add(id);
+    if (!target.visible) {
+      p.replaceWith(opDetails(id, title, label, `<p class="missing">Not available for the selected engine or production period.</p>`, "unavailable"));
+      continue;
+    }
+    const body = (await phaseHtml(target))[phase];
+    if (!body) continue;
+    const details = opDetails(id, title, label, body);
+    p.replaceWith(details);
+    await expandOps(details.querySelector(".op-body"), phase, state, target);
+  }
+}
+
 async function renderBody(container, node) {
-  const blocks = (await content(node)).filter(([e, d]) => fits(e, d));
-  const html = blocks.map(([e, d, o, body]) =>
-    `<section class="block ${optionClass(o)}">${chips({ e, d, o }, node)}${body}</section>`).join("");
-  container.innerHTML = `<div class="content">${html}</div>`;
+  const parts = await phaseHtml(node);
+  if (!/data-step="refitting"|<p><a href="#\/\d+">Op\./.test(parts.raw)) {
+    const blocks = (await content(node)).filter(([e, d]) => fits(e, d));
+    container.innerHTML = `<div class="content">${blocks.map(([e, d, o, body]) =>
+      `<section class="block ${optionClass(o)}">${chips({ e, d, o }, node)}${body}</section>`).join("")}</div>`;
+  } else {
+    const holder = document.createElement("div");
+    holder.className = "content";
+    container.replaceChildren(holder);
+    const state = { removal: new Set([node.id]), refit: new Set([node.id]) };
+    for (const phase of ["removal", "refit"]) {
+      if (!parts[phase]) continue;
+      const section = document.createElement("details");
+      section.className = `phase ${phase}`;
+      section.open = true;
+      section.innerHTML = `<summary>${phase === "removal" ? "Removing" : "Refitting"}</summary><div class="phase-body">${parts[phase]}</div>`;
+      holder.append(section);
+      await expandOps(section.querySelector(".phase-body"), phase, state, node);
+    }
+  }
   markLinks(container);
-  opify(container);
+  fitFigures(container);
   const kids = node.children.filter((c) => c.visible);
   if (kids.length) container.append(childList(kids));
 }
 
-// A paragraph that holds only an "Op." link is a procedure to do before or after this one.
-// Show it as a closed dropdown that loads the procedure when first opened.
-function opify(container) {
-  for (const p of container.querySelectorAll("p")) {
-    if (p.closest("td, th")) continue;
-    const links = p.querySelectorAll("a");
-    const a = links[0];
-    if (links.length !== 1 || p.textContent.trim() !== a.textContent.trim()) continue;
-    const href = a.getAttribute("href") || "";
-    if (!href.startsWith("#/") || !a.textContent.trim().startsWith("Op.")) continue;
-    const id = href.slice(2);
-    const target = byId.get(id);
-    const details = document.createElement("details");
-    details.className = "op" + (target && !target.visible ? " unavailable" : "");
-    details.dataset.id = id;
-    details.innerHTML = `<summary><span class="op-title">${esc(a.textContent.trim())}</span>` +
-      `<span class="op-tools"><a class="op-page" href="#/${id}" title="Open as page" aria-label="Open as page">&#8599;</a>` +
-      `<a class="op-tab" href="#/${id}" title="Open in new tab" aria-label="Open in new tab">&#10697;</a></span>` +
-      `</summary><div class="op-body"></div>`;
-    p.replaceWith(details);
+// Connector and wiring drawings: natural size, but never wider than the table below them.
+function fitFigures(root) {
+  for (const img of root.querySelectorAll("figure.diagram img")) {
+    let next = img.closest("figure").nextElementSibling;
+    while (next && !next.matches(".table, figure")) next = next.nextElementSibling;
+    const width = next?.matches(".table") ? next.querySelector("table")?.offsetWidth : 0;
+    img.style.maxWidth = width ? `${width}px` : "100%";
   }
+}
+
+// ---------- theme ----------
+
+function applyTheme(mode) {
+  if (mode === "system") document.documentElement.removeAttribute("data-theme");
+  else document.documentElement.setAttribute("data-theme", mode);
 }
 
 function childList(kids) {

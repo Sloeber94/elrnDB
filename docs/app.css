@@ -331,8 +331,7 @@ figure img {
   border-radius: 6px;
 }
 figure.photo img { max-height: 460px; }
-figure.diagram { max-width: min(100%, 150vh); }  /* full width, but never taller than the screen */
-figure.diagram img { width: 100%; background: var(--diagram-bg); }
+figure.diagram img { width: auto; max-width: 100%; background: var(--diagram-bg); }  /* natural size; app.js caps it at the table below */
 figcaption { color: var(--muted); font-size: .85rem; margin-top: 4px; }
 .legend { list-style: none; padding: 0; font-size: .85rem; columns: 2 220px; }
 
@@ -341,7 +340,15 @@ figcaption { color: var(--muted); font-size: .85rem; margin-top: 4px; }
 .children { margin-top: 18px; }
 .children-bar { display: flex; gap: 14px; align-items: center; margin-bottom: 6px; color: var(--muted); font-size: .85rem; }
 .children-bar :first-child { margin-right: auto; }
-/* Procedures listed before or after a step: closed dropdowns, loaded on first open */
+/* Removing / Refitting sections of a procedure */
+details.phase { margin: 10px 0; }
+details.phase > summary { font-size: 1.02rem; font-weight: 700; padding: 6px 2px; cursor: pointer; border-bottom: 1px solid var(--line); }
+details.phase > .phase-body { padding-top: 4px; }
+.op-phase { font-size: .72rem; color: var(--muted); border: 1px solid var(--line); border-radius: 99px; padding: 0 6px; }
+p.op-seen { display: flex; align-items: center; gap: 8px; margin: 6px 0; padding: 4px 10px; border-left: 3px solid var(--line); color: var(--muted); }
+p.op-seen .op-title { flex: 1; font-size: .9rem; }
+p.op-seen small { font-size: .8rem; }
+/* Procedures listed before or after a step: closed dropdowns */
 details.op {
   margin: 6px 0;
   border: 1px solid var(--line);
@@ -361,14 +368,14 @@ details.op > summary::-webkit-details-marker { display: none; }
 details.op > summary::before { content: "\25B8"; color: var(--muted); }
 details.op[open] > summary::before { content: "\25BE"; }
 details.op .op-title { flex: 1; font-size: .9rem; font-weight: 600; }
-details.op .op-tools a {
+.op-tools a {
   padding: 0 6px;
   border-radius: 4px;
   color: var(--muted);
   font-size: 1.05rem;
   text-decoration: none;
 }
-details.op .op-tools a:hover { background: var(--hover); color: var(--text); }
+.op-tools a:hover { background: var(--hover); color: var(--text); }
 details.op.unavailable > summary .op-title { color: var(--other); text-decoration: line-through; }
 details.op > .op-body { padding: 0 12px 8px; }
 
