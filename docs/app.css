@@ -341,6 +341,37 @@ figcaption { color: var(--muted); font-size: .85rem; margin-top: 4px; }
 .children { margin-top: 18px; }
 .children-bar { display: flex; gap: 14px; align-items: center; margin-bottom: 6px; color: var(--muted); font-size: .85rem; }
 .children-bar :first-child { margin-right: auto; }
+/* Procedures listed before or after a step: closed dropdowns, loaded on first open */
+details.op {
+  margin: 6px 0;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--code);
+  border-radius: 6px;
+  background: var(--panel);
+}
+details.op > summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  list-style: none;
+}
+details.op > summary::-webkit-details-marker { display: none; }
+details.op > summary::before { content: "\25B8"; color: var(--muted); }
+details.op[open] > summary::before { content: "\25BE"; }
+details.op .op-title { flex: 1; font-size: .9rem; font-weight: 600; }
+details.op .op-tools a {
+  padding: 0 6px;
+  border-radius: 4px;
+  color: var(--muted);
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+details.op .op-tools a:hover { background: var(--hover); color: var(--text); }
+details.op.unavailable > summary .op-title { color: var(--other); text-decoration: line-through; }
+details.op > .op-body { padding: 0 12px 8px; }
+
 details.sub {
   border: 1px solid var(--line);
   border-left-width: 3px;

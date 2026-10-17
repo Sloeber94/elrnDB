@@ -148,6 +148,14 @@ function bindEvents() {
       e.preventDefault();
       jump.closest(".content")?.querySelector(`[data-step="${jump.dataset.jump}"]`)?.scrollIntoView({ behavior: "smooth" });
     }
+    const opTool = e.target.closest(".op-tools a");
+    if (opTool) {  // navigate or open a new tab; do not toggle the dropdown
+      e.preventDefault();
+      e.stopPropagation();
+      if (opTool.classList.contains("op-tab")) window.open(opTool.getAttribute("href"), "_blank", "noopener");
+      else location.hash = opTool.getAttribute("href");
+      return;
+    }
     const img = e.target.closest("img.zoomable");
     if (img) openViewer(img);
     const toggle = e.target.closest("[data-expand]");
@@ -161,6 +169,14 @@ function bindEvents() {
     if (details.matches("details.sub") && details.open && !details.dataset.loaded) {
       details.dataset.loaded = "1";
       renderBody($(".sub-body", details), byId.get(details.dataset.id));
+    }
+    if (details.matches("details.op") && details.open && !details.dataset.loaded) {
+      details.dataset.loaded = "1";
+      const target = byId.get(details.dataset.id);
+      const body = $(".op-body", details);
+      if (!target) body.innerHTML = `<p class="missing">Procedure not found.</p>`;
+      else if (!target.visible) body.innerHTML = `<p class="missing">Not available for the selected engine or production period.</p>`;
+      else renderBody(body, target);
     }
   }, true);
 
@@ -277,8 +293,32 @@ async function renderBody(container, node) {
     `<section class="block ${optionClass(o)}">${chips({ e, d, o }, node)}${body}</section>`).join("");
   container.innerHTML = `<div class="content">${html}</div>`;
   markLinks(container);
+  opify(container);
   const kids = node.children.filter((c) => c.visible);
   if (kids.length) container.append(childList(kids));
+}
+
+// A paragraph that holds only an "Op." link is a procedure to do before or after this one.
+// Show it as a closed dropdown that loads the procedure when first opened.
+function opify(container) {
+  for (const p of container.querySelectorAll("p")) {
+    if (p.closest("td, th")) continue;
+    const links = p.querySelectorAll("a");
+    const a = links[0];
+    if (links.length !== 1 || p.textContent.trim() !== a.textContent.trim()) continue;
+    const href = a.getAttribute("href") || "";
+    if (!href.startsWith("#/") || !a.textContent.trim().startsWith("Op.")) continue;
+    const id = href.slice(2);
+    const target = byId.get(id);
+    const details = document.createElement("details");
+    details.className = "op" + (target && !target.visible ? " unavailable" : "");
+    details.dataset.id = id;
+    details.innerHTML = `<summary><span class="op-title">${esc(a.textContent.trim())}</span>` +
+      `<span class="op-tools"><a class="op-page" href="#/${id}" title="Open as page" aria-label="Open as page">&#8599;</a>` +
+      `<a class="op-tab" href="#/${id}" title="Open in new tab" aria-label="Open in new tab">&#10697;</a></span>` +
+      `</summary><div class="op-body"></div>`;
+    p.replaceWith(details);
+  }
 }
 
 function childList(kids) {
