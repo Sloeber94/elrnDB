@@ -1,0 +1,1178 @@
+# Operation index
+Procedure and test codes (the 'Op.' numbers in the text) -> topic.
+
+- 1040AA: SUPPLY VOLTAGE AND ABSORPTION CURRENT CHECKS [939010174] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1040AC: FUEL LEVEL GAUGE CHECK [939010175] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1040AB: SUBMERGED FUEL PUMP CHECK [939010176] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1040AC: FUEL LEVEL GAUGE CHECK [939005261] — Test; engines: 1.8, 1.9 JTS, 2.2 JTS; all production periods
+- 1040AD: FUEL PUMP RELAY CHECK [939005353] — Test; engines: 1.8, 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1040AE: FUEL QUALITY CHECK [939005354] — Test; engines: 1.8, 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1040AC: FUEL LEVEL GAUGE CHECK [939005355] — Test; engines: 3.2 JTS; all production periods
+- 1040OA: FUEL SUPPLY CIRCUIT CHECK [939010178] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1040OA: FUEL SUPPLY CIRCUIT CHECK [939005356] — Test; engines: 1.8, 1.9 JTS, 2.2 JTS; all production periods
+- 1040OA: FUEL SUPPLY CIRCUIT CHECK [939005357] — Test; engines: 3.2 JTS; all production periods
+- 1048OA: AIR INTAKE/VACUUM CIRCUIT CHECK [939010181] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1056BA: INJECTOR OPERATION CHECK [939005360] — Test; engines: 1.8, 1.9 JTS, 2.2 JTS; all production periods
+- 1056BA: INJECTOR OPERATION CHECK [939005361] — Test; engines: 3.2 JTS; all production periods
+- 1056BC: ENGINE COOLANT TEMPERATURE SENSOR OPERATION CHECK [939005362] — Test; engines: 3.2 JTS; all production periods
+- 1060EA: DIESEL FUEL TEMPERATURE CHECK [939010184] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060EB: FLOW MODULATOR SOLENOID OPERATION CHECK [939010185] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060GD: ATMOSPHERIC PRESSURE CHECK [939010187] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060GG: MEASURED AIR MASS CHECK [939010188] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060GH: DIESEL FUEL PRESSURE CHECK [939010189] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060GI: ENGINE SPEED CHECK [939010190] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060GJ: ENGINE MANAGEMENT CONTROL UNIT SOFTWARE RELEASE CHECK [939010191] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060GL: CHECK OPERATION OF MAIN ENGINE CONTROL UNIT RELAY [939010192] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060GM: CHECK ENGINE CONTROL UNIT CONNECTIONS [939010193] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060GN: CHECK ENGINE CONTROL UNIT CONNECTIONS [939010194] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060GO: INTEGRATED THROTTLE BODY OPERATION CHECK [939010195] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060GP: CHECK ENGINE CONTROL UNIT CONNECTIONS [939010196] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060GQ: CHECK OPERATION OF SENSOR DETECTING PRESENCE OF WATER IN DIESEL FILTER [939010197] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060GR: CHECK OPERATION OF FUEL PRESSURE SENSOR ON RAIL [939010198] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060GS: DEBIMETER OPERATION CHECK [939010199] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060GK: CHECK CONTROL UNIT SOFTWARE AND HARDWARE [939010200] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060GF: SUPERCHARGING PRESSURE CHECK [939010201] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 1060OA: CHECK ON RETURN LOW PRESSURE FUEL CIRCUIT [939010203] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060OB: CHECK ON SUPPLY LOW PRESSURE FUEL CIRCUIT [939010204] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060OC: INJECTORS SEAL TEST [939010205] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060OD: INSPECTION OF THE HIGH PRESSURE FUEL CIRCUIT [939010206] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060OE: CHECK ON OPERATION OF COOLANT TEMPERATURE SENSOR [939010207] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060FA: INJECTOR OPERATION CHECK [939010209] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 1060FA: INJECTOR OPERATION CHECK [939010210] — Test; engines: 2.4 JTD 20V; all production periods
+- 1060FB: INJECTOR CIRCUIT OPERATION CHECK [939010211] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 1060FB: INJECTOR CIRCUIT OPERATION CHECK [939010212] — Test; engines: 2.4 JTD 20V; all production periods
+- 1064BA: SUPRECHARGING PRESSURE CHECK [939010215] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1064BB: CHECK ON OPERATION OF SUPERCHARGING PRESSURE SOLENOID VALVE (PIERBURG) [939010216] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1064BC: VARIABLE GEOMETRY TURBOCHARGER ACTUATOR SEAL TEST [939010217] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1064BD: SUPERCHARGING TEMPERATURE CHECK [939010218] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1064BE: CHECK TURBO VALVE PROTECTION FUSE [939010219] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1068AC: ACCELERATOR PEDAL CHECKS [939010222] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1080BE: PARTICULATE FILTER SATURATION CHECK [939010225] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1080BF: CHECK DIFFERENTIAL PRESSURE SENSOR OPERATION [939010226] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1080BG: PRECONVERTER OUTPUT TEMPERATURE SENSOR OPERATION CHECK [939010227] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1080BH: DPF INPUT TEMPERATURE SENSOR OPERATION CHECK [939010228] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1080BA: UPSTREAM LAMBDA SENSOR OPERATION CHECK [939005363] — Test; engines: 1.8, 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1080BD: DOWNSTREAM LAMBDA SENSOR OPERATION CHECK [939005364] — Test; engines: 1.8, 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1080CB: E.G.R. SOLENOID FUNCTIONAL TEST [939010230] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 3330AA: Checking the low brake fluid sensor sensor [939004860] — Test; all engines; all production periods
+- 3330DA: CHECK VACUUM PUMP OPERATION AND BRAKE SERVO VACUUM CIRCUIT [939010236] — Test; all engines; all production periods
+- 3340AB: SPEED SIGNAL CHECK [939010239] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 44A: ROAD TEST FOR COMFORT EVALUATION [939010241] — Test; all engines; all production periods
+- 44B: ROAD TEST FOR ROLLING/PITCHING EVALUATION [939010242] — Test; all engines; all production periods
+- 4410AB: CHECKING RUBBER BLOCK AND BEARING ON FRONT SHOCK ABSORBER [939010245] — Test; all engines; all production periods
+- 4410AF: CHECK OF STATE OF SPRINGS ON LAYOUT BRACKETS [939010246] — Test; all engines; all production periods
+- 4410CA: CHECKS ON STABILIZER BAR [939010248] — Test; all engines; all production periods
+- 4410OA: CHECKING CORRECT TIGHTENING OF FRONT SUSPENSION [939010250] — Test; all engines; all production periods
+- 4420AF: CHECK OF SPRING STATUS ON LAYOUT BRACKETS [939010253] — Test; engines: 1.8, 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 4420AG: CHECK OF DAMPER CORRECT ORIENTATION [939010254] — Test; all engines; all production periods
+- 4420CA: CHECKS ON REAR STABILIZER BAR [939010256] — Test; all engines; all production periods
+- 4420OB: REAR SUSPENSION CORRECT TIGHTENING CHECK [939010258] — Test; engines: 1.8, 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5040AB: REFRIGERANT CIRCUIT CHECK [939010262] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5040BC: Climate control compressor linear sensor on/off check [939010264] — Test; all engines; all production periods; only with equipment: Automatic Air Conditioning
+- 5040BD: LINEAR SENSOR OPERATION CHECK [939010265] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5040CF: Sequential procedure for checking air conditioner fan resistor operation [939010267] — Test; all engines; all production periods; only with equipment: Manual Air Conditioning
+- 5040DB: Check windscreen demister sensor operation [939010269] — Test; all engines; all production periods; only with equipment: Automatic Air Conditioning
+- 5040DC: Check sunlight sensor operation [939010270] — Test; all engines; all production periods; only with equipment: Automatic Air Conditioning
+- 5040DD: Check operation of pollution sensor (AQS) [939010271] — Test; all engines; all production periods; only with equipment: Automatic Air Conditioning
+- 5040DF: Sequential procedure for checking air conditioner fan operation [939010272] — Test; all engines; all production periods; only with equipment: Manual Air Conditioning
+- 5505AF: CHECK OF THE EFFICIENCY OF KEY ACKNOWLEDGEMENT DEVICE [939010278] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5505AE: ENGINE MANAGEMENT CONTROL UNIT POWER SUPPLY FUSE CIRCUIT CHECK [939010279] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5505AG: CHECK SPARK PLUG HEATING FUSE [939010280] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5510CG: CHECK TIMING SENSOR OPERATION [939010331] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5510CC: IGNITION COIL CHECK [939005365] — Test; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 5510CC: IGNITION COIL CHECK [939005366] — Test; engines: 3.2 JTS; all production periods
+- 5510DA: SPARK PLUG STATE CHECK [939005368] — Test; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 5510DA: SPARK PLUG STATUS CHECK [939005369] — Test; engines: 3.2 JTS; all production periods
+- 5520GA: IGNITION PUSH BUTTON CHECK [939010283] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5520BA: ENGINE IGNITION SYSTEM CHECK [939010285] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5520CA: GLOW PLUGS FUNCTIONAL TEST [939010287] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5530AA: CHECK ALTERNATOR TERMINAL "D+" [939004862] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5530AB: Check alternator operation [939004863] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5530BB: BATTERY VOLTAGE CHECK [939010293] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5530BC: BATTERY CHARGE CHECK [939010294] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5530BB: BATTERY VOLTAGE CHECK [939005370] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 5540BA: DIPPED BEAM CIRCUIT CHECK [939005430] — Test; all engines; all production periods
+- 5540BJ: CHECK IGNITION-OPERATED HEADLAMP POWER SUPPLY [939005431] — Test; all engines; all production periods
+- 5540BK: CHECK THE CONTINUITY OF THE LOW BEAM WIRING INSIDE THE HEADLAMP [939005432] — Test; all engines; all production periods
+- 5540BL: BIDIRECTIONAL SERIAL LINE CHECK [939005433] — Test; all engines; all production periods
+- 5540BM: CHECK THE HEADLAMP ALIGNMENT MOTOR SUPPLY WIRING [939005434] — Test; all engines; all production periods
+- 5540BN: SPEED SIGNAL CHECK [939005435] — Test; all engines; all production periods
+- 5540BO: CHECK THE SPEED SIGNAL WIRING CONTINUITY INSIDE THE MASTER HEADLAMP [939005436] — Test; all engines; all production periods
+- 5540BP: CHECK THE HEADLAMP HIGH BEAM FUNCTION CONTROL COIL SUPPLY WIRING [939005437] — Test; all engines; all production periods
+- 5540CA: HEADLAMP ALIGNMENT SENSOR CHECK [939005439] — Test; all engines; all production periods
+- 5550DA: BRAKE PEDAL SWITCH OPERATION CHECK [939010297] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5560BW: CHECK AUXILIARY INSTRUMENTS [939010334] — Test; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5570: SUBWOOFER OPERATION CHECK [939010300] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5570TH: CHECK OPERATION OF SIGNALS BETWEEN CD-CHANGER AND RADIO [939005371] — Test; all engines; all production periods
+- 5570TN: BLUETOOTH LANGUAGE UPDATE PROCEDURE [939005372] — Test; all engines; all production periods
+- 5570TO: CHECK OPERATION OF VOICE RECOGNITION [939005373] — Test; all engines; all production periods
+- 5070TP: BLUETOOTH SOFTWARE LANGUAGE UPDATE PROCEDURE [939005374] — Test; all engines; all production periods
+- 5580AA: Cruise Control ON/OFF control check [939010303] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5580AB: Cruise Control SET + control check [939010304] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5580AC: Cruise Control "RECALL" control check [939010305] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5580AD: Cruise Control "SET -" control check [939010306] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5580AE: CRUISE CONTROL OPERATION ROAD TEST [939010307] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5580CG: Check the passenger bag disablement selector [939005089] — Test; all engines; all production periods
+- 5580EA: ANTI-THEFT REMOTE CONTROL OPERATION CHECK [939010311] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5580EB: SIREN FUNCTIONAL TEST [939010312] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5580EC: ULTRASOUND/ANTI-LIFT MODULE CHECK [939010313] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5580ED: ELECTRIC STEERING LOCK CHECK [939010314] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5580HB: PARKING SENSOR SYSTEM OPERATION CHECK [939010316] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5580HC: CHECK THE OPERATION OF THE PARKING SENSOR DISABLEMENT BUTTON [939010317] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5580HD: REAR BUZZER OPERATION CHECK [939010318] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5580HE: FRONT BUZZER OPERATION CHECK [939010319] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5580MC: SATELLITE NAVIGATOR OPERATION CHECK [939010321] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5580PE: CHECK THE OPERATION OF THE CONNECT GPS AERIAL MODULE [939010323] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5580PJ: CONNECT AUTODIAGNOSTIC PROCEDURE [939010324] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5580PL: CHECK OPERATION OF SIGNALS BETWEEN CD-CHANGER AND CONNECT [939010325] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5580PO: CONNECT POWER SUPPLY CHECK [939010326] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5580TA: CHECK AUDIO AMPLIFIER OPERATION [939010328] — Test; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 70B: ROAD TEST FOR NOISE RECOGNITION [939010336] — Test; all engines; all production periods
+- 70C: CHECK ON DOOR LOCK MICROSWITCHES [939010337] — Test; all engines; all production periods
+- 7005OA: FRONT DOOR NOISE LOCALISATION [939010340] — Test; all engines; all production periods
+- 7005RA: CHECK THE OPERATION OF THE DOOR MIRROR ADJUSTMENT CONTROL [939010342] — Test; all engines; all production periods
+- 7010OA: REAR DOORS NOISE LOCALISATION [939010345] — Test; all engines; all production periods
+- 7025OA: BONNET NOISE LOCALISATION [939010348] — Test; all engines; all production periods
+- 7035AA: WINDSCREEN NOISE LOCALISATION [939010351] — Test; all engines; all production periods
+- 7035OA: Check fixed window glass penetration (windscreen and rearscreen) [939010353] — Test; all engines; all production periods
+- 0010K30: 30,000KM SERVICE [939010358] — Procedures; all engines; all production periods
+- 0010K60: 60,000KM SERVICE [939010359] — Procedures; all engines; all production periods
+- 0010K90: 90,000KM SERVICE [939010360] — Procedures; all engines; all production periods
+- 0010M20: 120,000KM SERVICE [939010362] — Procedures; all engines; all production periods
+- 0010M50: 150,000KM SERVICE [939010363] — Procedures; all engines; all production periods
+- 0010M80: 180,000KM SERVICE [939010364] — Procedures; all engines; all production periods
+- 0010T10: CHANGE ENGINE OIL [939010366] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 0010T11: ENGINE OIL - CHECK LEVEL AND TOP UP, IF NECESSARY [939010367] — Procedures; all engines; all production periods
+- 0010T12: ENGINE OIL AND FILTER - REPLACE [939010368] — Procedures; all engines; all production periods
+- 0010T20: ENGINE COOLANT - CHANGE [939010369] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 0010T21: ENGINE COOLANT - CHECK DENSITY AND CHANGE, IF NECESSARY [939010370] — Procedures; all engines; all production periods
+- 0010T40: CHANGE MANUAL GEARBOX OIL [939010371] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 0010T41: MANUAL GEARBOX OIL CHECK LEVEL AND TOP UP IF NECESSARY [939010372] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 0010T51: GEAR DRIVE IDLER UNIT OIL - REPLACE [939005763] — Procedures; engines: 3.2 JTS; all production periods
+- 0010T52: GEAR DRIVE IDLER UNIT OIL - CHECK LEVEL AND TOP UP, IF NECESSARY [939005790] — Procedures; engines: 3.2 JTS; all production periods
+- 0010T54: REAR DIFFERENTIAL FLUID - REPLACE [939005230] — Procedures; engines: 3.2 JTS; all production periods
+- 0010T62: BRAKE AND/OR CLUTCH FLUID - REPLACE FLUID INCLUDES WASHING PIPES AND BLEEDING AIR [939005231] — Procedures; all engines; all production periods
+- 0010T64: BRAKE AND/OR CLUTCH FLUID CHECK LEVEL AND TOP UP AS NECESSARY [939010373] — Procedures; all engines; all production periods
+- 0010T65: HYDRAULIC BRAKE SYSTEM - BLEED AIR [939010374] — Procedures; all engines; all production periods
+- 0010T67: HYDRAULIC CLUTCH SYSTEM - BLEED AIR [939010375] — Procedures; all engines; all production periods
+- 0010T71: POWER STEERING FLUID CHECK LEVEL AND TOP UP IF NECESSARY [939010377] — Procedures; all engines; all production periods
+- 0010T75: HYDRAULIC POWER STEERING SYSTEM BLEED AIR [939010378] — Procedures; all engines; all production periods
+- 0010T82: DIESEL SYSTEM - BLEED WATER FROM DIESEL FILTER RESEVOIR [939010379] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 0010T84: COOLANT FOR AIR CONDITIONING SYSTEM - DEHYDRATE AND REPRESSURIZE [939010380] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 0510A10: CYLINDER COMPRESSION - CHECK FOR LOOSE SPARK PLUGS OR INJECTORS [939010387] — Procedures; engines: 1.8, 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 0510A20: TIMING GEAR WITH BELT DRIVE - CHECK - CARRY OUT OPERATION WITH CAM COVER(S) REMOVED AND TAPPETS ADJUSTED AND CRANKSHAFT PULLEY DETACHED (IF NECESSARY) [939010388] — Procedures; engines: 1.9 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 0510A24: CHAIN-DRIVEN TIMING SYSTEM - CHECK WITH TIMING COVER(S) REMOVED - OPERATION TO BE CARRIED OUT WITH TAPPET COVER(S) REMOVED AND TAPPETS ADJUSTED [939005843] — Procedures; engines: 3.2 JTS; all production periods
+- 0510C20: ENGINE LUBRICATION SYSTEM - CHECK SUPPLY PRESSURE [939010390] — Procedures; engines: 1.8, 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 0510C30: ENGINE COOLING SYSTEM - LEAKAGE TEST [939010391] — Procedures; all engines; all production periods
+- 0510C10: FUEL SYSTEM - CHECK DELIVERY PRESSURE [939005842] — Procedures; engines: 1.8; all production periods
+- 0520G12: PARTICULATE FILTER (D.P.F.) - REGENERATION EXAMINER [939010384] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 0520G15: COMPRESSION TEST - CHECK WITH EXAMINER WITH SPARK PLUGS/INJECTORS REMOVED [939005233] — Procedures; engines: 3.2 JTS; all production periods
+- 1004B10: POWER UNIT WITH MANUAL GEARBOX - R.R [939010395] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1004D10: POWER UNIT (MANUAL GEARBOX), REMOVED, DISMANTLE AND REASSEMBLE [939010397] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1004D40: ENGINE - POSITION ON STAND AND REMOVE [939010398] — Procedures; all engines; all production periods
+- 1004E10: ENGINE, REMOVED - REMOVE CYLINDER HEAD AND OIL SUMP FOR INSPECTION - INCLUDES POSITIONING ON STAND AND REMOVAL [939010400] — Procedures; all engines; all production periods
+- 1004E20: ENGINE - DISMANTLE AND REASSEMBLE FOLLOWING OPERATION 1004E10 - WASH AND CHECK DISMANTLED PARTS - REFIT CYLINDER HEAD AND OIL SUMP - DOES NOT INCLUDE REPAIRS TO CYLINDER HEAD AND AUXILIARY UNIT [939010401] — Procedures; all engines; all production periods
+- 1004E40: ENGINE REMOVED GENERAL OVERHAUL [939005235] — Procedures; engines: 3.2 JTS; all production periods
+- 1004E42: ENGINE REMOVED, GENERAL OVERHAUL EXCLUDING WHERE PRESENT INJECTION PUMP OR PRESSURE PUMP AND TURBOCHARGER [939010402] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1008A42: POWER UNIT RIGID SUPPORT - GEARBOX SIDE - R.R. [939010405] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1008A44: REAR RIGID MOUNT - R R [939010406] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 1008A46: POWER UNIT RIGID SUPPORT - TIMING SIDE - R.R. [939010407] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1008B10: POWER UNIT FRONT SUPPORT FLEXIBLE MOUNTING (TIMING SIDE) - REPLACE [939010409] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1008B20: POWER UNIT INTERMEDIATE MOUNT FLEXIBLE BLOCK - REPLACE [939010410] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 1008B30: GEARBOX SIDE SUPPORT FLEXIBLE MOUNTING(S) - REPLACE [939010411] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1008C30: POWER UNIT LOWER REACTION LINK - R.R. [939010413] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1008C32: GEARBOX LOWER REACTION ROD -R.R. [939005236] — Procedures; engines: 3.2 JTS; all production periods
+- 1008C34: BRACKET ON GEARBOX FOR LOWER REACTION ROD - R.R. [939005237] — Procedures; engines: 3.2 JTS; all production periods
+- 1016A10: SOUND-PROOFING COVER - R.R [939010416] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1016A20: SINGLE TAPPET COVER -R.R AND REPLACE GASKET [939010417] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V; all production periods
+- 1016A30: LEFT TAPPET COVER - R + R AND REPLACE GASKET [939005238] — Procedures; engines: 3.2 JTS; all production periods
+- 1016A34: RIGHT TAPPET COVER - R + R AND REPLACE GASKET [939005239] — Procedures; engines: 3.2 JTS; all production periods
+- 1016A36: LEFT AND RIGHT TAPPET COVER - R+R [939005240] — Procedures; engines: 3.2 JTS; all production periods
+- 1016B10: SINGLE CAMSHAFT HOUSING - REPLACE GASKET [939010426] — Procedures; engines: 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1016C10: SINGLE CYLINDER HEAD - R.R. AND REPLACE GASKET [939010419] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1016D10: CYLINDER HEAD – R.R. AND REPLACE GASKETS [939005242] — Procedures; engines: 3.2 JTS; all production periods
+- 1016D14: CYLINDER HEADS - R + R AND REPLACE GASKETS WITH ENGINE REMOVED [939005243] — Procedures; engines: 3.2 JTS; all production periods
+- 1016D20: LEFT CYLINDER HEAD - R.R. AND REPLACE GASKET [939005244] — Procedures; engines: 3.2 JTS; all production periods
+- 1016D22: LEFT HAND CYLINDER HEAD -R+R AND REPLACE GASKET WITH ENGINE REMOVED [939005245] — Procedures; engines: 3.2 JTS; all production periods
+- 1016D24: RIGHT CYLINDER HEAD - R.R. AND REPLACE GASKET [939005246] — Procedures; engines: 3.2 JTS; all production periods
+- 1016D26: RIGHT HAND CYLINDER HEAD - R+R AND REPLACE GASKET WITH ENGINE REMOVED [939005247] — Procedures; engines: 3.2 JTS; all production periods
+- 1016E10: SINGLE CYLINDER HEAD, REMOVED - OVERHAUL [939010421] — Procedures; engines: 1.8, 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1016E14: VALVE GUIDES IN SINGLE CYLINDER HEAD - REPLACE DURING OP. 1016E10 [939010422] — Procedures; engines: 1.8, 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1016E20: CYLINDER HEAD (ONE), LEFT OR RIGHT, REMOVED - OVERHAUL [939004944] — Procedures; engines: 3.2 JTS; all production periods
+- 1016E26: CYLINDER HEADS - OVERHAUL [939005248] — Procedures; engines: 3.2 JTS; all production periods
+- 1016E30: SINGLE CYLINDER HEAD, REMOVED - R .R PARTS FOR GRINDING [939010423] — Procedures; engines: 1.8, 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1016E38: SINGLE CYLINDER HEAD OR (ONE) L OR R, REMOVED - GRINDING [939010424] — Procedures; engines: 1.8, 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1020A20: CRANKCASE OIL SUMP - R.R CLEAN SURFACES FOR SEALANT APPLICATION [939010429] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 1020A24: CRANKCASE OIL SUMP - R.R CLEAN SURFACES FOR SEALANT APPLICATION WITH ENGINE OR INTERFERING COMPONENTS REMOVED [939005249] — Procedures; engines: 3.2 JTS; all production periods
+- 1020A26: CRANKCASE SUMP - R.R CLEAN MATING SURFACES AND APPLY SEALANT FOR VEHICLES WITH AIR CONDITIONING [939005250] — Procedures; engines: 2.4 JTD 20V; all production periods
+- 1020A30: ENGINE OIL DRAIN PLUG - REPLACE [939010430] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1020A46: CRANKCASE OIL SUMP PARTITION - R.R. WITH CRANKCASE SUMP REMOVED [939010431] — Procedures; all engines; all production periods
+- 1020D14: FRONT CRANKSHAFT OIL SEAL COVER - R.R AND REPLACE SEALS FOR VERSIONS WITH OIL PUMP ON CRANKSHAFT, TIMING SIDE [939010433] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1020D18: FRONT CRANKSHAFT COVER OIL SEAL - R.R. [939010434] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1020D38: FLYWHEEL SIDE OIL SEAL - REPLACE [939010435] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 2.4 JTD 20V; all production periods
+- 1020D26: FLYWHEEL SIDE OIL SEAL COVER - R.R AND REPLACE GASKETS [939010436] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 1020D30: FLYWHEEL SIDE OIL SEAL COVER - R.R. AND REPLACE GASKETS WITH FLYWHEEL REMOVED [939010437] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 1024A10: CRANKSHAFT - R.R WITH ENGINE REMOVED - CHECK AND, IF NECESSARY, REPLACE MAIN JOURNALS AND CRANKPINS [939010440] — Procedures; all engines; all production periods
+- 1024A28: CRANKSHAFT PHONIC WHEEL FOR RPM AND TIMING SENSOR - REPLACE WITH CRANKSHAFT REMOVED [939010441] — Procedures; engines: 1.9 JTD 8V, 2.4 JTD 20V; all production periods
+- 1024B10: ENGINE FLYWHEEL - R + R FOR VERSIONS WITH MANUAL GEARBOX [939010443] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1024B22: ENGINE FLYWHEEL - R.R WITH CLUTCH REMOVED FOR VERSIONS WITH MANUAL GEARBOX [939010444] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 1028H10: CONNECTING ROD AND PISTON SET - R.R [939010447] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 2.4 JTD 20V; all production periods
+- 1028H14: PISTON CONNECTING ROD SET - R.R. WITH ENGINE AND CYLINDER HEAD(S) REMOVED [939010448] — Procedures; engines: 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1028H20: PISTON WITH CONNECTING ROD - R.R [939010449] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1028H54: PISTON WITH CONNECTING ROD - DISMANTLING AT THE BENCH [939010450] — Procedures; all engines; all production periods
+- 1028H58: CONNECTING ROD SMALL END BUSH (ONE) - REPLACE [939010451] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1028H60: SET OF PISTONS, GUDGEON PINS AND SEALS - REPLACE PISTONS AND CONNECTING RODS AT THE BENCH - INCLUDES ALIGNMENT AND BALANCING [939010452] — Procedures; all engines; all production periods
+- 1032A10: CHAIN GEARS AND TIMING SYSTEM COMPONENTS R R [939010455] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1032A12: TIMING SYSTEM DRIVE CHAIN - R.R [939010456] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1032B10: TOOTHED TIMING BELT - R + R FOR TIMING ADJUSTMENT OR REPLACEMENT [939010458] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1032B40: TOOTHED DRIVEN PULLEY (ONE) - R + R WITH TIMING BELT REMOVED [939010459] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1032B44: TOOTHED DRIVE PULLEY - R + R WITH TIMING BELT REMOVED [939010460] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 1032B16: TOOTHED TIMING BELT - R R WITH ENGINE REMOVED [939010461] — Procedures; engines: 2.4 JTD 20V; all production periods
+- 1032C10: TIMING SYSTEM MOVING TENSIONER - R.R WITH TIMING BELT/CHAIN REMOVED [939010463] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1032C18: TIMING BELT MOVING TENSIONER - R.R. [939005251] — Procedures; engines: 3.2 JTS; all production periods
+- 1032C20: LEFT MOVING TIMING TENSIONER - R.R. [939005252] — Procedures; engines: 3.2 JTS; all production periods
+- 1032C24: RIGHT MOVING TIMING TENSIONER - R.R. [939005253] — Procedures; engines: 3.2 JTS; all production periods
+- 1032C30: TIMING SYSTEM FIXED TENSIONER - R.R. WITH TIMING BELT REMOVED [939010464] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1032C33: TIMING SYSTEM FIXED HYDRAULIC TENSIONER - R R [939010465] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1032C36: LEFT FIXED TIMING TENSIONER - R.R. [939005254] — Procedures; engines: 3.2 JTS; all production periods
+- 1032C38: RIGHT FIXED TIMING TENSIONER - R.R. [939005255] — Procedures; engines: 3.2 JTS; all production periods
+- 1032C40: TIMING SYSTEM CHAIN TENSIONER PAD - R.R. [939010466] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1032C41: TIMING SYSTEM FIXED CHAIN TENSIONER PAD R R [939010467] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1032C42: TIMING BELT TENSIONER SUPPORT - R.R [939010468] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1032D12: TIMING SYSTEM PROTECTIVE COVER(S) - R + R [939010470] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1036B10: OVERHEAD CAMSHAFT IN CYLINDER HEAD - R.R ON VEHICLE [939006037] — Procedures; engines: 1.9 JTD 8V; all production periods
+- 1036C10: CAMSHAFTS IN CAMSHAFT HOUSING - R.R - INCLUDES CAMSHAFT HOUSING REPLACEMENT, IF NECESSARY [939010473] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1036C41: PHASE TRANSFORMER ON OVERHEAD CAMSHAFT (ONE) INTAKE EXHAUST ON CYLINDER HEAD - R.R. [939010474] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1036C42: VARIABLE VALVE TIMING SYSTEM ON INTAKE EXHAUST CAMSHAFT IN CYLINDER HEAD R R [939010475] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1036E10: CAMSHAFTS IN LEFT CYLINDER HEAD - R.R. ON VEHICLE [939005257] — Procedures; engines: 3.2 JTS; all production periods
+- 1036E14: RIGHT CYLINDER HEAD TIMING SYSTEM SHAFTS - R.R. ON CAR [939005258] — Procedures; engines: 3.2 JTS; all production periods
+- 1036E18: CAMSHAFTS IN LEFT OR RIGHT CYLINDER HEAD - R.R. ON VEHICLE [939005259] — Procedures; engines: 3.2 JTS; all production periods
+- 1036E20: CAMSHAFT FOR ONE CYLINDER HEAD, LEFT OR RIGHT - R.R. WITH CYLINDER HEAD REMOVED [939005260] — Procedures; engines: 3.2 JTS; all production periods
+- 1036H56: HYDRAULIC TAPPET (ONE) AND VALVE CONTROL ROCKER (ONE) - R R WITH CAMSHAFT REMOVED [939010477] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1036H57: HYDRAULIC TAPPETS (ALL) R.R [939010478] — Procedures; engines: 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1036H10: VALVE TAPPETS - CHECK AND ADJUST CLEARANCE, IF NECESSARY [939010479] — Procedures; engines: 1.9 JTD 8V; all production periods
+- 1036H14: VALVE TAPPETS - CHECK CLEARANCE [939010480] — Procedures; engines: 1.9 JTD 8V; all production periods
+- 1036L10: CAMSHAFTS IN CAMSHAFT HOUSING - R.R. - INCLUDES CAMSHAFT HOUSING REPLACEMENT IF NECESSARY [939010482] — Procedures; engines: 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1036L30: FRONT OIL SEAL FOR CAMSHAFT IN CAMSHAFT HOUSING - REPLACE [939010483] — Procedures; engines: 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1036L14: CAMSHAFTS IN CAMSHAFT HOUSING - R.R. WITH CAMSHAFT HOUSING REMOVED - INCLUDES POSSIBLE REPLACEMENT. OF CAMSHAFT HOUSING [939010484] — Procedures; engines: 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1040A10: FUEL TANK - R + R AND DECANT FUEL [939010492] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1040A14: FUEL TANK - R + R FOR REPLACEMENT [939010493] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1040A30: FUEL FILLER PIPE ASSEMBLY- R + R [939010494] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1040A40: PLUG FOR FUEL FILLER PIPE - R + R [939010495] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1040A66: FUEL LEVEL GAUGE FOR SUBMERGED PUMP ASSEMBLY - REPLACE. [939005262] — Procedures; engines: 3.2 JTS; all production periods
+- 1040A70: SUBMERGED PUMP ASSEMBLY COMPLETE WITH LEVEL GAUGE CONTROL - R + R [939010496] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1040A74: INERTIA SWITCH FOR ELECTRIC PUMP SUPPLY CIRCUIT R + R [939010497] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1040B30: FUEL SUPPLY PIPE (ONE) - R.R. [939010499] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1040B32: FRONT FUEL DELIVERY LINE - R.R. [939010500] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1040B36: REAR FUEL DELIVERY LINE - R.R [939010501] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1040B42: SUPPLY PIPE FROM FUEL FILTER TO SUPPLY MANAGEMENT DEVICE - R.R. [939005764] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1040B52: FUEL RETURN PIPE (ONE) - R.R. [939005263] — Procedures; engines: 3.2 JTS; all production periods
+- 1040B54: FRONT FUEL RETURN PIPE - R.R [939010502] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1040B56: REAR FUEL RETURN PIPE - R.R. [939010503] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1040E12: LOWER FUEL TANK PROTECTION - R R [939010505] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1040E22: FUEL PIPE PROTECTION - R.R [939010506] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1044B10: FUEL FILTER ASSEMBLY - R + R OR REPLACE [939010509] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1048A10: AIR FILTER ASSEMBLY - R.R. [939010512] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1048A13: AIR FILTER MOUNT R R [939010513] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1048A14: AIR CLEANER FILTER ELEMENT - REPLACE. [939010514] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1048A23: COLD AIR INTAKE FOR AIR FILTER - R.R [939010515] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1048A28: VACUUM AIR CIRCUIT RESONATOR PIPE - R+R [939010516] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1048A34: SLEEVE(S) FROM FLOW METER TO AIR SUPPLY CAPACITY CASE - R + R [939010517] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1048A40: HOSE FROM AIR FILTER TO FLOW METER - R + R [939010518] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1048A41: HOSE FROM FLOW METER TO TURBOCHARGER - R.R. [939010520] — Procedures; engines: 2.4 JTD 20V; all production periods
+- 1048A42: SLEEVE FROM FLOW METER TO TURBO CHARGER AIR INLET PIPE - R + R [939005765] — Procedures; engines: 2.4 JTD 20V; all production periods
+- 1048A50: TURBOCHARGER AIR INTAKE PIPE - R.R. [939010519] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1048A51: TURBOCHARGER RIGID AIR INLET HOSE - R.R. [939005766] — Procedures; engines: 2.4 JTD 20V; all production periods
+- 1048A63: HOSE CONNECTING RESONATOR, FLOW METER AND THROTTLE BODY - R.R. [939005264] — Procedures; engines: 3.2 JTS; all production periods
+- 1048B14: AIR DELIVERY HOSE BETWEEN TURBOCHARGER AND HEAT EXCHANGER - REPLACE [939010522] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1048B20: AIR SUPPLY HOSE FROM HEAT EXCHANGER TO RIGID PIPE - REPLACE [939010523] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1048B22: AIR SUPPLY HOSE FROM HEAT EXCHANGER TO INTAKE MANIFOLD - R + R [939010524] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1048B50: INTERCOOLER - R + R [939010525] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1056B82: INJECTION/IGNITION SYSTEM E.C.U. (ONE) - R + R [939005841] — Procedures; engines: 1.8; all production periods
+- 1056F09: HOT FILM AIRFLOW METER DEBIMETER R R [939010528] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1056F17: THROTTLE BODY WITH DVL R R [939010529] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1056F44: INTAKE AIR ABSOLUTE PRESSURE SENSOR - R.R. [939005265] — Procedures; engines: 3.2 JTS; all production periods
+- 1056F46: PHASE TRANSFORMER SOLENOID, LEFT CYLINDER HEAD INTAKE OR EXHAUST - R.R. [939005266] — Procedures; engines: 3.2 JTS; all production periods
+- 1056F47: PHASE TRANSFORMER SOLENOID, RIGHT CYLINDER HEAD INTAKE OR EXHAUST - R.R. [939005267] — Procedures; engines: 3.2 JTS; all production periods
+- 1056F48: TIMING SYSTEM VARIABLE VALVE TIMING ELECTROMAGNET (ONE) INTAKE OR EXHAUST R R [939010530] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1056F50: COOLANT TEMPERATURE SENSO R R [939010531] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1056F51: CAM ANGLE SENSOR R R [939010532] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1056F52: FUEL PRESSURE REGULATOR R R [939010533] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1056F53: VARIABLE VALVE TIMING ELECTROMAGNETS IN INTAKE/EXHAUST TIMINIG SYSTEM R R [939010534] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1056F54: FUEL PRESSURE SENSOR R R [939010535] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1056F55: LEFT CYLINDER HEAD INTAKE OR EXHAUST CAM ANGLE SENSOR - R.R. [939005268] — Procedures; engines: 3.2 JTS; all production periods
+- 1056F56: RIGHT CYLINDER HEAD INTAKE OR EXHAUST CAM ANGLE SENSOR - R.R. [939005269] — Procedures; engines: 3.2 JTS; all production periods
+- 1056F61: LEFT CYLINDER HEAD FUEL MANIFOLD PIPE - R.R. [939005270] — Procedures; engines: 3.2 JTS; all production periods
+- 1056F62: RIGHT CYLINDER HEAD FUEL MANIFOLD PIPE - R.R. [939005271] — Procedures; engines: 3.2 JTS; all production periods
+- 1056F66: LEFT CYLINDER HEAD INJECTOR SET - R.R. [939005272] — Procedures; engines: 3.2 JTS; all production periods
+- 1056F67: RIGHT CYLINDER HEAD INJECTOR SET - R.R. [939005273] — Procedures; engines: 3.2 JTS; all production periods
+- 1056F68: INJECTOR SET R R INCLUDING GASKET REPLACEMENT [939010536] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1056F70: INJECTOR ONE R R WITH FUEL MANIFOLD PIPE REMOVED INCLUDES GASKET REPLACEMENT [939010537] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1056F72: PRESSURE PUMP R R [939010538] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1056F73: FUEL VAPOUR RECOVERY PIPE - R.R. [939005274] — Procedures; engines: 3.2 JTS; all production periods
+- 1056F74: LOW PRESSURE PIPE TO FUEL PRESSURE PUMP R R [939010539] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1056F75: FUEL RETURN PIPE FROM PRESSURE PUMP - R.R. [939005275] — Procedures; engines: 3.2 JTS; all production periods
+- 1056F76: HIGH PRESSURE PIPE FROM PRESSURE PUMP TO SINGLE FUEL MANIFOLD PIPE R R [939010540] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1056F77: SINGLE FUEL MANIFOLD PIPES HIGH PRESSURE PIPE - R.R. [939005276] — Procedures; engines: 3.2 JTS; all production periods
+- 1056F78: SWITCH ON CLUTCH PEDAL R R (PETROL ENGINES) [939010543] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1056F79: FUEL PIPE (DUPLEX) FROM PRESSURE PUMP TO FUEL MANIFOLD - R.R. [939005767] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1056F82: CONTROL UNIT SINGLE OF INJECTION IGNITION SYSTEM R R [939010541] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1056F94: SYSTEM WIRING HARNESS ON ENGINE R R [939010542] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1060D38: SWITCH ON BRAKE PEDAL - R.R (DIESEL ENGINES) [939010546] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060D42: SWITCH ON CLUTCH PEDAL- R. R (DIESEL ENGINES) [939010547] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060E10: DIESEL INJECTION PRESSURE PUMP - R.R. [939010549] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060E30: PRESSURE PUMP DRIVE PULLEY - R.R. [939010550] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060E40: PRESSURE PUMP SUPPORT - R.R. [939010551] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060E50: PRESSURE REGULATOR ON PRESSURE PUMP - R.R. [939010552] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060E42: PRESSURE PUMP SUPPORT - DISMANTLING AND REASSEMBLY AT THE BENCH [939010553] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060F10: FUEL INJECTORS - R.R. [939010555] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060F20: PIPE FROM PRESSURE PUMP TO FUEL MANIFOLD - R.R. [939010561] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060F30: SINGLE FUEL MANIFOLD PIPE - R.R. [939010556] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060F36: PIPES (ALL) FROM FUEL MANIFOLD TO INJECTOR - R.R. [939010557] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060F50: FUEL RETURN MANIFOLD - R.R. [939010558] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060F51: FUEL HOSE FROM SINGLE MANIFOLD INJECTOR TO RETURN MANIFOLD - R.R. [939010559] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060F52: FUEL RETURN PIPE FROM INJECTORS - R.R. [939010560] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060G10: AIR FLOW METER - R.R. [939010563] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060G14: ENGINE COOLANT TEMPERATURE SENSOR - R.R. [939010564] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060G16: PRESSURE RELIEF SENSOR - R.R. [939010565] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060G20: ENGINE RPM SENSOR - R.R. [939010566] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060G22: CAM ANGLE SENSOR - R.R [939010567] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060G28: FUEL PRESSURE SENSOR ON FUEL MANIFOLD TO INJECTORS - R.R [939010568] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060G30: WATER PRESENCE SENSOR IN FUEL FILTER - R.R. [939010569] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060G31: FUEL PRESSURE REGULATOR ON SINGLE MANIFOLD TO INJECTORS - R R [939010570] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060G50: THROTTLE BODY - R.R [939010571] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060G70: VACUUM RESEVOIR - R.R [939010572] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060G80: DIESEL ELECTRONIC INJECTION CONTROL UNIT - .R [939010573] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060G90: SYSTEM CABLE LOOM - R.R. [939010574] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060G38: BRAKE PEDAL SWITCH - R.R [939010575] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1060G42: SWITCH ON CLUTCH PEDAL - R.R. (JTD ENGINES) [939010576] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1064A27: TURBOCHARGER UNIT AND EXHAUST MANIFOLD - R.R. [939010579] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 1064A22: VARIABLE GEOMETRY TURBOCHARGER R R [939010580] — Procedures; engines: 2.4 JTD 20V; all production periods
+- 1064B42: SOLENOID CONTROLLING TURBOCHARGER VANE POSITION ACTUATOR - R.R [939010582] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1068A20: ACCELERATOR PEDAL WITH BUILT-IN POTENTIOMETER - R.R [939010585] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1068A21: ACCELERATOR PEDAL WITH INTEGRATED POTENTIOMETER - R.R. FOR RIGHT DRIVE VERSIONS [939005768] — Procedures; all engines; all production periods
+- 1072B10: INLET MANIFOLD - R + R AND REPLACE SEAL [939010588] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1072B12: INTAKE MANIFOLD (ONE) LH OR RH - R R AND REPLACE GASKET [939010589] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1072B21: AIR INTAKE FUEL MANIFOLD INTERGRATED DUCT R R AND REPLACE GASKET [939010590] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1072B50: AIR CHAMBER - R.R. [939010591] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1072B54: HOSES CONNECTING AIR INTAKE CHAMBER TO INTAKE MANIFOLD(S) - R.R. [939010592] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1072B60: THROTTLE SHAFT CONTROL VALVE FOR INLET PORTS R R [939010593] — Procedures; engines: 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1072C10: EXHAUST MANIFOLD - R + R AND REPLACE SEAL [939010600] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1072C13: EXHAUST MANIFOLD GASKET - REPLACE [939010595] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1072C16: EXHAUST MANIFOLD WITH CATALYTIC CONVERTER - R.R. [939010596] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1072C30: LEFT EXHAUST MANIFOLD - R + R AND REPLACE GASKET [939005277] — Procedures; engines: 3.2 JTS; all production periods
+- 1072C40: LEFT EXHAUST MANIFOLD HEAT SHIELD - R.R. [939005278] — Procedures; engines: 3.2 JTS; all production periods
+- 1072C42: EXHAUST MANIFOLD LOWER BULKHEAD R R [939010597] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1072C43: EXHAUST MANIFOLD UPPER BULKHEAD R R [939010598] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1072C44: EXHAUST MANIFOLD HEAT SHIELD - R+R [939010599] — Procedures; engines: 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1076A42: FRONT EXHAUST SILENCER FRONT HEAT SHILED R R [939010604] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1076A48: CATALYTIC CONVERTER HEAT SHIELD - R.R [939010603] — Procedures; engines: 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1076A52: EXHAUST PIPE REAR HEAT SHIELD(S) - R.R [939010605] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1076A72: HEAT SHIELD FOR RIGHT CATALYTIC PRECONVERTER - R.R. [939005279] — Procedures; engines: 3.2 JTS; all production periods
+- 1076B12: EXHAUST PIPE ASSEMBLY R R [939010607] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1076B18: RIGID SECTION OF EXHAUST PIPE BETWEEN CATALYTIC CONVERTER AND SILENCER - R + R [939010610] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1076B20: REAR EXHAUST SILENCER - R + R [939010611] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1076B22: REAR EXHAUST SILENCERS (ONE) LH OR RH R R [939010608] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1076B30: FRONT EXHAUST SILENCER - R + R [939010609] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1076B72: INTERMEDIATE EXHAUST PIPE WITH HOSE SECTION - R+R [939010612] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1076B82: LEFT EXHASUST PIPE BETWEEN CATALYTIC PRECONVERTER AND CONVERTER - R.R. [939005280] — Procedures; engines: 3.2 JTS; all production periods
+- 1076B84: RIGHT EXHAUST PIPE BETWEEN CATALYTIC PRECONVERTER AND CONVERTER - R.R. [939005281] — Procedures; engines: 3.2 JTS; all production periods
+- 1080A20: EXHAUST FUMES - CHECK WITH OPACIMETER [939010615] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1080A10: IDLING C.O. LEVEL - CHECK WITH SPECIAL EQUIPMENT [939010616] — Procedures; engines: 1.8, 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1080A12: IDLING CO LEVEL - CHECK USING SPECIAL EQUIPMENT AND ADJUST SPEED [939010617] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1080B38: LEFT CATALYTIC PRECONVERTER - R.R. OR REPLACE CYLINDER HEAD GASKET [939005282] — Procedures; engines: 3.2 JTS; all production periods
+- 1080B65: CATALYTIC CONVERTER ASSEMBLY - R.R. [939005283] — Procedures; engines: 3.2 JTS; all production periods
+- 1080B62: CATALYTIC CONVERTER - R + R [939010619] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1080B64: CATALYTIC CONVERTER EXCESS TEMPERATURE THERMOCOUPLE - R + R [939010622] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1080B81: PARTICULATE FILTER (D.P.F.) - R R [939010625] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1080B82: PARTICULATE FILTER DIFFERENTIAL PRESSURE (D.P.F.) SENSOR - R R [939010626] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1080B83: EXHAUST GAS TEMPERATURE SENSOR ON PARTICULATE FILTER (D.P.F.) - R R [939010627] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1080B92: LEFT UPPER LAMBDA SENSOR - R.R. [939010620] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1080B93: RIGHT UPPER LAMBDA SENSOR - R.R. [939010621] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1080B96: LEFT REAR LAMBDA SENSOR ON CATALYTIC CONVERTER R R [939010623] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1080B97: RIGHT REAR LAMBDA SENSOR ON CATALYTIC CONVERTER R R [939010624] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1080E20: ACTIVE CARBON FILTER FOR FUEL VAPOURS - R + R [939010629] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1080E28: ENABLEMENT SOLENOID FOR FLOW OF FUEL VAPOUR TO INLET - R+R [939010630] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1080E50: INTERMEDIATE FUEL VAPOUR PIPE R R [939010631] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1080E61: FUEL VAPOUR PIPE FROM VAPOUR FILTER TO INTERMEDIATE COUPLING - R.R. [939010632] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1080E63: FUEL VAPOR HOSE BETWEEN RIGID PIPE AND CUT OFF SOLENOID R R [939010633] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1080E43: PIPE FROM FUEL TANK TO ACTIVE CHARCOAL FILTER - R.R. [939005284] — Procedures; engines: 3.2 JTS; all production periods
+- 1080E64: PIPE FROM SOLENOID VALVE TO AIR INTAKE CHAMBER - R.R. [939005285] — Procedures; engines: 3.2 JTS; all production periods
+- 1080C24: E.G.R. SYSTEM SOLENOID - R + R [939010635] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1080C80: EXHAUST GAS/WATER HEAT EXCHANGER FOR EGR SYSTEM - R.R [939010636] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1080C83: EXHAUST GAS INLET PIPING FROM EXHAUST MANIFOLD TO HEAT EXCHANGER EGR - R R [939010637] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1080D34: ENGINE OIL VAPOUR SEPARATOR - R + R [939010639] — Procedures; engines: 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1080D20: OIL VAPOUR PIPE FROM TAPPET COVER TO ENGINE BLOCK - R.R [939010640] — Procedures; engines: 1.9 JTD 8V; all production periods
+- 1080D22: OIL VAPOUR PIPE FROM TAPPET COVER TO INTAKE - R.R [939010641] — Procedures; engines: 1.9 JTD 8V; all production periods
+- 1080D16: OIL VAPOUR PIPE FROM LEFT CYLINDER HEAD TAPPET COVER TO INTAKE CHAMBER - R.R. [939005286] — Procedures; engines: 3.2 JTS; all production periods
+- 1080D18: OIL VAPOUR PIPE FROM RIGHT CYLINDER HEAD TAPPET COVER TO INTAKE CHAMBER - R.R. [939005287] — Procedures; engines: 3.2 JTS; all production periods
+- 1084A16: OIL DIPSTICK PIPE - R.R [939010644] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1084A22: ENGINE OIL FILLER - R.R. [939010645] — Procedures; engines: 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1084A40: ENGINE OIL LEVEL SENSOR - R + R [939010646] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1084A42: ENGINE OIL PRESSURE WARNING LIGHT SWITCH - R + R [939010647] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1084B45: TIMING CHAIN LUBRICATION NOZZLE - R.R [939010649] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1084B26: ENGINE OIL INTAKE DUCT - R.R [939010650] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1084B30: ENGINE OIL FILTER - R.R [939010651] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1084B28: ENGINE OIL INTAKE PUMP - R + R WITH CRANKCASE SUMP REMOVED [939010652] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1084B36: ENGINE OIL FILTER MOUNTING AND HEAT EXCHANGER - R.R [939010653] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 1084B12: ENGINE OIL PUMP - R+R [939010654] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 2.4 JTD 20V; all production periods
+- 1084B18: ENGINE OIL PUMP, REMOVED - CHECK AT BENCH [939010655] — Procedures; all engines; all production periods
+- 1084B40: ENGINE OIL DELIVERY PIPE TO TURBOCHARGER - R + R [939010656] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1084B42: ENGINE OIL RETURN PIPE FROM TURBO - R + R [939010657] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1084B34: CARTRIDGE ENGINE OIL FILTER SUPPORT - R + R [939010658] — Procedures; engines: 2.4 JTD 20V; all production periods
+- 1084C10: ENGINE OIL HEAT EXCHANGER - R + R [939010660] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 1084C15: ENGINE OIL HEAT EXCHANGE MOUNT R R [939010661] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1084C34: ENGINE OIL COOLING RADIATOR - R + R [939010662] — Procedures; engines: 2.4 JTD 20V; all production periods
+- 1084C29: FRONT ENGINE OIL DELIVERY PIPE TO COOLING RADIATOR - R. R. [939010663] — Procedures; engines: 2.4 JTD 20V; all production periods
+- 1084C31: FRONT ENGINE OIL RETURN PIPE FROM COOLING RADIATOR - R. R. [939010664] — Procedures; engines: 2.4 JTD 20V; all production periods
+- 1084C33: REAR ENGINE OIL DELIVERY PIPE TO COOLING RADIATOR - R. R. [939010665] — Procedures; engines: 2.4 JTD 20V; all production periods
+- 1084C35: REAR ENGINE OIL RETURN PIPE FROM COOLING RADIATOR - R. R. [939010666] — Procedures; engines: 2.4 JTD 20V; all production periods
+- 1088B10: ENGINE COOLANT SUPPLY RESERVOIR - R.R. [939010669] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1088B12: ENGINE COOLANT RESERVOIR MOUNT - R R [939010671] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1088B20: ENGINE COOLING RADIATOR - R + R [939010670] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1088B35: LOWER PIN SUPPORTING ENGINE COOLING RADIATOR (ONE), LH OR RH - R&R [939005288] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1088B36: UPPER PIN SUPPORTING ENGINE COOLING RADIATOR (ONE), LH OR RH - R&R [939005289] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1088C10: WATER PUMP - R + R [939010673] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 2.4 JTD 20V; all production periods
+- 1088C14: WATER PUMP - R + R WITH TIMING BELT(S) REMOVED [939010674] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 1088C20: WATER PUMP - R + R WITH ENGINE REMOVED [939010675] — Procedures; engines: 2.4 JTD 20V; all production periods
+- 1088C22: WATER PUMP PULLEY - R.R. [939005290] — Procedures; engines: 3.2 JTS; all production periods
+- 1088C30: THERMOSTAT UNIT - R+R [939010676] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1088C32: THERMOSTAT UNIT - R + R WITH CYLINDER HEAD REMOVED [939010678] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1088C40: THERMOSTAT- R + R [939010677] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1088D06: THREE-WAY CONNECTOR BETWEEN RADIATOR AND THERMOSTAT [939005291] — Procedures; engines: 3.2 JTS; all production periods
+- 1088D10: LOWER RADIATOR COOLANT OUTLET HOSE - R.R. [939010680] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1088D13: LOWER FAST ON RADIARTOR FITTING R R [939010681] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1088D14: UPPER RADIATOR COOLANT OUTLET HOSE - R.R. [939010682] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1088D17: RIGID PIPE FROM RADIATOR TO THERMOSTAT R R [939010683] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1088D18: SLEEVE BETWEEN RIGID PIPE AND THERMOSTAT - R.R. [939010684] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1088D21: PIPE CONNECTING COOLANT RESERVOIR TO WATER INTAKE RIGID PIPE - R. R. [939010686] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1088D24: WATER PUMP RIGID COOLANT INLET PIPE - R.R. [939010685] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1088D43: COOLANT PIPE FROM CYLINDER HEAD R R [939010687] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1088D47: COOLANT SUPPLY AND RETURN HOSES TO ENGINE OIL HEAT EXCHANGER - R.R. [939010688] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 1088D51: COOLANT SUPPLY PIPE FROM CRANKCASE TO OIL/WATER HEAT EXCHANGER - R.R. WITH REAR ENGINE SUPPORT REMOVED [939005292] — Procedures; engines: 3.2 JTS; all production periods
+- 1088D56: ENGINE OIL HEAT EXCHANGER DELIVERY AND RETURN DUPLEX RIGID PIPING - R R [939010689] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 1088D55: COOLANT SUPPLY PIPE TO ENGINE OIL HEAT EXCHANGER - R.R. [939005293] — Procedures; engines: 3.2 JTS; all production periods
+- 1088D57: ENGINE COOLANT RETURN PIPE TO SUPPLY RESERVOIR - R.R. [939010690] — Procedures; engines: 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1088D67: COOLANT PIPE BETWEEN COOLANT RESERVOIR AND THERMOSTAT - R.R. [939005294] — Procedures; engines: 3.2 JTS; all production periods
+- 1088E10: RADIATOR COOLING FAN - R + R [939010692] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 1088E11: FANS WITH SINGLE ENGINE DUCT - R+R [939005295] — Procedures; engines: 3.2 JTS, 2.4 JTD 20V; all production periods
+- 1088E20: RESISTOR FOR RADIATOR COOLING FAN - R + R [939010693] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1092A10: CRANKSHAFT PULLEY - R + R [939010696] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1092B68: BELT FROM A/C COMPRESSOR TO ALTERNATOR DRIVE - R + R [939005769] — Procedures; engines: 2.4 JTD 20V; all production periods
+- 1092B75: AIR CONDITIONING COMPRESSOR/POWER STEERING PUMP DRIVE CHAIN - R.R. [939005770] — Procedures; engines: 2.4 JTD 20V; all production periods
+- 1092B80: AUXILIARY BELT FIXED TENSIONER (ONE) - R+R [939005771] — Procedures; engines: 2.4 JTD 20V; all production periods
+- 1092B82: AUXILARY BELT MOVING TENSIONER (ONE) -R+R [939005772] — Procedures; engines: 2.4 JTD 20V; all production periods
+- 1092B91: WATER PUMP BALANCING SHAFT DRIVE CHAIN GEARS AND COMPONENTS R R [939010698] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1092B92: WATER PUMP /BALANCING SHAFT DRIVE CHAIN HYDRAULIC TENSIONER R R [939010699] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1092B93: WATER PUMP /BALANCING SHAFT DRIVE CHAIN TENSIONER PADS R R [939010700] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1092C26: BELT FROM AIR CONDITIONER COMPRESSOR DRIVING POWER STEERING PUMP - R + R [939010702] — Procedures; engines: 1.9 JTS, 2.2 JTS, 2.4 JTD 20V; all production periods
+- 1092G10: SINGLE ENGINE BELT - R.R [939010704] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1092G14: ENGINE COMPONENT SINGLE BELT MOVING TENSIONER - R + R [939010705] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1092G15: ENGINE COMPONENT SINGLE BELT MOVING TENSIONER - R.R. WITH BELT REMOVED [939010706] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 1092G20: ENGINE COMPONENT SINGLE BELT FIXED TENSIONER - ONE - R + R [939010707] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 1810A20: CLUTCH - R + R [939010711] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1810A24: CLUTCH - R + R WITH GEARBOX REMOVED [939010712] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1820B20: MASTER CYLINDER (PUMP) - R + R [939010721] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1820B21: MASTER CYLINDER (PUMP) - R R FOR RIGHT HAND DRIVE VERSIONS [939005773] — Procedures; all engines; all production periods
+- 1820B30: CLUTCH HYDRAULIC ACTUATOR - R.R. [939010715] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1820B36: THREE-WAY CONNECTOR ON CLUTCH SLAVE CYLINDER - R.R. [939010716] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1820B38: HYDRAULIC CLUTCH ACTUATOR WITH COAXIAL CONTROL - R.R WITH GEARBOX REMOVED [939010717] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1820B39: HOSE FROM CLUTCH RESERVOIR TO MASTER CYLINDER - R.R. FOR RIGHT HAND DRIVE VERSIONS [939005774] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1820B40: HOSE FROM CLUTCH RESERVOIR TO MASTER CYLINDER (PUMP) - R + R [939010722] — Procedures; all engines; all production periods
+- 1820B45: RIGID DELIVERY PIPE FROM MASTER CYLINDER (PUMP) - R.R. FOR RIGHT HAND DRIVE VERSIONS [939005775] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 1820B48: SUPPLY HOSE TO OPERATING CYLINDER - R.R. [939010718] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1820B56: RIGID PIPE FROM VIBRATION DAMPER TO SLAVE CYLINDER - R R [939010719] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 1820B58: CLUTCH HYDRAULIC CIRCUIT VIBRATION DAMPER - R+R [939010720] — Procedures; all engines; all production periods
+- 2110A10: MANUAL GEARBOX AND DIFFERENTIAL - R + R [939010726] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 2110B34: MANUAL GEARBOX (6 SPEED) WITH DIFFERENTIAL - DISMANTLING AND REASSEMBLY - WASH, CHECK COMPONENTS, REPLACE SYNCHRONIZERS AND INTERNAL CONTROLS [939010735] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 2110C50: GEAR SELECTION AND ENGAGEMENT UNIT - R R [939010737] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 2110D26: DIFFERENTIAL INNER CASE BEARINGS - REPLACE WITH DIFFERENTIAL INNER CASE REMOVED [939010733] — Procedures; engines: 3.2 JTS, 2.4 JTD 20V; all production periods
+- 2110D14: DIFFERENTIAL INNER CASE SUPPORT - R + R WITH GEARBOX REMOVED [939010730] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 2110D20: DIFFERENTIAL INTERNAL CASING, REMOVED - DISMANTLING AND REASSEMBLY, CHECK PLANET AND SATELLITE GEARS [939010732] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 2110D52: FLANGE ON DIFFERENTIAL - R.R WITH DRIVESHAFT REMOVED [939010728] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 2110D62: RIGHT DIFFERENTIAL SHAFT OIL SEAL - R.R WITH INTERMEDIATE DRIVESHAFT REMOVED [939010729] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 2110D65: DIFFERENTIAL LEFT SHAFT OIL SEAL - R.R. WITH DRIVESHAFT REMOVED [939010731] — Procedures; engines: 3.2 JTS, 2.4 JTD 20V; all production periods
+- 2110E10: TRANSFER CASE FOR REAR TRACTION - R.R. [939005299] — Procedures; engines: 3.2 JTS; all production periods
+- 2110E20: REAR DRIVE IDLER CASING REMOVED - DISMANTLING AND REASSEMBLY [939005300] — Procedures; engines: 3.2 JTS; all production periods
+- 2125C02: GEAR CONTROL LEVER OUTER GAITER R R [939010741] — Procedures; all engines; all production periods
+- 2125C18: REVERSE INHIBITOR - REPLACE [939010745] — Procedures; all engines; all production periods
+- 2125C24: GEAR LEVER KNOB - R + R [939010743] — Procedures; all engines; all production periods
+- 2125C30: GEAR ENGAGEMENT/SELECTION CABLES - R.R [939010740] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 2125C31: GEAR SELECTION/ENGAGEMENT CABLES REACTION BRACKET - R.R. [939010744] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 2125C32: GEAR CONTROL LEVER MOUNT - R R [939010742] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 2410A18: TRANSMISSION WITH JOINTS INCLUDED - R.R. [939005305] — Procedures; engines: 3.2 JTS; all production periods
+- 2410D31: ALIGNMENT AND ANGLE ADJUSTMENT FOR DRIVE TRANSMISSION COMPONENTS - CHECK WITH SPECIAL TOOLS [939005307] — Procedures; engines: 3.2 JTS; all production periods
+- 2710A10: DRIVESHAFT WITH JOINTS (ONE), L/H OR R/H - R + R [939010749] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 2710A14: RIGHT HAND DRIVE SHAFT WITH JOINTS - R+R [939010750] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 2710A20: WHEEL SIDE CONSTANT VELOCITY JOINT (ONE), L/H OR R/H - R + R WITH DRIVESHAFT REMOVED - INCLUDES BOOT REPLACEMENT [939010751] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 2710A24: DIFFERENTIAL SIDE CONSTANT VELOCITY JOINT (ONE) L/H OR R/H - R + R WITH DRIVE SHAFT REMOVED - INCLUDES BOOT REPLACEMENT [939010754] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 2710A32: INTERMEDIATE DRIVESHAFT BEARING SUPPORT - R + R WITH INTERMEDIATE DRIVESHAFT REMOVED [939010752] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 2710A35: INTERMEDIATE DRIVESHAFT BEARING SUPPORT - R.R [939010753] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 2710A30: INTERMEDIATE DRIVESHAFT - R + R WITH RIGHT DRIVESHAFT REMOVED [939010755] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 2720C10: DIFFERENCIAL UNIT - R.R. [939005311] — Procedures; engines: 3.2 JTS; all production periods
+- 2720C20: PINION OIL SEAL ON DIFFERENTIAL UNIT CASING - R.R. WITH CASING REMOVED [939005312] — Procedures; engines: 3.2 JTS; all production periods
+- 2720C32: OIL SEAL (ONE) LEFT OR RIGHT FOR DIFFERENTIAL UNIT - R.R. AND REPLACE GASKET [939005313] — Procedures; engines: 3.2 JTS; all production periods
+- 2720C84: REAR DIFFERENTIAL TO CROSSMEMBER MOUNTING BRACKET - R.R. [939005314] — Procedures; engines: 3.2 JTS; all production periods
+- 2720D10: SEMISHAFT WITH LEFT OR RIGHT JOINT (ONE) - R.R. [939005316] — Procedures; engines: 3.2 JTS; all production periods
+- 2720D16: WHEEL SIDE CONSTANT VELOCITY JOINT (ONE), LEFT OR RIGHT - R.R. WITH DRIVESHAFT REMOVED - INCLUDES BOOT REPLACEMENT [939005317] — Procedures; engines: 3.2 JTS; all production periods
+- 2720D18: DIFFERENTIAL SIDE CONSTANT VELOCITY JOINT (ONE), LEFT OR RIGHT - R.R. WITH DRIVESHAFT REMOVED - INCLUDES BOOT REPLACEMENT [939005318] — Procedures; engines: 3.2 JTS; all production periods
+- 3310A30: FRONT BRAKE CALIPER (ONE) - R.R [939010759] — Procedures; all engines; all production periods
+- 3310A48: FRONT BRAKE DISC (ONE), LEFT OR RIGHT - R.R [939010760] — Procedures; all engines; all production periods
+- 3310A57: FRONT BRAKE CALIPER BRACKET (ONE), LEFT OR RIGHT - R.R [939010761] — Procedures; engines: 1.8, 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V; all production periods
+- 3310A59: FRONT BRAKE DISC GUARD (ONE), LEFT OR RIGHT- R.R [939005320] — Procedures; all engines; all production periods
+- 3310A60: FRONT BRAKE PADS - REPLACE [939010762] — Procedures; all engines; all production periods
+- 3310B36: REAR BRAKE CALIPER (ONE), LEFT OR RIGHT - R.R [939010764] — Procedures; all engines; all production periods
+- 3310B48: REAR BRAKE DISC (ONE), LEFT OR RIGHT - R.R. [939010765] — Procedures; all engines; all production periods
+- 3310B57: REAR BRAKE CALIPER BRACKET (ONE), LEFT OR RIGHT - R.R. [939010766] — Procedures; all engines; all production periods
+- 3310B59: REAR BRAKE DISC GUARD (ONE), LEFT OR RIGHT - R.R. [939010768] — Procedures; all engines; all production periods
+- 3310B62: REAR BRAKE PADS - REPLACE [939010767] — Procedures; all engines; all production periods
+- 3330B02: PEDAL ASSEMBLY - R.R [939010792] — Procedures; all engines; all production periods
+- 3330B08: PEDAL MOUNT ASSEMBLY - R R AND OVERHAUL WITH FACIA TRIM SUPPORT BEAM REMOVED FOR RIGHT-HAND DRIVE VERSIONS [939005776] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 3330B16: PEDAL UNIT ASSEMBLY - DISMANTLING AND REASSEMBLY AT THE BENCH [939010793] — Procedures; all engines; all production periods
+- 3330B22: BRAKE PEDAL - R+R FOR MANUAL GEARBOX VERSIONS [939010794] — Procedures; all engines; all production periods
+- 3330B23: BRAKE PEDAL - R.R. FOR RIGHT HAND DRIVE VERSIONS [939005777] — Procedures; all engines; all production periods
+- 3330B26: CLUTCH PEDAL - R+R [939010795] — Procedures; all engines; all production periods
+- 3330B27: CLUTCH PEDAL - R.R. FOR RIGHT HAND DRIVE VERSIONS [939005778] — Procedures; all engines; all production periods
+- 3330B42: PEDAL UNIT SUPPORT - R.R. FOR RIGHT HAND DRIVE VERSIONS [939005779] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 3330C10: MASTER CYLINDER (PUMP) - R + R [939010797] — Procedures; all engines; all production periods
+- 3330C12: MASTER CYLINDER (PUMP) - R.R. FOR RIGHT HAND DRIVE VERSIONS [939005780] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 3330C30: BRAKE FLUID RESERVOIR - R + R AND WASH INSIDE [939010798] — Procedures; all engines; all production periods
+- 3330C34: BRAKE FLUID RESERVOIR - R + R AND WASH INSIDE - VERSIONS WITH RIGHT HAND DRIVE AND ABS [939005781] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 3330C44: BRAKE FLUID MINIMUM W/L SWITCH - R + R [939010799] — Procedures; all engines; all production periods
+- 3330D02: BRAKE SERVO/BRAKE PUMP ASSEMBLY - R.R. [939010801] — Procedures; all engines; all production periods
+- 3330D18: BRAKE SERVO R R FOR RIGHT HAND DRRIVE VERSIONS [939005782] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 3330D20: SINGLE-ACTING VALVE FOR BRAKE SERVO - R+R [939010802] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 3330D21: SINGLE-ACTING VALVE FOR BRAKE SERVO - R.R. FOR RIGHT HAND DRIVE VERSIONS [939005783] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 3330D25: VACUUM PIPE FOR BRAKE SERVO - R.R. FOR RIGHT HAND DRIVE VERSIONS [939005784] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 3330D26: VACUUM PIPE FOR BRAKE SERVO ASSEMBLY - R.R [939010803] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 3330D30: VACUUM PUMP - R+R [939010804] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 3340A10: HYDRAULIC ABS CONTROL UNIT - R+R [939010773] — Procedures; all engines; all production periods
+- 3340A12: ABS HYDRAULIC AND ELECTRONIC CONTROL UNIT - R.R. [939010774] — Procedures; all engines; all production periods
+- 3340A20: ABS ELECTRONIC CONTROL UNIT - R+R [939010775] — Procedures; all engines; all production periods
+- 3340A30: RPM SENSOR (ONE) FOR ONE FRONT WHEEL, LEFT OR RIGHT - R.R. [939010771] — Procedures; all engines; all production periods
+- 3340A34: LEFT OR RIGHT REAR WHEEL RPM SENSOR (ONE) - R.R. [939010772] — Procedures; all engines; all production periods
+- 3340B10: HOSE TO L/H OR R/H FRONT BRAKES (ONE) - R+R [939010777] — Procedures; all engines; all production periods
+- 3340B30: HOSE TO L/H OR R/H REAR BRAKES (ONE) - R+R [939010778] — Procedures; all engines; all production periods
+- 3340B40: RIGID PIPE from hydraulic control unit to intermediate connector for right front brake - R.R. [939005321] — Procedures; engines: 3.2 JTS; all production periods
+- 3340B41: RIGID PIPE FROM INTERMEDIATE CONNECTOR TO RIGHT FRONT BRAKE - R.R. [939005322] — Procedures; engines: 3.2 JTS; all production periods
+- 3340B52: RIGID PIPE (ONE) FROM MASTER CYLINDER (PUMP) TO A.B.S HYDRAULIC CONTROL UNIT - R.R. [939010779] — Procedures; all engines; all production periods
+- 3340B53: RIGID PIPE (ONE) FROM MASTER CYLINDER (PUMP) TO ABS HYDRAULIC CONTROL UNIT - R.R. FOR RIGHT HAND DRIVE VERSIONS [939005785] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 3340B55: RIGID PIPE FROM HYDRAULIC CONTROL UNIT TO LEFT FRONT BRAKE - R.R. [939010780] — Procedures; all engines; all production periods
+- 3340B56: RIGID PIPE FROM HYDRAULIC CONTROL UNIT TO RIGHT FRONT BRAKE - R.R. [939010781] — Procedures; engines: 1.8, 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 3340B62: RIGID PIPE (ONE), LEFT OR RIGHT, FROM HYDRAULIC CONTROL UNIT WITH PIPE CONNECTOR TO REAR BRAKES - R.R. [939010782] — Procedures; all engines; all production periods
+- 3340B67: RIGID PIPE FROM RIGHT REAR BRAKE CONNECTOR - R.R. [939010783] — Procedures; all engines; all production periods
+- 3340B69: RIGID PIPE FROM LEFT RER BRAKE CONNECTOR - R.R. [939010784] — Procedures; all engines; all production periods
+- 3350A10: ASR DISENGAGEMENT SWITCH - R.R. [939010809] — Procedures; all engines; all production periods
+- 3350E30: LATERAL ACCELERATION AND SLEWING SENSOR - R.R [939010807] — Procedures; all engines; all production periods
+- 3380A04: HANDBRAKE - ADJUST TRAVEL [939005323] — Procedures; all engines; all production periods
+- 3380A10: HANDBRAKE LEVER - R+R [939010787] — Procedures; all engines; all production periods
+- 3380A30: HANDBRAKE CABLE - R+R [939010788] — Procedures; all engines; all production periods
+- 3380A44: HANDBRAKE/LINKAGE PROTECTION - R+R [939010789] — Procedures; all engines; all production periods
+- 4110A10: STEERING WHEEL - R+R FOR REPLACEMENT OR CHECKS [939010817] — Procedures; all engines; all production periods
+- 4110A18: TRIM ON STEERING WHEEL - R.R. [939010815] — Procedures; all engines; all production periods
+- 4110A29: MOUNT WITH STEERING SHAFTS - R R - INCLUDES STEERING WHEEL R R - FOR RIGHT-HAND SIDE VERSIONS [939005786] — Procedures; all engines; all production periods
+- 4110A30: SUPPORT WITH STEERING CONTROL SHAFTS - R+R [939010816] — Procedures; all engines; all production periods
+- 4110B10: STEERING LINKS - R+R ON VEHICLE - CHECK TOE-IN/TOE-OUT SEPARATELY [939010813] — Procedures; all engines; all production periods
+- 4130A14: POWER STEERING BOX COVER - R R [939005325] — Procedures; engines: 1.8, 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 4130A15: POWER STEERING BOX R R WITH FRONT SUSPENSION FRAME REMOVED [939010821] — Procedures; all engines; all production periods
+- 4130B10: POWER STEERING FLUID RESEVOIR - R.R. [939010833] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 4130B20: POWER STEERING PUMP - R.R. [939010823] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 4130B31: ONE POWER STEERING PUMP SUPPLY PIPE INTERMEDIATE RIGID JOINT R R [939010830] — Procedures; engines: 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 4130B34: SUPPLY PIPE FROM FLUID RESEVIOR TO POWER STEERING PUMP R R [939010824] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 4130B36: SUPPLY PIPE FROM FLUID RESEVIOR TO POWER STEERING PUMP INLET PIPE R R [939010831] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 4130B38: POWER STEERING PUMP INLET PIPE FROM FLUID RESEVIOR PIPE OR INTERMEDIATE RIGID PIPE R R [939010832] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 4130B40: SUPPLY PIPE FROM PUMP TO POWER STEERING BOX - R.R. [939010825] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 4130B41: SUPPLY PIPE FROM PUMP TO POWER STEERING BOX - R.R. FOR RIGHT HAND DRIVE VERSIONS [939005787] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 4130B43: RETURN PIPE FROM POWER ASSISTED STEERING BOX TO HEAT EXCHANGER COIL - R.R. [939005326] — Procedures; engines: 3.2 JTS; all production periods
+- 4130B45: PIPE FROM HEAT EXCHANGER COIL TO POWER ASSISTED STEERING FLUID RESERVOIR - R.R. [939005327] — Procedures; engines: 3.2 JTS; all production periods
+- 4130B52: HEAT EXCHANGER PIPE - R+R [939010826] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 4130B54: RETURN PIPE FROM HEAT EXCHANGER PIPE TO POWER STEERING FLUID RESEVIOR R R [939010827] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 4130B70: INETERMEDIATE RETURN PIPE BETWEEN POWER STEERING BOX AND POWER STEERING FLUID HEAT EXCHANGER COOLING RADIATOR R R [939010828] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 4130B72: REURN PIPE FROM POWER STEERING BOX TO INTERMEDIATE PIPE R R [939010829] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 4130B76: RETURN PIPE FROM POWER STEERING CASE TO POWER STEERING FLUID RESEVIOR R R [939005788] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 4130B98: POWER ASSISTED STEERING FLUID COOLING RADIATOR - R.R. [939005328] — Procedures; engines: 3.2 JTS; all production periods
+- 4410A12: FRONT SUSPENSION DAMPER (ONE), LH OR RH - FOR MCPHERSON STRUT SYSTEM - INCLUDES DISMANTLING/REASSEMBLY OF ASSEMBLY AT BENCH - R.R [939010838] — Procedures; all engines; all production periods
+- 4410A80: DAMPER LOWER FORK - R R [939010839] — Procedures; all engines; all production periods
+- 4410B40: LOWER TRACK CONTROL ARM (WITH BALLJOINT) FOR LEFT OR RIGHT FRONT SUSPENSION (ONE) - R+R - CHECK WHEEL GEOMETRY SEPARATELY [939010841] — Procedures; all engines; all production periods
+- 4410B52: FRONT SUSPENSION LOWER TRACK CONTROL ARM REAR BUSH LEFT OR RIGHT - REPLACE AT BENCH [939010843] — Procedures; all engines; all production periods
+- 4410B68: LOWER SWINGING ARM(ONE), LH OR RH OF FRONT SUSPENSION - R R -CHECK WHEEL ALIGNMENT SEPARATELY [939010842] — Procedures; all engines; all production periods
+- 4410C10: FRONT SUSPENSION ANTI-ROLL BAR - R+R - CHECK WHEEL GEOMETRY SEPARATELY [939010845] — Procedures; all engines; all production periods
+- 4410C12: FRONT SUSPENSION ANTI ROLL BAR JOINT (END) (ONE), LH OR RH - R.R [939010846] — Procedures; all engines; all production periods
+- 4410D10: FRONT SUSPENSION FRAME - R+R [939010848] — Procedures; all engines; all production periods
+- 4410D16: BRACKET (ONE) RETAINING CHASSIS TO BODY - R R [939010849] — Procedures; all engines; all production periods
+- 4420A12: REAR SUSPENSION DAMPER (ONE), LH OR RH - FOR MCPHERSON STRUT SYSTEM - INCLUDES DISMENTLING/REBUILDING OF ASSEMBLY AT BENCH R R [939010852] — Procedures; all engines; all production periods
+- 4420B10: L/H OR R/H REAR SUSPENSION WISHBONE (ONE) - R+R [939005330] — Procedures; all engines; all production periods
+- 4420B16: REAR SUSPENSION FRONT WISHBONE (ONE)- R R [939010859] — Procedures; all engines; all production periods
+- 4420C10: REAR SUSPENSION STABILIZER BAR - R+R [939010854] — Procedures; all engines; all production periods
+- 4420C12: REAR SUSPENSION STABILIZER BAR JOINT - R+R ON VEHICLE [939010855] — Procedures; all engines; all production periods
+- 4420D42: REAR SUSPENSION BEAM - R R [939010857] — Procedures; all engines; all production periods
+- 4450A10: FRONT WHEEL GEOMETRY - CHECK USING OPTICAL EQUIPMENT - INCLUDES ADJUSTMENT IF NECESSARY [939010868] — Procedures; all engines; all production periods
+- 4450A40: REAR WHEEL GEOMETRY - CHECK USING OPTICAL EQUIPMENT, INCLUDES ADJUSTMENT IF NECESSARY [939010869] — Procedures; all engines; all production periods
+- 4450B02: LEFT FRONT WHEEL - R.R [939010871] — Procedures; all engines; all production periods
+- 4450B04: RIGHT FRONT WHEEL - R.R [939010872] — Procedures; all engines; all production periods
+- 4450B06: LEFT REAR WHEEL - R.R [939010873] — Procedures; all engines; all production periods
+- 4450B08: RIGHT REAR WHEEL - R.R [939010874] — Procedures; all engines; all production periods
+- 4450B12: FRONT WHEELS (TWO) - R+R [939010875] — Procedures; all engines; all production periods
+- 4450B13: REAR WHEELS (TWO) - R.R [939010876] — Procedures; all engines; all production periods
+- 4450B14: WHEELS (FOUR) - R+R [939010877] — Procedures; all engines; all production periods
+- 4450C10: FRONT STEERING KNUCKLE (ONE), L/H OR R/H COMPLETE WITH WHEEL HUB - R+R WITH WHEEL REMOVED - CHECK WHEEL GEOMETRY SEPARATELY [939010862] — Procedures; all engines; all production periods
+- 4450C28: FRONT WHEEL HUB,LEFT OR RIGHT - R.R WITH WHEEL REMOVED, CHECK WHEEL GEOMETRY SEPARATELY [939010863] — Procedures; all engines; all production periods
+- 4450D10: HUB FOR ONE REAR WHEEL, L/H OR R/H - R+R WITH WHEEL REMOVED - CHECK WHEEL GEOMETRY SEPARATELY [939010865] — Procedures; all engines; all production periods
+- 4450D14: STUB AXLE FOR ONE REAR WHEEL HUB, LEFT OR RIGHT - R.R WITH HUB REMOVED - INCLUDES BUSH REPLACEMENT IF NECESSARY - CHECK WHEEL GEOMETRY SEPARATELY [939010866] — Procedures; all engines; all production periods
+- 5010A12: HEATER WATER SUPPLY PIPE - R.R. [939010882] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5010A16: HEATER WATER RETURN PIPE - R.R. [939010883] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5010B07: POLLEN FILTER COVER R R [939010893] — Procedures; all engines; all production periods
+- 5010B09: PURIFYING (POLLEN) FILTER FILTER ELEMENT - REPLACE [939010885] — Procedures; all engines; all production periods
+- 5010B18: HEATING VENTILATION UNIT AIR INTAKE - R+R [939010886] — Procedures; all engines; all production periods
+- 5010B24: UNDER-FACIA AIR DUCTS - R.R. [939010887] — Procedures; all engines; all production periods
+- 5010B44: REAR SEAT AIR DUCT - ARRANGE [939010892] — Procedures; all engines; all production periods
+- 5010B46: CENTRAL AIR DUCT TO REAR SEATS - R.R. [939010888] — Procedures; all engines; all production periods
+- 5010B47: SIDE AIR DUCT TO REAR SEATS (ONE), LH OR RH - R.R. [939010889] — Procedures; all engines; all production periods
+- 5010B49: TUNNEL CONSOLE GLOVE COMPARTMENT AIR DUCT - R. R. [939010891] — Procedures; all engines; all production periods
+- 5010B70: SIDE CONNECTOR BRACKETS ONE, LH OR RH, BETWEEN AIR CONDITIONER CASING AND DUCT FOR R [939010890] — Procedures; all engines; all production periods
+- 5010C12: WINDSCREEN DEMISTER DIFFUSER - R+R [939010900] — Procedures; all engines; all production periods
+- 5010C30: CENTRAL AIR VENT IN DASHBOARD - R.R. [939010901] — Procedures; all engines; all production periods
+- 5010C32: AIR VENT ON TUNNEL COVER FOR REAR SEATS - R.R. [939010899] — Procedures; all engines; all production periods
+- 5010C34: AIR OUTLET ON CONSOLE - R+R [939004909] — Procedures; all engines; all production periods
+- 5010C38: SIDE AIR VENT (ONE) LEFT OR RIGHT IN DASHBOARD - R.R. [939004910] — Procedures; all engines; all production periods
+- 5010C53: AIR VENT IN DASHBOARD (ONE), LEFT OR RIGHT FOR DEMISTING SIDE WINDOWS - R.R. [939010896] — Procedures; all engines; all production periods
+- 5010C55: LOWER AIR DIFFUSER (ONE) LH OR RH - R.R [939010902] — Procedures; all engines; all production periods
+- 5010C60: LH OR RH REAR AIR OUTLET VENT (ONE) - R.R [939010895] — Procedures; all engines; all production periods
+- 5010D20: MIXED AIR TEMPERATURE SENSOR - R+R FOLLOWING ELECTRICAL WIRING CHECK OPERATION [939010907] — Procedures; all engines; all production periods
+- 5010D40: PASSENGER COMPARTMENT AIR SENSOR FAN - R+R [939010906] — Procedures; all engines; all production periods
+- 5010D56: SOLAR SENSOR - R.R FOLLOWING ELECTRICAL SYSTEM CHECK [939010904] — Procedures; all engines; all production periods
+- 5010D72: AIR QUALITY SENSOR - R.R. FOLLOWING ELECTRICAL CIRCUIT CHECK [939010905] — Procedures; all engines; all production periods
+- 5040A20: AIR CONDITIONING COMPRESSOR - R+R - INCLUDES FLUID LEVEL CHECK AND TOP UP IF NECESSARY [939010911] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5040A26: AIR CONDITIONING COMPRESSOR SUPPORT - R.R. [939010912] — Procedures; engines: 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5040A40: AIR CONDITIONING CONDENSER - R+R [939010913] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5040A44: AIR CONDITIONING DRIER FILTER/ACCUMULATOR - R+R [939010914] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5040A81: PIPE FROM EXPANSION VALVE TO CONDENSER AND COMPRESSOR FILLING R R [939010915] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5040A82: PIPE FROM COMPRESSOR TO CONDENSER AND EXPANSION VALVE FITTING R R [939010916] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5040B14: AIR CONDITIONING SYSTEM MULTISTAGE PRESSURE SWITCH - R+R [939010918] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5040B30: EXPANSION VALVE (TUBE ORIFICE) - R+R [939010919] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5040C10: AIR CONDITIONING CASING - R.R [939010921] — Procedures; all engines; all production periods
+- 5040C16: AIR CONDITIONER HEATER/DISTRIBUTION UNIT HOUSING - DISMANTLE AT BENCH [939010922] — Procedures; all engines; all production periods
+- 5040C18: RECIRCULATION AIR INTAKE UNIT - R.R WITH AIR CONDITIONING CASING REMOVED [939010923] — Procedures; all engines; all production periods
+- 5040C30: AIR CONDITIONING FAN - R.R. [939010924] — Procedures; all engines; all production periods
+- 5040C44: FAN MOTOR ELECTRONIC VARIATOR - R+R [939010925] — Procedures; all engines; all production periods
+- 5040C50: AIR CONDITIONING HEATER RADIATOR - R.R. [939010928] — Procedures; all engines; all production periods
+- 5040C64: A/C EVAPORATOR - R+R [939010929] — Procedures; all engines; all production periods
+- 5040C66: AIR CONDITIONING EVAPORATOR - R+R WITH AIR CONDITIONING CASING REMOVED [939010926] — Procedures; all engines; all production periods
+- 5040C68: CONDENSATE DRAIN PIPE AND ANITI-CONDENSATION FILTER - ARRANGE [939010927] — Procedures; all engines; all production periods
+- 5040D18: AIR CONDITIONING CONTROL UNIT - R.R. [939010931] — Procedures; all engines; all production periods
+- 5040D19: CONTROL UNIT WITH CONTROL PANEL FOR REAR AIR CONDITIONING - R.R. [939004802] — Procedures; all engines; all production periods
+- 5040D75: AIR CONDITIONING RECIRCULATION FLAP CONTROL MOTOR - R.R [939010932] — Procedures; all engines; all production periods
+- 5040D79: MOTOR (ONE) CONTROLLING LH AIR CONDITIONER DISTRIBUTION/MIXER FLAPS R R WITH AIR CONDITIONER HOUSING REMOVED [939010933] — Procedures; all engines; all production periods
+- 5040D80: AIR CONDITIONER SYSTEM WIRING BUNDLE - R R OR REPLACE [939010936] — Procedures; all engines; all production periods
+- 5040D82: AIR CONDITIONING LOWER AIR DISTRIBUTION FLAP CONTROL MOTOR - R.R. [939010934] — Procedures; all engines; all production periods
+- 5040D84: AIR CONDITIONING LEFT AIR MIXTURE FLAP CONTROL MOTOR - R.R [939010935] — Procedures; all engines; all production periods
+- 5040D86: AIR CONDITIONING RIGHT AIR MIXTURE FLAP CONTROL MOTOR - R.R [939010937] — Procedures; all engines; all production periods
+- 5040D93: MOTOR CONTROLLING THREE ZONE AUTOMATIC AIR CONDITIONER REAR SEAT AIR MIXING FLAP R R [939004803] — Procedures; all engines; all production periods
+- 5040D94: AIR CONDITIONING LEFT UPPER AIR DISTRIBUTION FLAP MOTOR (DEFROST) - R.R [939010938] — Procedures; all engines; all production periods
+- 5040D96: AIR CONDITIONING RIGHT UPPER DISTRIBUTION FLAP MOTOR (DEFROST) - R.R [939010939] — Procedures; all engines; all production periods
+- 5050A10: WINDSCREEN WASHER FLUID RESERVOIR (IN ENGINE COMPARTMENT) - R+R [939010943] — Procedures; all engines; all production periods
+- 5050A11: WINDSCREEN WASHER FLUID RESERVOIR SUPPORT - R. R. [939010944] — Procedures; all engines; all production periods
+- 5050A16: WASHER FLUID LEVEL SENSOR - R R [939010945] — Procedures; all engines; all production periods
+- 5050B10: FRONT WINDSCREEN WASHER JETS - R+R CLEAN AND/OR POSITION [939010949] — Procedures; all engines; all production periods
+- 5050B15: WINDSCREEN WASHER JETS UPPER PIPE - R. R. [939010950] — Procedures; all engines; all production periods
+- 5050B16: WINDSCREEN WASHER JETS LOWER PIPE - R. R. [939010951] — Procedures; all engines; all production periods
+- 5050B20: WINDSCREEN WASHER ELECTRICAL PUMP - R+R [939010952] — Procedures; all engines; all production periods
+- 5050B28: WINDSCREEN WIPER BLADE/S - R+R [939010953] — Procedures; all engines; all production periods
+- 5050B34: WINDSCREEN WIPER ARM/S COMPLETE WITH BLADE - R+R [939010947] — Procedures; all engines; all production periods
+- 5050B38: WINDSCREEN WIPER ASSEMBLY - R+R OR REPAIR [939010948] — Procedures; all engines; all production periods
+- 5050B42: WINDSCREEN WIPER MOTOR - R+R [939010954] — Procedures; all engines; all production periods
+- 5050B64: RAIN SENSOR ELECTRONIC UNIT - R.R [939010955] — Procedures; all engines; all production periods
+- 5050B70: RAIN/DUSK SENSOR - R.R. [939004911] — Procedures; all engines; all production periods
+- 5050C10: REAR WINDOW WASHER JET - R+R CLEAN AND/OR POSITION [939005339] — Procedures; all engines; all production periods
+- 5050C20: REAR WINDOW WASHER ELECTRICAL PUMP - R+R [939005340] — Procedures; all engines; all production periods
+- 5050C28: REAR WIPER BLADE - R+R [939005341] — Procedures; all engines; all production periods
+- 5050C34: REAR WIPER ARM WITH BLADE - R+R [939005342] — Procedures; all engines; all production periods
+- 5050C42: REAR WIPER MOTOR - R+R [939005343] — Procedures; all engines; all production periods
+- 5050D08: HEADLAMP WASHER JET/S - R R [939004913] — Procedures; all engines; all production periods
+- 5050D13: HEADLAMP WASHER SYSTEM TYPES AND FITTINGS - R R [939004914] — Procedures; all engines; all production periods
+- 5050D15: OUTLET PIPE FROM HEADLAMP WASHER SYSTEM ELECTRIC PUMP - R.R. [939004915] — Procedures; all engines; all production periods
+- 5050D20: HEADLAMP WASHER PUMP - R+R [939004916] — Procedures; all engines; all production periods
+- 5505A10: JUNCTION UNIT - R+R [939010965] — Procedures; all engines; all production periods
+- 5505A13: ADDITIONAL JUNCTION UNIT IN ENGINE COMPARTMENT - R.R. [939010962] — Procedures; all engines; all production periods
+- 5505A14: SUPPLEMENTARY JUNCTION BOX IN LUGGAGE COMPARTMENT - R.R [939010970] — Procedures; all engines; all production periods
+- 5505A28: CONTAINER FOR ADDITIONAL JUNCTION UNIT IN ENGINE COMPARTMENT - R.R. [939010963] — Procedures; all engines; all production periods
+- 5505A29: CONTAINER FOR ADDITIONAL JUNCTION UNIT IN ENGINE COMPARTMENT - R.R. WITH ADDITIONAL JUNCTION UNIT REMOVED [939010961] — Procedures; all engines; all production periods
+- 5505A31: ELECTRONIC KEY ACKNOWLEDGEMENT DEVICE - R. R. [939010968] — Procedures; all engines; all production periods
+- 5505A32: BODY COMPUTER - R.R [939010966] — Procedures; all engines; all production periods
+- 5505A35: MAIN BODY COMPUTER/JUNCTION UNIT - R.R. [939010967] — Procedures; all engines; all production periods
+- 5505A42: CONTROL UNIT (DIGITAL NETWORK NODE) IN DRIVER'S DOOR - R.R. [939010964] — Procedures; all engines; all production periods
+- 5505A43: CONTROL UNIT (DIGITAL NETWORK NODE) IN DRIVER'S DOOR - R.R. WITH PANEL REMOVED [939010960] — Procedures; all engines; all production periods
+- 5505A47: PASSENGER SIDE DOOR CONTROL UNIT DIGITAL NETWORK MODE R R WITH PANEL REMOVED [939010969] — Procedures; all engines; all production periods
+- 5505A48: CONTROL UNIT (DIGITAL NETWORK NODE) IN BOOT COMPARTMENT - R.R. [939010971] — Procedures; all engines; all production periods
+- 5505B10: FRONT DOOR WIRING (ONE), LEFT OR RIGHT - R.R. WITH WATER GUARD OR FRAME DETACHED [939010979] — Procedures; all engines; all production periods
+- 5505B11: FRONT DOOR WIRING (ONE) LEFT OR RIGHT - R.R [939010980] — Procedures; all engines; all production periods
+- 5505B20: REAR DOOR WIRING (ONE) LEFT OR RIGHT - R.R WITH WATER GUARD OR FRAME DETACHED [939010983] — Procedures; all engines; all production periods; only with equipment: High setup, Low setup
+- 5505B21: REAR DOOR WIRING (ONE) LEFT OR RIGHT - R.R [939010981] — Procedures; all engines; all production periods
+- 5505B50: BOOT WIRING - R R [939010982] — Procedures; all engines; all production periods
+- 5505B55: TAIL-GATE WIRING - R R [939005344] — Procedures; all engines; all production periods; only with equipment: Station Wagon
+- 5505C02: WIRING BUILT INTO FRONT BUMPER R R [939010973] — Procedures; all engines; all production periods
+- 5505C28: ENGINE COMPARTMENT AND A.B.S BUILT-IN WIRING - R.R. [939004804] — Procedures; all engines; all production periods
+- 5505C29: ENGINE COMPARTMENT AND A.B.S. BUILT-IN WIRING - R.R. WITH INTERFERING COMPONENTS REMOVED [939010976] — Procedures; all engines; all production periods
+- 5505C31: BUILT-IN WIRING UNDER DASHBOARD - R.R. [939010977] — Procedures; all engines; all production periods
+- 5505C40: PASSENGER COMPARTMENT WIRING - R.R. WITH INTERFERING COMPONENTS DETACHED [939010975] — Procedures; all engines; all production periods
+- 5505C41: PASSENGER COMPARTMENT WIRING - R.R [939004805] — Procedures; all engines; all production periods
+- 5505C82: WIRING BUILT INTO REAR BUMPER R R [939010974] — Procedures; all engines; all production periods
+- 5510C14: IGNITION COIL/S - R.R. [939010988] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 5510C16: LEFT HAND CYLINDER HEAD IGNITION COIL - R+R [939005331] — Procedures; engines: 3.2 JTS; all production periods
+- 5510C18: RIGHT HAND CYLINDER HEAD IGNITION COIL - R+R [939005332] — Procedures; engines: 3.2 JTS; all production periods
+- 5510C26: ENGINE RPM SENSOR - R+R [939010989] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 5510C44: KNOCK SENSOR (ONE) - R+R [939005333] — Procedures; engines: 3.2 JTS; all production periods
+- 5510C45: KNOCK SENSOR (ONE REMAINING) - RR FOLLOWING OP.5510C44 [939005334] — Procedures; engines: 3.2 JTS; all production periods
+- 5510C46: FLYWHEEL SIDE KNOCK SENSOR - R+R [939010990] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 5510C48: TIMING SIDE KNOCK SENSOR - R+R [939010991] — Procedures; engines: 1.9 JTS, 2.2 JTS; all production periods
+- 5510D10: SPARK PLUGS - R+R [939010993] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS; all production periods
+- 5520B10: STARTER MOTOR - R+R [939010997] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5520B14: STARTER MOTOR - DISMANTLE AND REBUILD AT BENCH - WASH, CHECK AND REPLACE COMPONENTS IF NECESSARY [939010999] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5520B18: STARTER MOTOR SOLENOID - R+R WITH MOTOR REMOVED [939010998] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5520C10: HEATER PLUGS - R+R [939011002] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5520C20: HEATER PLUGS CONTROL UNIT - R.R [939011001] — Procedures; engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5520G30: START/STOP SWITCH FOR EASY-GO SYSTEM STARTER MOTOR - R.R. [939011004] — Procedures; all engines; all production periods
+- 5530A10: ALTERNATOR - R+R [939011014] — Procedures; engines: 1.9 JTS, 2.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5530A24: ALTERNATOR VOLTAGE REGULATOR - R.R. WITH ALTERNATOR REMOVED [939011015] — Procedures; engines: 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 5530A30: ALTERNATOR PULLEY OR FAN - R+R WITH ALTERNATOR REMOVED [939004806] — Procedures; engines: 2.4 JTD 20V; all production periods
+- 5530B10: BATTERY - R+R [939011011] — Procedures; all engines; all production periods
+- 5530B22: BATTERY EARTH LEAD - R+R [939011012] — Procedures; all engines; all production periods
+- 5530B40: SUPPLY BOX ON BATTERY (LINK BATTERY AND FUSE BOX) - R R [939011008] — Procedures; all engines; all production periods
+- 5530B52: BATTERY SUPPORT/DRIP TRAY - R.R [939011009] — Procedures; all engines; all production periods
+- 5530B60: BATTERY FASTENING BELT/RETAINERS - REPLACE [939011010] — Procedures; all engines; all production periods
+- 5530B72: RELAY FOR BATTERY DISCONNECTION SYSTEM - R.R. [939004807] — Procedures; all engines; all production periods
+- 5540A56: EXTERIOR REAR LIGHT (ONE), LEFT OR RIGHT - R.R. [939011023] — Procedures; all engines; all production periods
+- 5540A68: INTERIOR REAR LIGHT (ONE), LEFT OR RIGHT - R.R. [939011024] — Procedures; all engines; all production periods
+- 5540A71: EXTERIOR TAIL LIGHT BULB (ONE), LH OR RH - R.R. [939011026] — Procedures; all engines; all production periods
+- 5540A72: INTERIOR TAIL LIGHT BULB (ONE), LH OR RH - R.R. [939011027] — Procedures; all engines; all production periods
+- 5540A94: (ONE) NUMBER PLATE LIGHT - R.R. [939011025] — Procedures; all engines; all production periods
+- 5540B16: FRONT LIGHT CLUSTER TRIM (ONE), LEFT OR RIGHT - R.R. [939011029] — Procedures; all engines; all production periods
+- 5540B17: EXTERIOR LIGHT DIMMER HEADLAMP RESISTOR - R+R [939011030] — Procedures; all engines; all production periods
+- 5540B25: LOW BEAM BULB (ONE) FOR ONE HEADLAMP/LIGHT CLUSTER LH OR RH - R.R [939011033] — Procedures; all engines; all production periods
+- 5540B26: BULB (ONE) FOR SIDE LIGHT FOR ONE HEADLAMP/LIGHT CLUSTER, L/H OR R/H - R+R [939011034] — Procedures; all engines; all production periods
+- 5540B39: DIPPED HEADLAMP LIGHT BEAM - ALIGN [939011037] — Procedures; all engines; all production periods
+- 5540B40: CONTROL UNIT IN LEFT GAS DISCHARGE LIGHT CLUSTER - R.R. [939004917] — Procedures; all engines; all production periods
+- 5540B41: CONTROL UNIT IN RIGHT GAS DISCHARGE LIGHT CLUSTER - R.R. [939004918] — Procedures; all engines; all production periods
+- 5540B43: CONTROL UNIT OF ONE RIGHT GAS DISCHARGE LIGHT CLUSTER ONE LH OR RH RR WITH LIGHT CLUSTER REMOVED [939004919] — Procedures; all engines; all production periods
+- 5540B45: GAS DISCHARGE DIPPED/MAIN BEAM HEADLAMP BULB - R.R. [939004920] — Procedures; all engines; all production periods
+- 5540B51: BULB (ONE) FOR LEFT LIGHT CLUSTER - R.R. [939011035] — Procedures; all engines; all production periods
+- 5540B53: BULB (ONE) FOR RIGHT LIGHT CLUSTER - R.R. [939011036] — Procedures; all engines; all production periods
+- 5540B70: LEFT FRONT LIGHT CLUSTER WITH DIRECTION INDICATOR - R.R. [939011031] — Procedures; all engines; all production periods
+- 5540B71: RIGHT FRONT LIGHT CLUSTER WITH DIRECTION INDICATOR - R.R. [939011032] — Procedures; all engines; all production periods
+- 5540B81: LEFT GAS DISCHARGE LIGHT CLUSTER - R.R. [939004921] — Procedures; all engines; all production periods
+- 5540B82: RIGHT GAS DISCHARGE LIGHT CLUSTER - R.R. [939004922] — Procedures; all engines; all production periods
+- 5540B84: BRACKET FASTENING FRONT LIGHT CLUSTER TO THE BODY (ONE) LH OR RH - REPLACE WITH LIGHT CLUSTER DETACHED [939011038] — Procedures; all engines; all production periods
+- 5540C24: MOTOR (ONE) FOR L/H OR R/H HEADLAMP/LIGHT CLUSTER ALIGNMENT CORRECTION - R+R [939011019] — Procedures; all engines; all production periods
+- 5540C42: SENSOR FOR CORRECTING/ALIGNING GAS DISCHARGE LIGHTING UNITS ON FRONT SUSPENSION - R R [939004923] — Procedures; all engines; all production periods
+- 5540C44: BAR FOR FRONT SENSOR FOR CORRECTING/ALIGNING GAS DISCHARGE LIGHTING UNITS R R [939004924] — Procedures; all engines; all production periods
+- 5540C46: SENSOR FOR CORRECTING/ALIGNING GAS DISCHARGE LIGHTING UNITS ON REAR SUSPENSION - R.R. [939004925] — Procedures; all engines; all production periods
+- 5540C48: CONNECTING ROD FOR REAR SENSOR FOR CORRECTING/ALIGNING GAS DISCHARGE LIGHTING UNITS - R.R. [939004926] — Procedures; all engines; all production periods
+- 5540D10: L/H OR R/H FOG LIGHT (ONE) - R+R [939011040] — Procedures; all engines; all production periods
+- 5540D14: L/H OR R/H FOG LIGHT BULB (ONE) - R+R [939011041] — Procedures; all engines; all production periods
+- 5540D15: FOG LIGHT TRIM (ONE), LEFT OR RIGHT - R.R. [939011042] — Procedures; all engines; all production periods
+- 5540D38: FOG LIGHT BEAM - ADJUST [939011043] — Procedures; all engines; all production periods
+- 5550A10: STALK UNIT ASSEMBLY - R+R [939011059] — Procedures; all engines; all production periods
+- 5550B10: HORN CONTROL ON STEERING WHEEL - R+R [939011047] — Procedures; all engines; all production periods
+- 5550B30: L/H OR R/H HORN (ONE) - R+R [939011048] — Procedures; all engines; all production periods
+- 5550C22: L/H OR R/H SIDE REPEATER (ONE) - R+R [939011056] — Procedures; all engines; all production periods
+- 5550C54: BULB FOR ONE SIDE REPEATER UNIT LH OR RH - R.R [939011057] — Procedures; all engines; all production periods
+- 5550D10: BRAKE LIGHT SWITCH - R+R [939011051] — Procedures; all engines; all production periods
+- 5550D16: THIRD BRAKE LIGHT - R+R [939011052] — Procedures; all engines; all production periods
+- 5550D17: THIRD BRAKE LIGHT BULB(S) - R.R [939011053] — Procedures; all engines; all production periods
+- 5550D18: HANDBRAKE ON WARNING LIGHT SWITCH - R+R [939011054] — Procedures; all engines; all production periods
+- 5550D22: REVERSING LIGHT SWITCH - R+R [939011050] — Procedures; all engines; all production periods
+- 5550D86: THIRD BRAKE LIGHT CABLE LOOM - R.R. OR REPLACE [939005345] — Procedures; all engines; all production periods; only with equipment: Station Wagon
+- 5560B10: CONTROL PANEL - R+R [939011063] — Procedures; all engines; all production periods
+- 5560C51: COMBINED ANALOGUE CONTROL PANEL - R+R OR REPLACE [939011066] — Procedures; all engines; all production periods
+- 5570T10: CAR RADIO SUPPORT - R+R - INCLUDES CONTACT REPAIR AND SUPPLY CIRCUIT CHECK [939011074] — Procedures; all engines; all production periods
+- 5570T14: MOBILE PHONE HANDS-FREE SYSTEM MICROPHONE - R R [939011080] — Procedures; all engines; all production periods
+- 5570T27: AERIAL SUPPORT - R.R [939011072] — Procedures; all engines; all production periods
+- 5570T31: AERIAL COAXIAL LEAD - R R [939011073] — Procedures; all engines; all production periods
+- 5570T32: LEAD FROM COAXIAL TO RADIO - R R [939011075] — Procedures; all engines; all production periods
+- 5570T49: BLUETOOTH ELECTRONIC CONTROL UNIT - R.R. [939004927] — Procedures; all engines; all production periods
+- 5570T52: CENTRE SPEAKER IN DASHBOARD - R.R. [939004808] — Procedures; all engines; all production periods
+- 5570T66: MODULE (ONE) ON STEERING WHEEL FOR RADIO CONTROL - R+R [939011076] — Procedures; all engines; all production periods
+- 5570T80: CAR RADIO EQUIPMENT - R+R [939011077] — Procedures; all engines; all production periods
+- 5570T90: FRONT SPEAKER (ONE), LEFT OR RIGHT - R.R [939011071] — Procedures; all engines; all production periods
+- 5570T92: FRONT TWEETER (ONE), LEFT OR RIGHT - R.R [939011078] — Procedures; all engines; all production periods
+- 5570T94: REAR TWEETER (ONE), LH OR RH - R R [939011079] — Procedures; all engines; all production periods
+- 5570T96: REAR SIDE SPEAKER (ONE), LEFT OR RIGHT- R.R [939011070] — Procedures; all engines; all production periods
+- 5580A10: CRUISE CONTROL LEVER ASSEMBLY - R+R [939011085] — Procedures; all engines; all production periods
+- 5580C10: DECELERATION SENSOR FOR AIR BAG (ONE), L/H OR R/H - R+R [939011087] — Procedures; all engines; all production periods
+- 5580C12: CLOCK SPRING FOR AIR BAG MODULE ON STEERING WHEEL - R.R [939011096] — Procedures; all engines; all production periods
+- 5580C14: AIR BAG ECU - R+R [939011090] — Procedures; all engines; all production periods
+- 5580C18: AIR BAG MODULE - R+R [939011097] — Procedures; all engines; all production periods
+- 5580C22: AIR BAG MODULE - PASSENGER SIDE - R.R [939011089] — Procedures; all engines; all production periods
+- 5580C23: DRIVE SIDE KNEE PROTECTION AIR BAG MODULE R. R. [939011091] — Procedures; all engines; all production periods
+- 5580C24: PASSENGER SIDE AIR BAG MODULE SUPPORT R. R. [939011095] — Procedures; all engines; all production periods
+- 5580C26: PASSENGER AIR BAG DISABLING KEY LOCK BARREL/SWITCH - R.R. [939011094] — Procedures; all engines; all production periods
+- 5580C40: SIDE BAG SENSOR (ONE), LH OR RH - R.R. [939011088] — Procedures; all engines; all production periods
+- 5580C44: FRONT SIDE BAG MODULE (ONE) LH OR RH - R.R [939011098] — Procedures; all engines; all production periods
+- 5580C50: WINDOW BAG MODULE (ONE) LH OR RH - R.R [939011092] — Procedures; all engines; all production periods
+- 5580C52: WINDOW BAG MODULE (ONE) LH OR RH - R.R WITH INTERFERING PARTS REMOVED [939011093] — Procedures; all engines; all production periods
+- 5580C86: SIDE BAG CABLE LOOM (ONE) LH OR RH - R.R OR REPLACE [939011099] — Procedures; all engines; all production periods
+- 5580E17: STEERING LOCK - R.R [939011103] — Procedures; all engines; all production periods
+- 5580E18: ANTI-THEFT DEVICE W/L - R+R FOLLOWING ELECTRICAL WIRING CHECK [939011104] — Procedures; all engines; all production periods
+- 5580E40: ANTI-THEFT DEVICE SIREN - R+R [939004928] — Procedures; all engines; all production periods
+- 5580E50: ANTITHEFT DEVICE VOLUMETRIC SENSOR R R FOLLOWING ELECTRICAL CIRCUIT CHECK [939011105] — Procedures; all engines; all production periods
+- 5580H10: PARKING OBSTACLE DETECTION DEVICE ELECTRONIC CONTROL UNIT - R.R. [939004810] — Procedures; all engines; all production periods
+- 5580H15: FRONT BUZZER OF PARKING OBSTICLE DETECTION DEVICE R R [939004811] — Procedures; all engines; all production periods
+- 5580H16: REAR BUZZER OF PARKING OBSTICLE DETECTION DEVICE R R [939004812] — Procedures; all engines; all production periods
+- 5580H20: FRONT SENSORS OF SYSTEM FOR DETECTING OBSTACLES DURING PARKING R R [939004813] — Procedures; all engines; all production periods
+- 5580H30: PARKING OBSTACLE DETECTION SYSTEM REAR SENSORS - R.R. [939004929] — Procedures; all engines; all production periods
+- 5580H36: PARKING SENSOR SYSTEM REAR SENSORS - R.R. WITH REAR BUMPER REMOVED [939004814] — Procedures; all engines; all production periods
+- 5580P12: CONNECT PANEL REPLACE [939004931] — Procedures; all engines; all production periods
+- 5580T10: BOSE SOUND SYSTEM FRONT SPEAKER (ONE), LH OR RH - R R [939004816] — Procedures; all engines; all production periods
+- 5580T20: BOSE SOUND SYSTEM REAR SPEAKER (ONE), LH OR RH - R.R. [939004817] — Procedures; all engines; all production periods
+- 5580T40: BOSE SOUND SYSTEM SUBWOOFER - R.R. [939004818] — Procedures; all engines; all production periods
+- 5580T42: BOSE SOUND SYSTEM AMPLIFIER - R.R. [939004819] — Procedures; all engines; all production periods
+- 7005A08: INTERIOR SUPPORT FRAME FOR ONE SIDE DOOR - R.R. WITH DOOR PANEL REMOVED [939011109] — Procedures; all engines; all production periods
+- 7005A09: FRONT SIDE DOOR INTERIOR SUPPORT FRAME - R.R. [939011110] — Procedures; all engines; all production periods
+- 7005A10: FRONT SIDE DOOR - ADJUST STRIKER AND ADAPT SEAL IF NECESSARY [939011111] — Procedures; all engines; all production periods
+- 7005A14: FRONT SIDE DOOR - ADJUST CENTERING AND MOULDING - INCLUDES ADAPTATION OF HINGES AND SEALS ON DOOR COMPARTMENT [939011112] — Procedures; all engines; all production periods
+- 7005A24: FRONT SIDE DOOR HINGES (BOLTED) - R.R. WITH DOOR DETACHED [939011116] — Procedures; all engines; all production periods
+- 7005A28: FRONT SIDE DOOR LIMITER - R.R. [939011113] — Procedures; all engines; all production periods
+- 7005A34: FRONT SIDE DOOR COMPARTMENT SEAL - R.R [939011114] — Procedures; all engines; all production periods
+- 7005A46: FRONT SIDE DOOR LOWER SEAL - R.R. [939011115] — Procedures; all engines; all production periods
+- 7005B14: FRONT SIDE DOOR LOCK STRIKER - R.R [939011118] — Procedures; all engines; all production periods
+- 7005C10: FRONT DOOR EXTERIOR HANDLE - R.R WITH DOOR PANEL REMOVED [939011120] — Procedures; all engines; all production periods
+- 7005C11: FRONT SIDE DOOR EXTERIOR HANDLE - R.R [939011121] — Procedures; all engines; all production periods
+- 7005C17: FRONT SIDE DOOR LOCK BARREL - R.R. [939011122] — Procedures; all engines; all production periods
+- 7005C20: FRONT SIDE DOOR LOCK BARREL - REPLACE WITH DIFFERENT UNIT [939011126] — Procedures; all engines; all production periods
+- 7005C41: FRONT SIDE DOOR EXTERIOR HANDLE LOCK CONNECTION LINK - R.R [939011123] — Procedures; all engines; all production periods
+- 7005C52: FRONT DOOR OPENING INTERIOR HANDLE (ONE), LEFT OR RIGHT - R.R. WITH DOOR PANEL REMOVED [939011124] — Procedures; all engines; all production periods
+- 7005C53: FRONT SIDE DOOR INTERIOR OPENING HANDLE (ONE), LEFT OR RIGHT - R.R. [939011125] — Procedures; all engines; all production periods
+- 7005D15: FRONT SIDE DOOR DESCENDING WINDOW GLASS (ONE) LEFT OR RIGHT - R.R [939011128] — Procedures; all engines; all production periods
+- 7005D18: FRONT SIDE DOOR DESCENDING WINDOW GLASS CHANNEL (ONE), LEFT OR RIGHT - R.R [939011129] — Procedures; all engines; all production periods
+- 7005D24: FRONT DOOR WINDOW REAR GUIDE - R R [939011130] — Procedures; all engines; all production periods
+- 7005D25: FRONT DOOR WINDOW REAR GUIDE - R R [939011134] — Procedures; all engines; all production periods
+- 7005D26: FRONT SIDE DESCENDING WINDOW GLASS SCRAPER (OUTER) (ONE), LEFT OR RIGHT- R.R [939011131] — Procedures; all engines; all production periods
+- 7005D30: FRONT SIDE DESCENDING WINDOW GLASS SCRAPER (INNER) (ONE), LEFT OR RIGHT - R.R. [939011132] — Procedures; all engines; all production periods
+- 7005D33: CHANNEL FOR DOOR DESCENDING GLASS INNER GUIDE (ONE) LH OR RH ON FRONT SIDE DOOR - R.R. [939011133] — Procedures; all engines; all production periods
+- 7005E10: FRONT SIDE DOOR INTERIOR PANEL - R.R. [939011136] — Procedures; all engines; all production periods
+- 7005E12: CORNER COVER FOR ONE FRONT SIDE DOOR, LH OR RH - R.R. [939011137] — Procedures; all engines; all production periods
+- 7005E38: FRONT SIDE DOOR INTERIOR HANDLE- R.R. [939011138] — Procedures; all engines; all production periods
+- 7005E50: FRONT SIDE DOOR PILLAR TRIM (ONE) LH OR RH - R.R. [939011139] — Procedures; all engines; all production periods
+- 7005M15: DRIVE SIDE FRONT DOOR ELECTRIC WINDOWS AND DOOR MIRRORS CONTROL SWITCHES - R.R. [939011145] — Procedures; all engines; all production periods
+- 7005M26: ELECTRIC WINDOW MECHANISM FOR ONE FRONT DOOR LH OR RH - R.R [939011144] — Procedures; all engines; all production periods
+- 7005M27: ELECTRIC WINDOW MECHANISM FOR ONE FRONT DOOR LH OR RH - R.R WITH SUPPORT FRAME REMOVED [939011141] — Procedures; all engines; all production periods
+- 7005M28: FRONT SIDE DOOR ELECTRICALLY OPERATED WINDOW MOTOR - R.R. WITH DOOR PANEL/SUPPORT FRAME REMOVED [939011142] — Procedures; all engines; all production periods
+- 7005M29: FRONT SIDE DOOR ELECTRICALLY OPERATED WINDOW MOTOR, LEFT OR RIGHT - R.R [939011143] — Procedures; all engines; all production periods
+- 7005N20: FRONT SIDE DOOR LOCK MOTOR/CATCH ASSEMBLY, LEFT OR RIGHT - R.R WITH DOOR PANEL AND SUPPORT FRAME REMOVED [939011147] — Procedures; all engines; all production periods
+- 7005N21: FRONT SIDE DOOR LOCK MOTOR/LOCK ASSEMBLEY FOR ONE DOOR, LEFT OR RIGHT - R.R. [939011148] — Procedures; all engines; all production periods
+- 7005R30: ELECTRICALLY CONTROLLED DOOR MIRROR (ONE) - R+R [939011150] — Procedures; all engines; all production periods
+- 7005R35: DOOR MIRROR REFLECTOR (ONE), LEFT OR RIGHT - R.R [939011151] — Procedures; all engines; all production periods
+- 7005R36: DOOR MIRROR ADJUSTMENT MOTOR (ONE), LEFT OR RIGHT - R.R [939011152] — Procedures; all engines; all production periods
+- 7010A08: REAR SIDE DOOR INTERIOR SUPPORT FRAME - R.R. WITH DOOR PANEL REMOVED [939011156] — Procedures; all engines; all production periods
+- 7010A09: REAR SIDE DOOR INTERIOR SUPPORT FRAME - R.R. [939011157] — Procedures; all engines; all production periods
+- 7010A10: REAR SIDE DOOR - ADJUST STRIKER AND ADAPT SEAL IF NECESSARY [939011158] — Procedures; all engines; all production periods
+- 7010A14: REAR SIDE DOOR - ADJUST CENTERING AND MOULDING - INCLUDES ADAPTATION OF HINGES AND SEALS ON DOOR COMPARTMENT [939011159] — Procedures; all engines; all production periods
+- 7010A24: REAR SIDE DOOR HINGES (BOLTED) - REPAIR OR REPLACE WITH DOOR REMOVED [939011163] — Procedures; all engines; all production periods
+- 7010A28: REAR SIDE DOOR OPENING LIMITER - R.R [939011160] — Procedures; all engines; all production periods
+- 7010A34: REAR SIDE DOOR COMPARTMENT SEAL - R.R [939011161] — Procedures; all engines; all production periods
+- 7010A46: LOWER REAR SIDE DOOR SEAL - R.R. [939011162] — Procedures; all engines; all production periods
+- 7010B14: REAR SIDE DOOR LOCK STRIKER - R.R [939011165] — Procedures; all engines; all production periods
+- 7010C10: REAR SIDE DOOR EXTERIOR HANDLE - R.R WITH DOOR PANEL REMOVED [939011167] — Procedures; all engines; all production periods
+- 7010C11: REAR SIDE DOOR EXTERIOR HANDLE - R.R [939011168] — Procedures; all engines; all production periods
+- 7010C52: INTERIOR HANDLE FOR REAR DOOR OPENING MECHANISM ONE LEFT OR RIGHT RR WITH DOOR PANEL REMOVED [939011169] — Procedures; all engines; all production periods
+- 7010C53: INTERIOR HANDLE FOR REAR DOOR OPENING MECHANISM (ONE) LEFT OR RIGHT - R.R. [939011170] — Procedures; all engines; all production periods
+- 7010C64: EXTERIOR HANDLE TO HANDLE REAR SIDE DOOR LOCK CONNECTING ROD - R.R. WITH PANEL REMOVED [939011171] — Procedures; all engines; all production periods
+- 7010C65: CONNECTING ROD FROM EXTERIOR HANDLE TO REAR SIDE DOOR LOCK - R.R. [939011172] — Procedures; all engines; all production periods
+- 7010D12: REAR SIDE DOOR DESCENDING WINDOW GLASS FASTENING ELEMENT (ONE), LEFT OR RIGHT - R.R. [939011174] — Procedures; all engines; all production periods
+- 7010D15: REAR SIDE DOOR DESCENDING WINDOW GLASS (ONE), LEFT OR RIGHT - R.R [939011175] — Procedures; all engines; all production periods
+- 7010D18: REAR SIDE DOOR DESCENDING WINDOW GLASS CHANNEL (ONE), LEFT OR RIGHT - R.R [939011176] — Procedures; all engines; all production periods
+- 7010D20: FRONT GUIDE (ONE) LH OR RH OF SIDE DOOR DESCENDING GLASS - R R WITH DOOR PANEL (AND FRAME) REMOVED [939011177] — Procedures; all engines; all production periods
+- 7010D21: FRONT SIDE DOOR GLASS FRONT GUIDE (1), LH OR RH - R R [939011178] — Procedures; all engines; all production periods
+- 7010D26: REAR SIDE DESCENDING WINDOW GLASS SCRAPER (OUTER) (ONE), LEFT OR RIGHT - R.R [939011179] — Procedures; all engines; all production periods
+- 7010D30: REAR SIDE DESCENDING WINDOW GLASS SCRAPER (INNER) R R [939011180] — Procedures; all engines; all production periods
+- 7010D33: CHANNEL FOR DOOR DESCENDING GLASS INNER GUIDE (ONE) LEFT OR RIGHT FOR REAR SIDE DOOR - R.R. [939011181] — Procedures; all engines; all production periods
+- 7010D34: REAR SIDE DOOR MANUAL WINDOW MECHANISM (ONE), LEFT OR RIGHT - R.R. WITH DOOR PANEL AND SUPPORT FRAME REMOVED [939011182] — Procedures; all engines; all production periods
+- 7010D35: REAR SIDE DOOR MANUAL WINDOW MECHANISM (ONE), LEFT OR RIGHT - R.R. [939011184] — Procedures; all engines; all production periods
+- 7010D38: REAR SIDE DOOR MANUAL WINDOW OPENING MECHANISM HANDLE/RING NUT (ONE), LEFT OR RIGHT - R.R [939011183] — Procedures; all engines; all production periods
+- 7010E10: REAR SIDE DOOR INNER PANEL - R.R. OR REPLACE [939011186] — Procedures; all engines; all production periods
+- 7010E38: REAR SIDE DOOR INTERIOR HANDLE-R R [939011187] — Procedures; all engines; all production periods; only with equipment: High setup, Low setup
+- 7010E50: REAR SIDE DOOR PILLAR TRIM (ONE) LEFT OR RIGHT - R.R. [939011188] — Procedures; all engines; all production periods
+- 7010E60: REAR DOOR PANEL - R R [939011189] — Procedures; all engines; all production periods
+- 7010E62: REAR DOOR INNER REAR PANEL (ONE) LH OR RH - R R [939011190] — Procedures; all engines; all production periods
+- 7010N20: REAR SIDE DOOR LOCK MOTOR/CATCH ASSEMBLY - R.R. WITH DOOR PANEL AND SUPPORT FRAME REMOVED [939011192] — Procedures; all engines; all production periods
+- 7010N21: REAR SIDE DOOR LOCK MOTOR/LOCK ASSEMBLY, LEFT OR RIGHT - R.R [939011193] — Procedures; all engines; all production periods
+- 7010M10: REAR SIDE DOOR ELECTRICALLY OPERATED WINDOW SWITCH (ONE), LEFT OR RIGHT - R.R [939011195] — Procedures; all engines; all production periods
+- 7010M20: REAR DOOR ELECTRIC WINDOW, LEFT OR RIGHT - R.R. WITH DOOR PANEL/SUPPORT FRAME REMOVED [939011196] — Procedures; all engines; all production periods
+- 7010M21: REAR SIDE DOOR ELECTRICALLY-OPERATED WINDOW, LEFT OR RIGHT - R.R. [939011197] — Procedures; all engines; all production periods
+- 7010M26: ELECTRIC WINDOW OPENING MECHANISM FOR ONE REAR DOOR LH OR RH - R.R [939011198] — Procedures; all engines; all production periods
+- 7010M27: ELECTRIC WINDOW MECHANISM FOR ONE REAR DOOR LH OR RH - R.R. WITH SUPPORT FRAME REMOVED [939011199] — Procedures; all engines; all production periods
+- 7015A05: TAILGATE LOWER INTERIOR PANEL-R R [939005348] — Procedures; all engines; all production periods
+- 7015A06: TAILGATE UPPER INTERIOR PANEL - R.R. [939005349] — Procedures; all engines; all production periods
+- 7015A10: TAILGATE - ADJUST STRIKER AND ADAPT SEAL IF NECESSARY [939005350] — Procedures; all engines; all production periods
+- 7015A14: TAILGATE - ADJUST CENTRING AND PROFILE - INCLUDES HINGE AND COMPARTMENT SEAL ADAPTATION [939005351] — Procedures; all engines; all production periods
+- 7015A24: TAILGATE HINGES - REPAIR OR REPLACE WITH TAILGATE REMOVED [939005352] — Procedures; all engines; all production periods
+- 7015A28: L/H OR R/H TAILGATE TELESCOPIC STRUT (ONE) - R+R [939005440] — Procedures; all engines; all production periods
+- 7015A30: TAILGATE COMPARTMENT SEAL - R+R [939005441] — Procedures; all engines; all production periods
+- 7015B10: SINGLE TAILGATE LOCK - R+R OR REPAIR WITH PANEL/PROTECTION REMOVED [939005443] — Procedures; all engines; all production periods
+- 7015B12: TAILGATE SELF-ADJUSTING BUFFERS - R.R. [939005444] — Procedures; all engines; all production periods
+- 7015B15: TAILGATE SINGLE LOCK - R.R. [939005445] — Procedures; all engines; all production periods
+- 7015B18: TAILGATE LOCK STRIKER - R+R [939005446] — Procedures; all engines; all production periods
+- 7015B45: EMERGENCY CONTROL FOR OPENING TAILGATE - R.R. [939005447] — Procedures; all engines; all production periods
+- 7015B70: TAILGATE LOCK MOTOR - R.R AND CHECK LOCK SUPPLY LINE [939005448] — Procedures; all engines; all production periods
+- 7025A10: BONNET LID - ALIGNMENT [939004932] — Procedures; all engines; all production periods
+- 7025A15: BONNET LID SELF-ADJUSTING BUFFERS - R.R. [939004933] — Procedures; all engines; all production periods
+- 7025A18: L/H OR R/H BONNET LID HINGE (ONE) - R+R WITH LID REMOVED [939011205] — Procedures; all engines; all production periods
+- 7025A19: L/H OR R/H BONNET LID HINGE SUPPORT (ONE) - L/H OR R/H - R.R. [939011210] — Procedures; all engines; all production periods
+- 7025A22: SOUNDPROOFING LINING FOR BONNET LID - R+R [939011206] — Procedures; all engines; all production periods
+- 7025A24: BONNET LID OPENING LEVER - R+R [939011211] — Procedures; all engines; all production periods
+- 7025A28: BONNET LID OPENING CABLE - R R [939011212] — Procedures; all engines; all production periods
+- 7025A34: BONNET LID LOCK (ONE) - R+R OR REPAIR [939011207] — Procedures; all engines; all production periods
+- 7025A62: BONNET LID WEATHERSTRIP - R+R [939011208] — Procedures; all engines; all production periods
+- 7025A64: ENGINE COMPARTMENT GASKET - R.R. [939011203] — Procedures; all engines; all production periods
+- 7025A66: L/H OR R/H BONNET LID SUPPORT DAMPER (ONE) - R+R [939011209] — Procedures; all engines; all production periods
+- 7025B10: BOOT LID - SQUARE [939011214] — Procedures; all engines; all production periods
+- 7025B18: BOOT LID LINING - R+R [939011215] — Procedures; all engines; all production periods
+- 7025B22: L/H OR R/H BOOT LID HINGE (ONE) - R+R WITH LID REMOVED [939011216] — Procedures; all engines; all production periods
+- 7025B26: L/H OR R/H BOOT LID LIFT DEVICE (ONE) - R+R [939011217] — Procedures; all engines; all production periods
+- 7025B34: BOOT LID EMERGENCY OPENING CONTROL - R.R. [939005556] — Procedures; all engines; all production periods
+- 7025B38: BOOT LID LOCK - R+R [939011220] — Procedures; all engines; all production periods
+- 7025B41: BOOT LID LOCK [939004820] — Procedures; all engines; all production periods
+- 7025B58: BOOT LID LOCK STRIKER - R+R [939011218] — Procedures; all engines; all production periods
+- 7025B66: BOOT COMPARTMENT SEAL - R+R [939011219] — Procedures; all engines; all production periods
+- 7025B70: BOOT LOCK MOTOR - R R AND CHECK LOCK SUPPLY LINE [939011221] — Procedures; all engines; all production periods
+- 7025C10: FUEL FILLER ACCESS FLAP - R+R [939011224] — Procedures; all engines; all production periods
+- 7025C32: FUEL FILLER FLAP CATCH CONTROL - R+R [939011225] — Procedures; all engines; all production periods
+- 7025C40: FUEL FILLER FLAP CONTROL MOTOR - R+R AND CHECK LOCK SUPPLY LINE [939011223] — Procedures; all engines; all production periods
+- 7030B10: SLIDING ROOF (ASSEMBLY) - R+R WITH ROOF PANEL REMOVED [939004822] — Procedures; all engines; all production periods
+- 7030B12: SLIDING ROOF (ASSEMBLY) - R+R [939004823] — Procedures; all engines; all production periods
+- 7030B14: SLIDING ROOF - DISMANTLE AND REBUILD WITH ASSEMBLY REMOVED [939004824] — Procedures; all engines; all production periods
+- 7030B17: SUN-ROOF GLASS - ALIGNMENT [939004825] — Procedures; all engines; all production periods
+- 7030B18: SLIDING ROOF GLASS PANEL - R+R [939004826] — Procedures; all engines; all production periods
+- 7030B22: GLASS SEAL - R+R WITH GLASS REMOVED [939004827] — Procedures; all engines; all production periods
+- 7030B28: SLIDING ROOF BLIND - R+R [939004828] — Procedures; all engines; all production periods
+- 7030B34: SLIDING ROOF COMPARTMENT DECORATIVE SEAL - R+R [939004829] — Procedures; all engines; all production periods
+- 7030B38: SLIDING ROOF DRAINAGE PIPES (WATER DRAIN) - CHECK [939004830] — Procedures; all engines; all production periods
+- 7030B40: DRAINAGE CHANNEL - R R [939004831] — Procedures; all engines; all production periods
+- 7030B42: SLIDING ROOF SPOILER - R+R [939004832] — Procedures; all engines; all production periods
+- 7030B50: SUN ROOF SLIDING GUIDE (ONE), LH OR RH - R.R [939004833] — Procedures; all engines; all production periods
+- 7030B54: SUN ROOF (ASSEMBLY) - ALIGNMENT AND POSITIONING [939004834] — Procedures; all engines; all production periods
+- 7030B64: SUN ROOF CONTROL SWITCH - R+R [939004835] — Procedures; all engines; all production periods
+- 7030B66: SUN-ROOF MOVEMENT ECU - R+R [939004836] — Procedures; all engines; all production periods
+- 7030B70: SUN ROOF MOVEMENT MOTOR - R+R [939004837] — Procedures; all engines; all production periods
+- 7035A04: WINDSCREEN - ELIMINATE LEAKS [939004934] — Procedures; all engines; all production periods
+- 7035A18: WINDSCREEN GLASS - R.R INCLUDING CLEANING HOUSING [939011347] — Procedures; all engines; all production periods
+- 7035B04: REAR WINDSCREEN - ELIMINATE LEAKS [939004935] — Procedures; all engines; all production periods
+- 7035B14: REAR WINDOW GLASS - R.R INCLUDES CLEANING HOUSING [939011349] — Procedures; all engines; all production periods
+- 7035C14: FIXED REAR SIDE WINDOW (ONE) LEFT OR RIGHT - R.R INCLUDES CLEANING HOUSING [939005450] — Procedures; all engines; all production periods
+- 7040A04: FACIA LOWER TRIM-R R [939004936] — Procedures; all engines; all production periods
+- 7040A10: DASHBOARD TRIM - R+R [939011245] — Procedures; all engines; all production periods
+- 7040A14: FLAP OF GLOVE COMPARTMENT TRIM ELEMENT (ONE) - ARRANGE [939011235] — Procedures; all engines; all production periods
+- 7040A17: AIR CONDITIONER CONTROLS [939011241] — Procedures; all engines; all production periods
+- 7040A26: STEERING COLUMN TRIM - R+R [939011231] — Procedures; all engines; all production periods
+- 7040A27: DASHBOARD TRIM - STRIPPING FOLLOWING REPLACEMENT [939011236] — Procedures; all engines; all production periods
+- 7040A31: DASHBOARD COMPARTMENT ASSEMBLY - R.R. [939011237] — Procedures; all engines; all production periods
+- 7040A32: GLOVE COMPARTMENT OPENING HANDLE - R.R [939011238] — Procedures; all engines; all production periods
+- 7040A33: GLOVE COMPARTMENT LOCK STRIKER - ADJUST [939011239] — Procedures; all engines; all production periods
+- 7040A36: STEERING COLUMN FLEXIBLE TRIM - R.R. [939011246] — Procedures; all engines; all production periods
+- 7040A37: FUSE BOX COVER IN INSTRUMENT PANEL - R.R [939011243] — Procedures; all engines; all production periods
+- 7040A44: LEFT DASHBOARD SIDE TRIM - R.R. [939011232] — Procedures; all engines; all production periods
+- 7040A45: RIGHT DASHBOARD SIDE TRIM - R.R. [939011233] — Procedures; all engines; all production periods
+- 7040A56: SWITCH UNIT IN DASHBOARD - R.R. [939011240] — Procedures; all engines; all production periods
+- 7040A58: INSTRUMENT PANEL MOULDING - R+R [939011244] — Procedures; all engines; all production periods
+- 7040A62: SWITCH UNIT ON TUNNEL R R [939011242] — Procedures; engines: 1.8, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods
+- 7040A65: CONSOLE SIDE CLOSING (ONE) - R.R. [939011230] — Procedures; all engines; all production periods
+- 7040A89: REINFORCEMENT BRACKET BETWEEN DASHBOARD SUPPORTING CROSSMEMER AND BODYSHELL - R.R. [939011234] — Procedures; all engines; all production periods
+- 7040B04: SIDE MOULDING (ONE) LH OR RH FOR LUGGAGE COMPARTMENT - R.R. [939005451] — Procedures; all engines; all production periods; only with equipment: Station Wagon
+- 7040B10: LOAD PLATFORM (LUGGAGE PLATFORM) TRIM - R+R [939011248] — Procedures; all engines; all production periods
+- 7040B17: LUGGAGE COMPARTMENT/LOAD PLATFORM SIDE TRIM FLAP (ONE), LH OR RH REPLACE [939005452] — Procedures; all engines; all production periods; only with equipment: Station Wagon
+- 7040B18: LOAD COMPARTMENT LOAD PLATFORM SIDE TRIM ONE LH OR RH - R.R [939011249] — Procedures; all engines; all production periods
+- 7040B20: BACK TRIM FOR LUGGAGE COMPARTMENT/LOAD PLATFORM - ARRANGE [939011250] — Procedures; all engines; all production periods
+- 7040B22: LUGGAGE COMPARTMENT/LOAD PLATFORM MOULDING - R+R [939011251] — Procedures; all engines; all production periods
+- 7040B26: LOAD PLATFORM COVER BLIND - R+R [939005453] — Procedures; all engines; all production periods; only with equipment: Station Wagon
+- 7040B30: L/H OR R/H SIDE SUPPORT (ONE) FOR LOAD PLATFORM COVER BLIND - ARRANGE [939005454] — Procedures; all engines; all production periods; only with equipment: Station Wagon
+- 7040B36: Oddments compartment FLAP on load carrying compartment compartment covering blind SIDE SUPPORT - R.R. [939005455] — Procedures; all engines; all production periods; only with equipment: Station Wagon
+- 7040E15: SIDE COURTESY LIGHT (ONE) - R.R. ON VERSIONS WITH SUN ROOF [939004838] — Procedures; all engines; all production periods
+- 7040E21: COURTESY LIGHT FOR SUN VISOR MIRROR (ONE), LH OR RH - R.R [939011253] — Procedures; all engines; all production periods
+- 7040E24: LOWER COURTESY LIGHT IN DOOR PANEL - R+R [939011254] — Procedures; all engines; all production periods
+- 7040E40: MODULAR FRONT COURTESY LIGHT - R R [939011255] — Procedures; all engines; all production periods
+- 7040E46: REAR COURTESY LIGHT ASSEMBLY - R R [939011256] — Procedures; all engines; all production periods
+- 7040G20: BULB HOLDER FOR COMPARTMENT LIGHTING IN DASHBOARD - R.R. [939011260] — Procedures; all engines; all production periods
+- 7040G24: SWITCH FOR FACIA COMPARTMENT LIGHT - R+R [939011259] — Procedures; all engines; all production periods
+- 7040G30: BOOT LIGHT BULB HOLDER - R.R. [939011258] — Procedures; all engines; all production periods
+- 7040G36: BULB HOLDER FOR LOAD CARRYING COMPARTMENT lighting on tailgate - R.R. [939005460] — Procedures; all engines; all production periods; only with equipment: Station Wagon
+- 7040G40: LOAD COMPARTMENT LIGHT BULB HOLDER - R R [939005461] — Procedures; all engines; all production periods; only with equipment: Station Wagon
+- 7040H10: ROOF PANEL LINING - R.R. [939011262] — Procedures; all engines; all production periods
+- 7040H12: ROOF REAR TRIM - R.R. [939005456] — Procedures; all engines; all production periods; only with equipment: Station Wagon
+- 7040H16: ROOF PANEL LINING FOR VERSIONS WITH SUN ROOF - R.R [939004839] — Procedures; all engines; all production periods
+- 7040H30: FRONT PILLAR TRIM (ONE), LEFT OR RIGHT - R.R. [939011263] — Procedures; all engines; all production periods
+- 7040H33: GLASSES HOLDER (1) LH OR RH, ON ROOF TRIM - R R [939004840] — Procedures; all engines; all production periods
+- 7040H36: CENTRE PILLAR LOWER ELEMENT (ONE), LEFT OR RIGHT - R.R [939011264] — Procedures; all engines; all production periods
+- 7040H38: CENTRE PILLAR UPPER ELEMENT (ONE), LEFT OR RIGHT - R.R [939011265] — Procedures; all engines; all production periods
+- 7040H42: REAR PILLAR TRIM (ONE), LEFT OR RIGHT- R.R [939011266] — Procedures; all engines; all production periods
+- 7040H68: TAI GATE HOUSING PILLAR TRIM (ONE), LH OR RH - R.R. [939005457] — Procedures; all engines; all production periods; only with equipment: Station Wagon
+- 7040H80: REAR PARCEL SHELF - R.R. [939011267] — Procedures; all engines; all production periods
+- 7040L06: PASSENGER COMPARTMENT FLOOR RIGHT FRONT CARPET - R. R. [939011281] — Procedures; all engines; all production periods
+- 7040L07: PASSENGER COMPARTMENT FLOOR LEFT FRONT CARPET - R.R. [939011282] — Procedures; all engines; all production periods
+- 7040L18: PASSENGER COMPARTMENT FLOOR REAR CARPET - R.R. [939011269] — Procedures; all engines; all production periods
+- 7040L20: TUNNEL COVER - R.R [939011270] — Procedures; all engines; all production periods
+- 7040L21: TRIM ON TUNNEL DISMANTLE AND REBUILD AT BENCH [939011284] — Procedures; all engines; all production periods
+- 7040L23: TRIM ON TUNNEL COVER - R.R. [939011271] — Procedures; all engines; all production periods
+- 7040L33: ARMREST ON TUNNEL COVER WITH ODDMENTS COMPARTMENT - R.R. [939011272] — Procedures; all engines; all production periods
+- 7040L37: GEAR LEVER TRIM - R.R [939011273] — Procedures; all engines; all production periods
+- 7040L40: FRONT DOOR RUNNING BOARD (ONE), LEFT OR RIGHT - R.R. [939011274] — Procedures; all engines; all production periods
+- 7040L44: REAR DOOR RUNNING BOARD (ONE), LEFT OR RIGHT - R.R. [939011275] — Procedures; all engines; all production periods
+- 7040L50: DRIVER SIDE FOOT REST - R R [939011276] — Procedures; all engines; all production periods
+- 7040L70: TUNNEL COVER REAR TRIM - R.R. [939011277] — Procedures; all engines; all production periods
+- 7040L71: BOX ON TUNNEL REAR COATING - R R [939011278] — Procedures; all engines; all production periods
+- 7040L73: BOTTLE-HOLDER/ASHTRAY ON REAR TUNNEL TRIM - R.R. [939011279] — Procedures; all engines; all production periods
+- 7040L74: TUNNEL TRIM SUPPORT BRACKET/MOUNT R R [939011283] — Procedures; all engines; all production periods
+- 7040L75: GLOVE COMPARTMENT ON REAR TUNNEL TRIM R. R. [939011280] — Procedures; all engines; all production periods
+- 7045A10: FRONT SEAT (ONE), LEFT OR RIGHT - R.R. [939011288] — Procedures; all engines; all production periods
+- 7045A24: FRONT SEAT BACKREST ANGLE ADJUSTMENT KNOB (ONE), LEFT OR RIGHT - R.R. [939011289] — Procedures; all engines; all production periods
+- 7045A25: FRONT SEAT BACKREST LUMBAR ADJUSTMENT KNOB (ONE), LEFT OR RIGHT - R.R. [939011290] — Procedures; all engines; all production periods
+- 7045A29: FRONT SEAT SLIDING CONTROL LEVER (ONE), LEFT OR RIGHT - R.R [939011291] — Procedures; all engines; all production periods
+- 7045A36: DRIVER'S SEAT MANUAL HEIGHT ADJUSTMENT DEVICE - R.R [939011292] — Procedures; all engines; all production periods
+- 7045A38: DRIVER'S SEAT BACKREST LUMBAR ADJUSTMENT DEVICE - R.R WITH SEAT REMOVED [939011293] — Procedures; all engines; all production periods
+- 7045A39: DEVICE FOR DRIVER'S SEAT BACKREST LUMBAR ADJUSTMENT - R.R. [939011303] — Procedures; all engines; all production periods
+- 7045A42: GUARD (ONE) FOR FRONT SEAT, LEFT OR RIGHT - R.R. [939005557] — Procedures; all engines; all production periods; only with equipment: Electric seats
+- 7045A43: FRONT SEAT EXTERIOR GUARD (ONE), LEFT OR RIGHT - R.R [939011294] — Procedures; all engines; all production periods
+- 7045A47: BACKREST ADJUSTMENT DEVICE FOR ONE SEAT, LEFT OR RIGHT - R.R. [939005558] — Procedures; all engines; all production periods; only with equipment: Electric seats
+- 7045A56: DRIVER'S SEAT HEIGHT ADJUSTMENT DEVICE CONTROL LEVER - R.R [939011295] — Procedures; all engines; all production periods
+- 7045A59: FRONT SEAT BACK INCLINATION ADJUSTING DEVICE (ONE), LH OR RH - R R [939011296] — Procedures; all engines; all production periods
+- 7045A63: FRONT SEAT GUIDE OUTER GUARD (ONE), LH OR RH - R R [939011297] — Procedures; all engines; all production periods
+- 7045A66: SLIDING GUIDE (ONE),LEFT OR RIGHT FOR FRONT SEAT - R.R. [939011298] — Procedures; all engines; all production periods
+- 7045A67: SLIDING GUIDE (ONE), LEFT OR RIGHT FOR FRONT SEAT - R.R WITH SEAT REMOVED [939011299] — Procedures; all engines; all production periods
+- 7045A81: FRONT SEAT SLIDING CONTROL HOSE (ONE), LH OR RH - R R [939011300] — Procedures; all engines; all production periods
+- 7045A83: FRONT SEAT SLIDING CONTROL HOSE (ONE), LH OR RH - R R WITH SEAT TAKEN AWAY [939011301] — Procedures; all engines; all production periods
+- 7045A86: FRONT SEAT FRAME (ONE), LEFT OR RIGHT, R.R. [939011302] — Procedures; all engines; all production periods
+- 7045B06: GUIDE BUSH FOR FRONT SEAT HEAD RESTRAINT (ONE), LEFT OR RIGHT - R.R. [939011306] — Procedures; all engines; all production periods
+- 7045B10: FRONT SEAT HEAD RESTRAINT, LEFT OR RIGHT - R.R. [939011305] — Procedures; all engines; all production periods
+- 7045D10: TRIM FOR ONE FRONT SEAT LH OR RH - R.R [939011310] — Procedures; all engines; all production periods
+- 7045D11: TRIM OF ONE FRONT SEAT LH OR RH RR WITH SEAT REMOVED [939011311] — Procedures; all engines; all production periods
+- 7045D18: FRONT SEAT CUSHION SPRINGING (ONE), LH OR RH - R R [939011312] — Procedures; all engines; all production periods
+- 7045D19: FRONT SEAT CUSHION SPRINGING (ONE), LH OR RH - R R WITH COATING TAKEN OFF [939011313] — Procedures; all engines; all production periods
+- 7045D20: FRONT SEAT CUSHION COVER, LEFT OR RIGHT - R.R. [939011314] — Procedures; all engines; all production periods
+- 7045D21: FRONT SEAT CUSHION COVER, LEFT OR RIGHT - R.R. WITH SEAT REMOVED [939011315] — Procedures; all engines; all production periods
+- 7045D30: FRONT SEAT BACKREST COVER, LEFT OR RIGHT - R.R. [939011316] — Procedures; all engines; all production periods
+- 7045D31: FRONT SEAT BACKREST COVER, LEFT OR RIGHT - R.R. WITH SEAT REMOVED [939011317] — Procedures; all engines; all production periods
+- 7045D50: FRONT SEAT HEAD RESTRAINT TRIM, LEFT OR RIGHT - R.R. [939011308] — Procedures; all engines; all production periods
+- 7045D51: COVER FOR FRONT SEAT HEAD RESTRAINT, LEFT OR RIGHT - R.R. WITH HEAD RESTRAINT REMOVED [939011309] — Procedures; all engines; all production periods
+- 7045J10: SWITCH UNIT FOR MOVEMENT OF ONE FRONT SEAT, L/H OR R/H - R+R FOR CHECK [939005560] — Procedures; all engines; all production periods; only with equipment: Electric seats
+- 7045J11: REAR SEAT GUIDES CONNECTION BAR, (ONE) LH OR RH - R R [939005561] — Procedures; all engines; all production periods; only with equipment: Electric seats
+- 7045J26: FRONT SEAT SLIDE MOTOR, L/H OR R/H - R+R FOLLOWING ELECTRICAL WIRING CHECK [939005562] — Procedures; all engines; all production periods; only with equipment: Electric seats
+- 7045J30: FRONT SEAT LIFTING MOTOR, LEFT OR RIGHT - R.R. FOLLOWING ELECTRICAL WIRING CHECK [939005571] — Procedures; all engines; all production periods; only with equipment: Electric seats
+- 7045J33: FRONT SEAT SWINGING MOTOR, (ONE) LH OR RH - R R AFTER CHECKING THE ELECTRIC CIRCUIT [939005572] — Procedures; all engines; all production periods; only with equipment: Electric seats
+- 7045J34: FRONT SEAT BACKREST ANGLE MOTOR, LEFT OR RIGHT - R.R. FOLLOWING ELECTRICAL WIRING CHECK [939005563] — Procedures; all engines; all production periods; only with equipment: Electric seats
+- 7045J36: SEAT MOVEMENT ECU R R FOLLOWING ELECTRICAL CIRCUIT CHECK [939005564] — Procedures; all engines; all production periods; only with equipment: Electric seats
+- 7045J81: FRONT SEAT CONNECTORS SUPPORT BRACKET (ONE), LH OR RH - R R WITH SEAT TAKEN OFF [939011319] — Procedures; all engines; all production periods
+- 7045M10: FRONT SEAT HEATING SYSTEM SWITCH, LEFT OR RIGHT - R+R [939005567] — Procedures; all engines; all production periods
+- 7045M22: HEATER PAD FOR FRONT SEAT CUSHION, LEFT OR RIGHT - R.R. FOLLOWING ELECTRICAL CIRCUIT CHECK [939005568] — Procedures; all engines; all production periods
+- 7045M26: L/H OR R/H FRONT SEAT SQUAB HEAT PAD - R+R FOLLOWING ELECTRICAL WIRING CHECK [939005569] — Procedures; all engines; all production periods
+- 7045M32: ELECTRONIC THERMOSTAT FOR HEATING CIRCUIT OF ONE FRONT SEAT, LH OR RH R R [939005570] — Procedures; all engines; all production periods
+- 7050A10: REAR SEAT - R+R [939011323] — Procedures; all engines; all production periods
+- 7050A13: SPLIT REAR SEAT LEFT BACKREST - R.R. [939011331] — Procedures; all engines; all production periods
+- 7050A14: SPLIT REAR SEAT ASSEMBLY - R+R [939011330] — Procedures; all engines; all production periods
+- 7050A15: SPLIT REAR SEAT RIGHT BACKREST - R.R. [939011329] — Procedures; all engines; all production periods
+- 7050A19: REAR SEAT BACKREST - R.R [939011324] — Procedures; all engines; all production periods
+- 7050A20: ONE-PIECE REAR SEAT CUSHION - R.R. [939011325] — Procedures; all engines; all production periods
+- 7050A42: REAR BACKREST CATCH DEVICE (ONE) - R+R [939011326] — Procedures; all engines; all production periods
+- 7050A43: SPLIT REAR SEAT ABCKREST ATTACHMENT/LOCKING DEVICE - R.R. [939004841] — Procedures; all engines; all production periods
+- 7050A45: STRIKER FOR ONE SPLIT REAR SEAT BACKREST FASTENING RELEASE DEVICE ONE LH OR RH - R.R [939004842] — Procedures; all engines; all production periods
+- 7050A47: SIDE PANEL ONE OF REAR SEAT SQUAB LH OR RH R R [939004843] — Procedures; all engines; all production periods
+- 7050A53: SPLIT REAR SEAT BACKREST FRAME (ONE), LEFT OR RIGHT - R.R. WITH BACKREST REMOVED [939004844] — Procedures; all engines; all production periods
+- 7050A56: REAR SEAT CUSHION FRAME - R.R. [939011327] — Procedures; all engines; all production periods
+- 7050A78: SKI FLAP IN REAR SEAT BACKREST - R.R. [939011328] — Procedures; all engines; all production periods
+- 7050B08: GUIDE BUSH FOR HEAD RESTRAINT (ONE) FOR REAR SEAT - R.R [939011333] — Procedures; all engines; all production periods
+- 7050B12: REAR SEAT HEAD RESTRAINT - R.R. [939011334] — Procedures; all engines; all production periods
+- 7050B18: REAR SEAT ARMREST - R+R [939011335] — Procedures; all engines; all production periods
+- 7050D20: REAR SEAT CUSHION TRIM - R.R. [939011337] — Procedures; all engines; all production periods
+- 7050D21: TRIM OF REAR SEAT CUSHION RR WITH CUSHION REMOVED [939011338] — Procedures; all engines; all production periods
+- 7050D30: TRIM FOR REAR SEAT BACKREST - R.R. [939011341] — Procedures; all engines; all production periods
+- 7050D31: TRIM OF REAR SEAT SQUAB RR WITH SQUAB REMOVED [939011342] — Procedures; all engines; all production periods
+- 7050D34: TRIM FOR LEFT REAR SEAT BACKREST (TWO SEATER) - R.R. [939004845] — Procedures; all engines; all production periods
+- 7050D35: LEFT REAR SEAT BACKREST COVER (TWO SEATER) - R.R. WITH BACKREST REMOVED [939004846] — Procedures; all engines; all production periods
+- 7050D36: TRIM FOR RIGHT REAR SEAT BACKREST (INDIVIDUAL) - R.R. [939004847] — Procedures; all engines; all production periods
+- 7050D37: RIGHT REAR SEAT BACKREST COVER (SINGLE) - R.R. WITH BACKREST REMOVED [939004848] — Procedures; all engines; all production periods
+- 7050D50: TRIM FOR ONE HEAD RESTRAINT, LEFT OR RIGHT FOR REAR SEAT - R.R. [939011339] — Procedures; all engines; all production periods
+- 7050D51: COVER FOR REAR SEAT HEAD RESTRAINT (ONE), LEFT OR RIGHT - R.R. WITH HEAD RESTRAINT REMOVED [939011340] — Procedures; all engines; all production periods
+- 7050D57: TRIM OF REAR SEAT ARM REST RR WITH ARM REST REMOVED [939011343] — Procedures; all engines; all production periods
+- 7055A10: MOULDING ON ROOF PANEL (ONE), LEFT OR RIGHT - R.R. [939011357] — Procedures; all engines; all production periods
+- 7055A40: RADIATOR SHIELD - R R [939011353] — Procedures; all engines; all production periods
+- 7055A44: MOULDING (ONE) ON RADIATOR GRILLE, L/H OR R/H - R R [939011354] — Procedures; all engines; all production periods
+- 7055A81: ORNAMENT ON BOOT LID - R R [939011356] — Procedures; all engines; all production periods
+- 7055A83: BADGE ON TAILGATE - R.R [939005458] — Procedures; all engines; all production periods
+- 7055A84: FRONT BADGE ON BONNET LID OR RADIATOR BADGE - R.R. [939011355] — Procedures; all engines; all production periods
+- 7055B08: GRILLE (ONE) ON FRONT BUMPER - R.R [939011359] — Procedures; all engines; all production periods
+- 7055B24: REAR BUMPER DAMPER - R+R WITH BUMPER REMOVED [939011368] — Procedures; all engines; all production periods
+- 7055B28: LH OR RH REFLECTOR(ONE) ON REAR BUMPERS - R R [939011360] — Procedures; all engines; all production periods
+- 7055B44: LEFT REAR WHEEL ARCH LINER - R.R [939011361] — Procedures; all engines; all production periods
+- 7055B45: RIGHT REAR WHEEL ARCH LINER - R.R [939011362] — Procedures; all engines; all production periods
+- 7055B54: UNDER ENGINE PROTECTION/GUARD - R.R. [939011369] — Procedures; all engines; all production periods
+- 7055B65: ENGINE COMPARTMENT DUST COVER IN LEFT FRONT WHEEL ARCH - R.R. [939004937] — Procedures; all engines; all production periods
+- 7055B66: ENGINE COMPARTMENT DUST COVER IN RIGHT FRONT WHEEL ARCH - R.R. [939004938] — Procedures; all engines; all production periods
+- 7055B74: FRONT BUMPER SIDE MOUNT (ONE) LEFT OR RIGHT R R [939011365] — Procedures; all engines; all production periods
+- 7055B75: REAR BUMPER CENTRE MOUNT - R R [939011366] — Procedures; all engines; all production periods
+- 7055B76: REAR BUMPER SIDE MOUNT ONE LEFT OR RIGHT R R [939011367] — Procedures; all engines; all production periods
+- 7055B90: LEFT FRONT WHEEL ARCH LINER - R.R. [939011363] — Procedures; all engines; all production periods
+- 7055B91: RIGHT FRONT WHEEL ARCH LINER - R.R. [939011364] — Procedures; all engines; all production periods
+- 7065A10: FRONT SEAT BELT (ONE) LEFT OR RIGHT - R.R. [939011384] — Procedures; all engines; all production periods
+- 7065A24: ANCHORAGE LINK WITH PRETENSIONER FOR ONE FRONT SEAT BELT LH OR RH R R [939011385] — Procedures; all engines; all production periods
+- 7065A34: PASSENGER PRESENCE SENSOR ON FRONT SEAT FOR INDICATING SEATBELT UNFASTENED R R [939005573] — Procedures; all engines; all production periods
+- 7065B10: REAR SEAT BELT (ONE), LEFT OR RIGHT - R.R. [939011382] — Procedures; all engines; all production periods
+- 7065B14: ANCHORAGE ROD FOR (ONE) REAR SEAT BELT LEFT OR RIGHT - R.R. [939011381] — Procedures; all engines; all production periods
+- 7065B18: CENTRE REAR SEAT BELT - R.R. [939011380] — Procedures; all engines; all production periods
+- 7065B24: CENTRE REAR SEAT BELT ANCHORAGE MECHANISM LINK - R.R. [939011379] — Procedures; all engines; all production periods
+- 7065C19: LONGITUDINAL SUPPORT (ONE), LEFT OR RIGHT FOR ROOF RACK BARS - R.R. [939005459] — Procedures; all engines; all production periods
+- 7065C30: GRAB HANDLE (ONE) LEFT, RIGHT OR CENTRE PASSENGER COMPARTMENT INTERIOR - R.R [939011375] — Procedures; all engines; all production periods
+- 7065C34: SUN BLIND (ONE), LEFT OR RIGHT - R.R. [939011374] — Procedures; all engines; all production periods
+- 7065C42: ASHTRAY (ONE) R+R [939004849] — Procedures; all engines; all production periods
+- 7065C60: INTERIOR REAR VIEW MIRROR FOR VERSIONS WITH RAIN/DUSK SENSOR - R.R. [939011377] — Procedures; all engines; all production periods
+- 7065C68: INTERIOR REAR VIEW MIRROR - R+R [939011373] — Procedures; all engines; all production periods
+- 7065C69: INTERIOR REAR VIEW MIRROR PLATE - R.R. [939011376] — Procedures; all engines; all production periods
+- 7065C72: FRONT CIGAR LIGHTER SOCKET - R.R. [939004939] — Procedures; all engines; all production periods
+- 7065C76: REAR CIGAR LIGHTER HOUSING - R.R. [939004851] — Procedures; all engines; all production periods
+- 7095E20: SOUNDPROOFING PANEL ON PASSENGER COMPARTMENT FRONT BULKHEAD - R.R WITH HEATER OR AIR CONDITIONING UNIT REMOVED [939011389] — Procedures; all engines; all production periods
+- 7205E10: STRIPPING FRONT BUMPER [939011433] — Procedures; all engines; all production periods
+- 7205E36: STRIPPING FRONT SIDE DOOR [939011434] — Procedures; all engines; all production periods
+- 7205E37: STRIPPING FRONT SIDE DOOR INTERIOR SUPPORT FRAME [939011435] — Procedures; all engines; all production periods
+- 7205E38: STRIPPING REAR SIDE DOOR [939011436] — Procedures; all engines; all production periods
+- 7205E39: STRIPPING REAR SIDE DOOR INTERIOR SUPPORT FRAME [939011437] — Procedures; all engines; all production periods
+- 7205E56: STRIPPING TAILGATE [939005551] — Procedures; all engines; all production periods
+- 7205E66: STRIPPING REAR BUMPER [939011438] — Procedures; all engines; all production periods
+- 7210A15: R.R. FRONT WING/HEADLAMP HOUSING CROSSMEMBER [939011411] — Procedures; all engines; all production periods
+- 7210A18: R.R FRONT CROSSMEMBER [939011413] — Procedures; all engines; all production periods
+- 7210A31: R R FRONT SHOCK ABSORBER ATTACHMENT DOME, (ONE) LH OR RH [939011414] — Procedures; all engines; all production periods
+- 7210A32: R.R. PARTIAL FRONT SHOCK ABSORER TURRET MOUNTING (ONE), LEFT OR RIGHT [939004852] — Procedures; all engines; all production periods
+- 7210A35: R.R. LOWER FRONT STRUT/SIDE PANEL (COMPLETE) (ONE) LEFT OR RIGHT [939011415] — Procedures; all engines; all production periods
+- 7210A45: R.R. LOWER FRONT STRUT/SIDE PANEL (LEVEL 2) PARTIAL (ONE) LEFT OR RIGHT [939004853] — Procedures; all engines; all production periods
+- 7210A46: R R (COMPLETE) UPPER FRONT STRUT (ONE) LH OR RH [939011416] — Procedures; all engines; all production periods
+- 7210A60: R.R. FRONT PILLAR [939004854] — Procedures; all engines; all production periods
+- 7210A74: R R FACIA SUPPORT BEAM [939011412] — Procedures; all engines; all production periods
+- 7210B10: R.R. CENTRE PILLAR [939004855] — Procedures; all engines; all production periods
+- 7210B18: R.R. ROOF PANEL SUPPORTING CROSSMEMBER [939011425] — Procedures; all engines; all production periods
+- 7210B40: R.R. REAR INNER WHEEL ARCH [939011418] — Procedures; all engines; all production periods
+- 7210B41: R.R. REAR WHEEL ARCH STIFFENER IN BOOT (ONE), LH OR RH [939011426] — Procedures; all engines; all production periods
+- 7210B45: R.R. REAR WING FRAME [939011419] — Procedures; all engines; all production periods
+- 7210B50: R.R. REAR WING LOWER FRAME [939011420] — Procedures; all engines; all production periods
+- 7210B51: R R UPPER CHANNEL STIFFENER, (ONE) LH OR RH [939011421] — Procedures; all engines; all production periods
+- 7210B52: R.R. REAR WING LONGITUDINAL REINFORCEMENT (ONE), LEFT OR RIGHT [939005552] — Procedures; all engines; all production periods; only with equipment: Station Wagon
+- 7210B54: R.R. SPARE WHEEL COMPARTMENT [939011427] — Procedures; all engines; all production periods
+- 7210B56: R.R. BOOT LOAD COMPARTMENT FLOOR PLAN (PARTIAL REAR INTERVENTION) [939004856] — Procedures; all engines; all production periods
+- 7210B58: R.R. BOOT FLOOR CORNER (ONE), LEFT OR RIGHT [939004857] — Procedures; all engines; all production periods
+- 7210B60: R.R. BOOT FLOOR SIDE MEMBER [939011428] — Procedures; all engines; all production periods
+- 7210B61: R.R. BOOT FLOOR PAN SIDE MEMBER - PARTIAL [939004858] — Procedures; all engines; all production periods
+- 7210B65: R.R. REAR PILLAR (WING INTERIOR) [939011422] — Procedures; all engines; all production periods
+- 7210B70: R.R. REAR TRIM (STRUCTURAL ELEMENT) [939011429] — Procedures; all engines; all production periods
+- 7210B75: R.R. REAR LIGHT CLUSTER HOUSING [939011423] — Procedures; all engines; all production periods
+- 7210B82: R.R REAR CROSSMEMBER [939011424] — Procedures; all engines; all production periods
+- 7210E10: R.R. FRONT BUMPER [939011399] — Procedures; all engines; all production periods
+- 7210E18: R.R. FRONT WING [939011407] — Procedures; all engines; all production periods
+- 7210E20: R.R. BONNET [939011400] — Procedures; all engines; all production periods
+- 7210E22: R.R. WINDSCREEN BASE TRIM [939011397] — Procedures; all engines; all production periods
+- 7210E28: R.R. ROOF PANEL [939004908] — Procedures; all engines; all production periods
+- 7210E34: R.R. ROOF PANEL/SIDE PANEL CONNECTION PROFILE-MOULDING [939011404] — Procedures; all engines; all production periods
+- 7210E36: R.R. FRONT SIDE DOOR [939011402] — Procedures; all engines; all production periods
+- 7210E38: R.R. REAR SIDE DOOR [939011403] — Procedures; all engines; all production periods
+- 7210E44: R.R. DOOR SILL RAIL OUTER TRIM [939011408] — Procedures; all engines; all production periods
+- 7210E45: R.R. PARTIAL DOOR SILL RAIL OUTER TRIM [939011409] — Procedures; all engines; all production periods
+- 7210E52: R.R. REAR WING [939011405] — Procedures; all engines; all production periods
+- 7210E54: BOOT [939011401] — Procedures; all engines; all production periods
+- 7210E56: R.R. TAILGATE [939005553] — Procedures; all engines; all production periods
+- 7210E66: R.R. REAR BUMPER [939011398] — Procedures; all engines; all production periods
+- 7210E72: R.R. FUEL FILLER BUSH WITH WING REMOVED [939011406] — Procedures; all engines; all production periods
+- 7210G76: REAR SPOILER - R.R. [939005555] — Procedures; all engines; all production periods; only with equipment: Station Wagon
