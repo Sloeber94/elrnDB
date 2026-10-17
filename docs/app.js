@@ -176,7 +176,7 @@ function bindEvents() {
       details.dataset.loaded = "1";
       renderBody($(".sub-body", details), byId.get(details.dataset.id));
     }
-    if (details.open) fitFigures(details);
+    if (details.open) { fitFigures(details); details._load?.(); }
   }, true);
 
   bindViewer();
@@ -287,36 +287,50 @@ function content(node) {
 }
 
 // ---------- procedure bodies ----------
-// A procedure has a Removing part and a Refitting part, each shown as its own collapsible section.
-// Operations listed in a part are expanded where they are first called, once per part, so nothing is
-// removed or refitted twice. Later calls become a one-line reference.
+// A procedure has a Removing part and a Refitting part. Each operation it calls is expanded where it is
+// first called in that part; removing and refitting are tracked separately. An operation's own Removing and
+// Refitting sections are both shown, and the one that is not current stays collapsed until opened.
+// Refitting calls that the main Refitting list already contains are not expanded inside other operations,
+// so the main list keeps the manual's refit order.
 
 const phaseCache = new Map();
 
-// Stored block HTML -> { removal, refit, raw } for the selected engine and period.
-function phaseHtml(node) {
+// Stored blocks, split into the Removing and Refitting parts. The part is followed across blocks in manual
+// order, because one part can span several variant blocks. Cached without the engine filter; applied in phaseHtml.
+function phaseBlocks(node) {
   if (!phaseCache.has(node.id)) {
     phaseCache.set(node.id, content(node).then((blocks) => {
-      const parts = { removal: "", refit: "", raw: "" };
-      for (const [e, d, o, html] of blocks) {
-        if (!fits(e, d)) continue;
-        parts.raw += html;
+      // No markers at all: a single-part operation (e.g. "Refer to ..."), which applies to both parts.
+      const marked = blocks.some(([, , , html]) => /data-step="(removing|refitting)"/.test(html));
+      let phase = "removal";
+      return blocks.map(([e, d, o, html]) => {
         const root = document.createElement("div");
         root.innerHTML = html;
-        const split = { removal: "", refit: "" };
-        let phase = "removal";
-        for (const el of [...root.children]) {
-          if (el.matches('h3[data-step="refitting"]')) phase = "refit";
-          else if (!el.matches('h3[data-step="removing"], a.jump')) split[phase] += el.outerHTML;
+        const own = { removal: "", refit: "" };
+        if (!marked) own.removal = own.refit = html;
+        else for (const el of [...root.children]) {
+          if (el.matches('h3[data-step="removing"]')) phase = "removal";
+          else if (el.matches('h3[data-step="refitting"]')) phase = "refit";
+          else if (!el.matches("a.jump")) own[phase] += el.outerHTML;
         }
-        for (const key of ["removal", "refit"]) {
-          if (split[key]) parts[key] += `<section class="block ${optionClass(o)}">${chips({ e, d, o }, node)}${split[key]}</section>`;
-        }
-      }
-      return parts;
+        return { e, d, o, own, raw: html };
+      });
     }));
   }
   return phaseCache.get(node.id);
+}
+
+// Removing / Refitting HTML for the selected engine and period.
+async function phaseHtml(node) {
+  const parts = { removal: "", refit: "", raw: "" };
+  for (const { e, d, o, own, raw } of await phaseBlocks(node)) {
+    parts.raw += raw;
+    if (!fits(e, d)) continue;
+    for (const key of ["removal", "refit"]) {
+      if (own[key]) parts[key] += `<section class="block ${optionClass(o)}">${chips({ e, d, o }, node)}${own[key]}</section>`;
+    }
+  }
+  return parts;
 }
 
 // A paragraph that holds only an "Op." link is a call to another procedure.
@@ -328,47 +342,94 @@ function opLinkId(p) {
   return href.startsWith("#/") && a.textContent.trim().startsWith("Op.") ? href.slice(2) : null;
 }
 
+// Operation ids called directly in an HTML fragment (not inside an operation).
+function directCalls(html) {
+  const div = document.createElement("div");
+  div.innerHTML = html;
+  return [...div.querySelectorAll("p")].filter((p) => !p.closest("td, th")).map(opLinkId).filter(Boolean);
+}
+
 function opTools(id) {
   return `<span class="op-tools"><a class="op-page" href="#/${id}" title="Open as page" aria-label="Open as page">&#8599;</a>` +
     `<a class="op-tab" href="#/${id}" title="Open in new tab" aria-label="Open in new tab">&#10697;</a></span>`;
 }
 
-function opDetails(id, title, phase, bodyHtml, extra = "") {
+function seenLine(id, title, label) {
+  const p = document.createElement("p");
+  p.className = "op-seen";
+  p.innerHTML = `<span class="op-title">${title}</span>${opTools(id)}<small>already ${label} in this procedure</small>`;
+  return p;
+}
+
+// Consecutive "already" lines become one collapsed line with a count.
+function groupSeen(container) {
+  let run = [];
+  const flush = () => {
+    if (run.length > 1) {
+      const group = document.createElement("details");
+      group.className = "seen-group";
+      group.innerHTML = `<summary>${run.length} operations already listed in this procedure</summary>`;
+      run[0].before(group);
+      run.forEach((el) => group.append(el));
+    }
+    run = [];
+  };
+  for (const el of [...container.children]) {
+    if (el.matches("p.op-seen")) run.push(el);
+    else flush();
+  }
+  flush();
+}
+
+// One operation called from `ctx.phase`. Its current part is open; the other part loads when opened.
+async function buildOp(target, title, ctx) {
+  const parts = await phaseHtml(target);
   const details = document.createElement("details");
-  details.className = `op ${extra}`.trim();
-  details.dataset.id = id;
-  details.innerHTML = `<summary><span class="op-title">${title}</span><span class="op-phase">${phase}</span>${opTools(id)}</summary>` +
-    `<div class="op-body">${bodyHtml}</div>`;
+  details.className = "op";
+  details.dataset.id = target.id;
+  details.innerHTML = `<summary><span class="op-title">${title}</span><span class="op-phase">${ctx.phase === "removal" ? "removing" : "refitting"}</span>${opTools(target.id)}</summary><div class="op-body"></div>`;
+  const body = details.querySelector(".op-body");
+  for (const phase of ["removal", "refit"]) {
+    if (!parts[phase]) continue;
+    const section = document.createElement("details");
+    section.className = `phase ${phase}`;
+    section.open = phase === ctx.phase;
+    section.innerHTML = `<summary>${phase === "removal" ? "Removing" : "Refitting"}</summary><div class="phase-body"></div>`;
+    body.append(section);
+    section._load = async () => {
+      const slot = section.querySelector(".phase-body");
+      if (slot.dataset.loaded) return;
+      slot.dataset.loaded = "1";
+      slot.innerHTML = parts[phase];
+      await expandCalls(slot, phase, { ...ctx, phase, owner: target, depth: ctx.depth + 1 });
+      fitFigures(slot);
+    };
+    if (section.open) await section._load();
+  }
   return details;
 }
 
-// Expand the calls in one part (removal or refit) of `container`, depth first.
-async function expandOps(container, phase, state, owner) {
+// Expand the calls in one part of `container`, depth first.
+async function expandCalls(container, phase, ctx) {
   const label = phase === "removal" ? "removing" : "refitting";
   for (const p of [...container.querySelectorAll("p")]) {
     if (p.closest("td, th")) continue;
     const id = opLinkId(p);
     const target = id && byId.get(id);
-    if (!target || id === owner.id) continue;
+    if (!target || id === ctx.owner.id) continue;
     const title = esc(p.textContent.trim());
-    if (state[phase].has(id)) {
-      const seen = document.createElement("p");
-      seen.className = "op-seen";
-      seen.innerHTML = `<span class="op-title">${title}</span>${opTools(id)}<small>already ${label} above</small>`;
-      p.replaceWith(seen);
+    const inMainRefit = phase === "refit" && ctx.depth > 0 && ctx.reserved.has(id);
+    if (ctx.done[phase].has(id) || inMainRefit) {
+      p.replaceWith(seenLine(id, title, label));
       continue;
     }
-    state[phase].add(id);
-    if (!target.visible) {
-      p.replaceWith(opDetails(id, title, label, `<p class="missing">Not available for the selected engine or production period.</p>`, "unavailable"));
-      continue;
-    }
-    const body = (await phaseHtml(target))[phase];
-    if (!body) continue;
-    const details = opDetails(id, title, label, body);
-    p.replaceWith(details);
-    await expandOps(details.querySelector(".op-body"), phase, state, target);
+    ctx.done[phase].add(id);
+    if (!target.visible) { p.remove(); continue; }  // not for the selected engine or period
+    const parts = await phaseHtml(target);
+    if (!parts[phase]) continue;
+    p.replaceWith(await buildOp(target, title, { ...ctx, phase }));
   }
+  groupSeen(container);
 }
 
 async function renderBody(container, node) {
@@ -381,7 +442,12 @@ async function renderBody(container, node) {
     const holder = document.createElement("div");
     holder.className = "content";
     container.replaceChildren(holder);
-    const state = { removal: new Set([node.id]), refit: new Set([node.id]) };
+    const shared = {
+      done: { removal: new Set(), refit: new Set() },
+      reserved: new Set(directCalls(parts.refit)),
+      owner: node,
+      depth: 0,
+    };
     for (const phase of ["removal", "refit"]) {
       if (!parts[phase]) continue;
       const section = document.createElement("details");
@@ -389,7 +455,9 @@ async function renderBody(container, node) {
       section.open = true;
       section.innerHTML = `<summary>${phase === "removal" ? "Removing" : "Refitting"}</summary><div class="phase-body">${parts[phase]}</div>`;
       holder.append(section);
-      await expandOps(section.querySelector(".phase-body"), phase, state, node);
+      const slot = section.querySelector(".phase-body");
+      await expandCalls(slot, phase, { ...shared, phase });
+      fitFigures(slot);
     }
   }
   markLinks(container);
