@@ -10,28 +10,34 @@
 <body>
 <header class="topbar">
   <button id="menu" class="icon-button" aria-label="Toggle navigation">&#9776;</button>
-  <a class="brand" href="#/"><span id="model">Workshop manual</span></a>
+  <a class="brand" href="#/"><span id="model"></span></a>
 </header>
 
 <aside id="sidebar" class="sidebar">
   <div class="sidebar-head">
-    <a class="brand wide" href="#/"><span id="model-wide">Workshop manual</span></a>
+    <a class="brand wide" href="#/"><span id="model-wide"></span></a>
     <button class="icon-button collapse" data-nav-toggle title="Hide sidebar" aria-label="Hide sidebar">&laquo;</button>
   </div>
 
   <section class="filters">
-    <label>Engine<select id="engine"></select></label>
-    <label>Production<select id="period"></select></label>
+    <label><span data-label="Engine"></span><select id="engine"></select></label>
+    <label><span data-label="Production"></span><select id="period"></select></label>
     <details id="equipment">
-      <summary>Highlight equipment <span id="equipment-count"></span></summary>
-      <p class="hint"><span class="swatch match"></span>matches your car
-        <span class="swatch other"></span>other equipment</p>
+      <summary><span data-label="Highlight equipment "></span><span id="equipment-count"></span></summary>
+      <p class="hint"><span class="swatch match"></span><span data-label="matches your car"></span>
+        <span class="swatch other"></span><span data-label="other equipment"></span></p>
       <div id="options"></div>
-      <button id="clear-options" class="link-button" type="button">Clear</button>
+      <button id="clear-options" class="link-button" type="button" data-label="Clear" aria-label="Clear"></button>
     </details>
   </section>
 
-  <input id="search" type="search" placeholder="Search code, title or text" autocomplete="off">
+  <div class="search">
+    <input id="search" type="search" autocomplete="off" aria-label="Search">
+    <div id="scope" class="scope" role="radiogroup" aria-label="Search in">
+      <label><input type="radio" name="scope" value="titles" checked><span data-label="Chapters"></span></label>
+      <label><input type="radio" name="scope" value="text"><span data-label="Content"></span></label>
+    </div>
+  </div>
   <nav id="tree" class="tree" aria-label="Contents"></nav>
   <div id="results" class="results" hidden></div>
   <div id="resizer" class="resizer" title="Drag to resize, double-click to reset"></div>

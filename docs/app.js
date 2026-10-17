@@ -6,6 +6,8 @@
 //        [[engineMask, periodMask] per distinct block], contentSize]
 
 const $ = (selector, root = document) => root.querySelector(selector);
+// Sidebar text is drawn from data-label via CSS so the browser's find (Ctrl+F) only hits the page.
+const label = (text, cls = "", tag = "span") => `<${tag} class="${cls}" data-label="${esc(text)}"></${tag}>`;
 const esc = (value) => String(value).replace(/[&<>"]/g, (c) => `&${{ "&": "amp", "<": "lt", ">": "gt", '"': "quot" }[c]};`);
 const store = {
   get(key) { try { return JSON.parse(localStorage.getItem(key)); } catch { return null; } },
@@ -36,7 +38,7 @@ async function init() {
     else { node.parent = nodes[node.parentIndex]; node.parent.children.push(node); }
   }
   document.title = `${meta.model} workshop manual`;
-  $("#model").textContent = $("#model-wide").textContent = `${meta.model} workshop manual`;
+  $("#model").dataset.label = $("#model-wide").dataset.label = `${meta.model} workshop manual`;
 
   Object.assign(state, store.get("filters") || {});
   readHash();
@@ -89,7 +91,7 @@ function buildFilters() {
     .filter((o) => o.count)
     .sort((a, b) => b.count - a.count)
     .map((o) => `<label class="option"><input type="checkbox" value="${o.bit}"${state.options >> o.bit & 1 ? " checked" : ""}>
-      ${esc(o.name)}<small>${o.count}</small></label>`)
+      ${label(o.name)}${label(o.count, "", "small")}</label>`)
     .join("");
 }
 
@@ -99,7 +101,7 @@ function refresh() {
     n.visible = Boolean(fits(n.e, n.d) && (n.blocks.some(([e, d]) => fits(e, d)) || n.children.some((c) => c.visible)));
   }
   const count = optionNames(state.options).length;
-  $("#equipment-count").textContent = count ? `(${count})` : "";
+  $("#equipment-count").dataset.label = count ? `(${count})` : "";
   writeHash();
   renderTree();
   renderPage();
@@ -164,6 +166,7 @@ function bindEvents() {
 
   bindViewer();
   bindSidebar();
+  bindSearchScope();
 }
 
 // Sidebar width (drag the edge, double-click to reset) and hide/show; remembered per browser.
@@ -210,14 +213,14 @@ function variant(node) {
   if (state.engine < 0 && twins.some((s) => s.e !== node.e)) parts.push(list(node.e, full(meta.engines), meta.engines, "all engines"));
   if (state.period < 0 && twins.some((s) => s.d !== node.d)) parts.push(list(node.d, full(meta.periods), meta.periods, "all periods"));
   if (twins.some((s) => s.o !== node.o)) parts.push(node.o ? optionNames(node.o).join(", ") : "standard");
-  return parts.length ? `<small class="variant">${esc(parts.join(" · "))}</small>` : "";
+  return parts.length ? label(parts.join(" · "), "variant", "small") : "";
 }
 
 function treeRow(node) {
   const active = state.current === node ? " active" : "";
-  return `<a class="row${active} ${optionClass(node.o)}" href="#/${node.id}">` +
-    (node.code ? `<span class="code">${esc(node.code)}</span>` : "") +
-    `<span class="title">${esc(node.title)}${variant(node)}</span></a>`;
+  return `<a class="row${active} ${optionClass(node.o)}" href="#/${node.id}" aria-label="${esc(`${node.code} ${node.title}`.trim())}">` +
+    (node.code ? label(node.code, "code") : "") +
+    `<span class="title">${label(node.title)}${variant(node)}</span></a>`;
 }
 
 function treeItem(node) {
@@ -361,28 +364,40 @@ async function runSearch() {
   if (!query) return;
   const terms = query.split(/\s+/);
   const matches = (text) => terms.every((t) => text.includes(t));
-  const found = nodes.filter((n) => n.visible && matches(`${n.code} ${n.title}`.toLowerCase()));
-  if (!searchText) {
-    results.innerHTML = resultList(found, "Searching text…");
-    searchText = (await (await fetch("data/search.json")).json()).map((t) => t.toLowerCase());
-    if ($("#search").value.trim().toLowerCase() !== query) return;
+  if (searchScope() === "titles") {
+    results.innerHTML = resultList(nodes.filter((n) => n.visible && matches(`${n.code} ${n.title}`.toLowerCase())));
+    return;
   }
-  const seen = new Set(found);
-  const text = nodes.filter((n) => n.visible && !seen.has(n) && matches(searchText[n.index]));
-  results.innerHTML = resultList(found.concat(text), "", terms[0]);
+  if (!searchText) {
+    results.innerHTML = resultList([], "Loading text…");
+    searchText = (await (await fetch("data/search.json")).json()).map((t) => t.toLowerCase());
+    if ($("#search").value.trim().toLowerCase() !== query || searchScope() !== "text") return;
+  }
+  results.innerHTML = resultList(nodes.filter((n) => n.visible && matches(searchText[n.index])), "", terms[0]);
+}
+
+const searchScope = () => $('input[name="scope"]:checked').value;
+
+function bindSearchScope() {
+  const placeholder = { titles: "Search chapter code or title", text: "Search text inside topics" };
+  const apply = () => { $("#search").placeholder = placeholder[searchScope()]; runSearch(); };
+  const saved = store.get("scope");
+  if (saved) $(`input[name="scope"][value="${saved}"]`).checked = true;
+  $("#scope").addEventListener("change", () => { store.set("scope", searchScope()); apply(); $("#search").focus(); });
+  apply();
 }
 
 function resultList(list, note, term) {
-  if (!list.length && !note) return `<p class="hint">No results</p>`;
+  if (!list.length && !note) return label("No results", "hint", "p");
   const section = (n) => { while (n.parent) n = n.parent; return n.title; };
-  return `<p class="hint">${note || `${list.length} result${list.length === 1 ? "" : "s"}`}</p><ul>` +
+  return label(note || `${list.length} result${list.length === 1 ? "" : "s"}${list.length > 200 ? " (first 200 shown)" : ""}`, "hint", "p") + "<ul>" +
     list.slice(0, 200).map((n) => {
       let snippet = "";
       const at = term && searchText ? searchText[n.index].indexOf(term) : -1;
       if (at >= 0 && !`${n.code} ${n.title}`.toLowerCase().includes(term))
-        snippet = `<small>…${esc(searchText[n.index].slice(Math.max(0, at - 40), at + 60))}…</small>`;
-      return `<li><a href="#/${n.id}" class="${optionClass(n.o)}">${n.code ? `<span class="code">${esc(n.code)}</span>` : ""}${esc(n.title)}
-        <em>${esc(section(n))}</em>${snippet}</a></li>`;
+        snippet = label(`…${searchText[n.index].slice(Math.max(0, at - 40), at + 60)}…`, "", "small");
+      return `<li><a href="#/${n.id}" class="${optionClass(n.o)}">${n.code ? label(n.code, "code") : ""}${label(n.title)}${variant(n)}
+        ${label(section(n), "", "em")}${snippet}</a></li>`;
     }).join("") + "</ul>";
 }
 

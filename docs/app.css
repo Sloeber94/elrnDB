@@ -77,6 +77,9 @@ button, select, input { font: inherit; color: inherit; }
   font: 600 .86em/1.4 ui-monospace, "Cascadia Mono", Consolas, monospace;
 }
 
+/* Sidebar labels are generated content, so the browser's find (Ctrl+F) only searches the page. */
+[data-label]::before { content: attr(data-label); }
+
 /* ---------- layout ---------- */
 
 .topbar { display: none; }
@@ -191,6 +194,14 @@ body.resizing { cursor: col-resize; user-select: none; }
   background: var(--accent);
   color: #fff;
 }
+
+.search { display: grid; gap: 6px; }
+.scope { display: flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; font-size: .8rem; }
+.scope label { flex: 1; }
+.scope input { position: absolute; opacity: 0; pointer-events: none; }
+.scope span { display: block; padding: 3px 0; text-align: center; color: var(--muted); cursor: pointer; }
+.scope input:checked + span { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.scope input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: -2px; }
 
 /* ---------- tree ---------- */
 
