@@ -114,6 +114,7 @@ function refresh() {
 function bindEvents() {
   window.addEventListener("hashchange", () => {
     readHash();
+    expanded.clear();  // only the path to the topic you went to stays open
     // Navigating to a topic opens the branch that leads to it, even where the user had collapsed it.
     for (let n = state.current?.parent; n; n = n.parent) userCollapsed.delete(n.id);
     $("#engine").value = state.engine;
@@ -517,7 +518,7 @@ function fitFigures(root) {
     const tableWidth = figure.classList.contains("diagram") && next?.matches(".table") ? next.querySelector("table")?.offsetWidth : 0;
     const width = figureWidths.get(src) || tableWidth;
     img.style.width = width ? `${width}px` : "";
-    if (figureWidths.has(src)) img.style.maxHeight = "none";
+    img.style.maxHeight = figureWidths.has(src) ? "none" : "";
   }
 }
 
@@ -557,7 +558,7 @@ function childList(kids) {
   wrap.className = "children";
   const small = kids.length <= 6 && kids.every((k) => !k.children.some((c) => c.visible)) &&
     kids.reduce((sum, k) => sum + k.size, 0) <= 12000;
-  const autoOpen = kids.length === 1 || small;
+  const autoOpen = false;  // subtopics always start collapsed
   wrap.innerHTML = (kids.length > 1
     ? `<div class="children-bar"><span>${kids.length} subtopics</span>
          <button class="link-button" data-expand="all">Expand all</button>
@@ -677,9 +678,12 @@ function resultList(list, note, term) {
 
 const view = { scale: 1, x: 0, y: 0, pointers: new Map(), pinch: 0 };
 
+let viewedSrc = null;
+
 function openViewer(img) {
   const viewer = $("#viewer");
   const target = $("#viewer-img");
+  viewedSrc = img.getAttribute("src");
   $("#viewer-title").textContent = img.alt || "";
   $("#viewer-open").href = img.src;
   target.onload = () => zoom("fit");
@@ -709,6 +713,7 @@ function zoom(action) {
     $("#viewer").hidden = true;
     document.body.classList.remove("viewing");
     img.removeAttribute("src");
+    if (viewedSrc) { figureWidths.delete(viewedSrc); fitFigures($("#page")); }  // back to the starting size
   } else if (action === "fit") {
     const w = img.naturalWidth || 1000, h = img.naturalHeight || 700;
     view.scale = Math.min(stage.width / w, stage.height / h) * 0.96;
