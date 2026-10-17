@@ -1,0 +1,19 @@
+﻿# Only the site (docs/) and this README are published.
+
+# Build tooling and licensed source (local only)
+pipeline/
+source/
+
+# Old repository files and build outputs (local only)
+archive/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db
