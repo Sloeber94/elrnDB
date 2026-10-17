@@ -26,7 +26,7 @@ const periodMask = () => (state.period < 0 ? full(meta.periods) : 1 << state.per
 const fits = (e, d) => (e & engineMask()) && (d & periodMask());
 const names = (mask, list) => list.filter((_, bit) => mask >> bit & 1);
 const optionNames = (mask) => names(mask, meta.options.map((o) => o[1]));
-const optionClass = (mask) => (!mask || !state.options ? "" : mask & state.options ? "match" : "other");
+const optionClass = (mask) => (!mask || !state.options ? "" : (mask & state.options) === mask ? "match" : "other");
 
 async function init() {
   meta = await (await fetch("data/tree.json")).json();
@@ -131,6 +131,15 @@ function bindEvents() {
   });
   $("#menu").addEventListener("click", () => document.body.classList.toggle("nav-open"));
   $("#theme").addEventListener("change", (e) => { applyTheme(e.target.value); store.set("theme", e.target.value); });
+  $("#expand-all").addEventListener("click", () => {
+    for (const n of nodes) if (n.children.some((c) => c.visible)) { expanded.add(n.id); userCollapsed.delete(n.id); }
+    renderTree();
+  });
+  $("#collapse-all").addEventListener("click", () => {
+    expanded.clear();
+    for (const n of nodes) if (n.children.length) userCollapsed.add(n.id);
+    renderTree();
+  });
   let resizeTimer;
   window.addEventListener("resize", () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(() => fitFigures($("#page")), 150); });
 
@@ -170,6 +179,7 @@ function bindEvents() {
       return;
     }
     const img = e.target.closest("img.zoomable");
+    if (img?.dataset.dragged) { delete img.dataset.dragged; return; }  // end of a resize drag, not a click
     if (img) openViewer(img);
     const toggle = e.target.closest("[data-expand]");
     if (toggle) {
@@ -317,7 +327,7 @@ function phaseBlocks(node) {
       // No markers at all: a single-part operation (e.g. "Refer to ..."), which applies to both parts.
       const marked = blocks.some(([, , , html]) => /data-step="(removing|refitting)"/.test(html));
       let phase = "removal";
-      return blocks.map(([e, d, o, html]) => {
+      const result = blocks.map(([e, d, o, html]) => {
         const root = document.createElement("div");
         root.innerHTML = html;
         const own = { removal: "", refit: "" };
@@ -329,6 +339,8 @@ function phaseBlocks(node) {
         }
         return { e, d, o, own, raw: html };
       });
+      result.marked = marked;
+      return result;
     }));
   }
   return phaseCache.get(node.id);
@@ -336,8 +348,9 @@ function phaseBlocks(node) {
 
 // Removing / Refitting HTML for the selected engine and period.
 async function phaseHtml(node) {
-  const parts = { removal: "", refit: "", raw: "" };
-  for (const { e, d, o, own, raw } of await phaseBlocks(node)) {
+  const blocks = await phaseBlocks(node);
+  const parts = { removal: "", refit: "", raw: "", marked: blocks.marked };
+  for (const { e, d, o, own, raw } of blocks) {
     parts.raw += raw;
     if (!fits(e, d)) continue;
     for (const key of ["removal", "refit"]) {
@@ -403,6 +416,12 @@ async function buildOp(target, title, ctx) {
   details.dataset.id = target.id;
   details.innerHTML = `<summary><span class="op-title">${title}</span><span class="op-phase">${ctx.phase === "removal" ? "removing" : "refitting"}</span>${opTools(target.id)}</summary><div class="op-body"></div>`;
   const body = details.querySelector(".op-body");
+  if (!parts.marked) {
+    body.innerHTML = parts[ctx.phase];
+    await expandCalls(body, ctx.phase, { ...ctx, owner: target, depth: ctx.depth + 1 });
+    fitFigures(body);
+    return details;
+  }
   for (const phase of ["removal", "refit"]) {
     if (!parts[phase]) continue;
     const section = document.createElement("details");
@@ -448,7 +467,7 @@ async function expandCalls(container, phase, ctx) {
 
 async function renderBody(container, node) {
   const parts = await phaseHtml(node);
-  if (!/data-step="refitting"|<p><a href="#\/\d+">Op\./.test(parts.raw)) {
+  if (!parts.marked) {
     const blocks = (await content(node)).filter(([e, d]) => fits(e, d));
     container.innerHTML = `<div class="content">${blocks.map(([e, d, o, body]) =>
       `<section class="block ${optionClass(o)}">${chips({ e, d, o }, node)}${body}</section>`).join("")}</div>`;
@@ -488,16 +507,10 @@ function fitFigures(root) {
   for (const img of root.querySelectorAll("figure img.zoomable")) {
     const figure = img.closest("figure");
     const src = img.getAttribute("src");
-    if (!img.parentElement.classList.contains("fig-img")) {
-      const box = document.createElement("span");
-      box.className = "fig-img";
-      img.replaceWith(box);
-      box.append(img);
-      const grip = document.createElement("span");
-      grip.className = "resize-grip";
-      grip.title = "Drag to resize";
-      grip.addEventListener("pointerdown", (ev) => startResize(ev, img, src));
-      box.append(grip);
+    if (!img.dataset.resizable) {
+      img.dataset.resizable = "1";
+      img.draggable = false;  // otherwise the browser starts a native image drag and the resize stops
+      img.addEventListener("pointerdown", (ev) => startResize(ev, img, src));
     }
     let next = figure.nextElementSibling;
     while (next && !next.matches(".table, figure")) next = next.nextElementSibling;
@@ -508,19 +521,25 @@ function fitFigures(root) {
   }
 }
 
+// Drag anywhere on an image to resize it. A click without movement still opens the viewer.
 function startResize(ev, img, src) {
-  ev.preventDefault();
-  ev.stopPropagation();
+  if (ev.button !== 0) return;
+  delete img.dataset.dragged;
   const startX = ev.clientX;
   const startWidth = img.getBoundingClientRect().width;
+  let moved = false;
   const move = (e) => {
+    if (!moved && Math.abs(e.clientX - startX) < 5) return;
+    moved = true;
     const width = Math.max(120, Math.round(startWidth + e.clientX - startX));
     figureWidths.set(src, width);
     img.style.width = `${width}px`;
+    img.style.maxHeight = "none";
   };
   const up = () => {
     window.removeEventListener("pointermove", move);
     window.removeEventListener("pointerup", up);
+    if (moved) img.dataset.dragged = "1";
   };
   window.addEventListener("pointermove", move);
   window.addEventListener("pointerup", up);

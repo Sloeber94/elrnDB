@@ -329,14 +329,7 @@ figure img {
 }
 figure.photo img { max-height: 460px; }
 figure.diagram img { display: block; width: auto; max-width: 100%; background: var(--diagram-bg); }
-.fig-img { position: relative; display: inline-block; max-width: 100%; }
-.resize-grip {
-  position: absolute; right: 2px; bottom: 2px;
-  width: 16px; height: 16px; cursor: nwse-resize; opacity: .6;
-  background: linear-gradient(135deg, transparent 45%, var(--muted) 45%, var(--muted) 55%, transparent 55%,
-    transparent 70%, var(--muted) 70%, var(--muted) 80%, transparent 80%);
-}
-.resize-grip:hover { opacity: 1; }
+.tree-tools { font-size: .8rem; color: var(--muted); padding: 0 4px; }
 figcaption { color: var(--muted); font-size: .85rem; margin-top: 4px; }
 .legend { list-style: none; padding: 0; font-size: .85rem; columns: 2 220px; }
 
