@@ -114,6 +114,8 @@ function refresh() {
 function bindEvents() {
   window.addEventListener("hashchange", () => {
     readHash();
+    // Navigating to a topic opens the branch that leads to it, even where the user had collapsed it.
+    for (let n = state.current?.parent; n; n = n.parent) userCollapsed.delete(n.id);
     $("#engine").value = state.engine;
     $("#period").value = state.period;
     document.body.classList.remove("nav-open");
@@ -133,12 +135,17 @@ function bindEvents() {
   window.addEventListener("resize", () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(() => fitFigures($("#page")), 150); });
 
   $("#tree").addEventListener("click", (e) => {
-    const twisty = e.target.closest(".twisty");
-    if (!twisty) return;
-    const li = twisty.closest("li");
+    const li = e.target.closest("li[data-i]");
+    if (!li) return;
     const node = nodes[li.dataset.i];
-    expanded.has(node.id) ? expanded.delete(node.id) : expanded.add(node.id);
-    li.replaceWith(treeItem(node));
+    if (!node.children.some((c) => c.visible)) return;
+    if (e.target.closest(".twisty")) {
+      setExpanded(node, !expanded.has(node.id));
+      li.replaceWith(treeItem(node));
+    } else if (e.target.closest("a.row")) {
+      setExpanded(node, !expanded.has(node.id));  // the link still navigates
+      setTimeout(renderTree, 0);                  // redraw now too, in case the link points to the current topic
+    }
   });
 
   let timer;
@@ -256,9 +263,16 @@ function treeList(list) {
   return ul;
 }
 
+// Topics the user collapsed stay collapsed when the tree is redrawn; ancestors of the current topic stay open.
+const userCollapsed = new Set();
+function setExpanded(node, open) {
+  if (open) { expanded.add(node.id); userCollapsed.delete(node.id); }
+  else { expanded.delete(node.id); userCollapsed.add(node.id); }
+}
+
 function renderTree() {
-  for (let n = state.current?.parent; n; n = n.parent) expanded.add(n.id);
-  if (state.current?.children?.length) expanded.add(state.current.id);
+  for (let n = state.current?.parent; n; n = n.parent) if (!userCollapsed.has(n.id)) expanded.add(n.id);
+  if (state.current?.children?.length && !userCollapsed.has(state.current.id)) expanded.add(state.current.id);
   $("#tree").replaceChildren(treeList(roots.filter((n) => n.visible)));
   $("#tree .row.active")?.scrollIntoView({ block: "nearest" });
 }
@@ -467,13 +481,49 @@ async function renderBody(container, node) {
 }
 
 // Connector and wiring drawings: natural size, but never wider than the table below them.
+// Diagrams: as wide as the table below them, unless the user resized them (kept for the session).
+const figureWidths = new Map();
+
 function fitFigures(root) {
-  for (const img of root.querySelectorAll("figure.diagram img")) {
-    let next = img.closest("figure").nextElementSibling;
+  for (const img of root.querySelectorAll("figure img.zoomable")) {
+    const figure = img.closest("figure");
+    const src = img.getAttribute("src");
+    if (!img.parentElement.classList.contains("fig-img")) {
+      const box = document.createElement("span");
+      box.className = "fig-img";
+      img.replaceWith(box);
+      box.append(img);
+      const grip = document.createElement("span");
+      grip.className = "resize-grip";
+      grip.title = "Drag to resize";
+      grip.addEventListener("pointerdown", (ev) => startResize(ev, img, src));
+      box.append(grip);
+    }
+    let next = figure.nextElementSibling;
     while (next && !next.matches(".table, figure")) next = next.nextElementSibling;
-    const width = next?.matches(".table") ? next.querySelector("table")?.offsetWidth : 0;
-    img.style.maxWidth = width ? `${width}px` : "100%";
+    const tableWidth = figure.classList.contains("diagram") && next?.matches(".table") ? next.querySelector("table")?.offsetWidth : 0;
+    const width = figureWidths.get(src) || tableWidth;
+    img.style.width = width ? `${width}px` : "";
+    if (figureWidths.has(src)) img.style.maxHeight = "none";
   }
+}
+
+function startResize(ev, img, src) {
+  ev.preventDefault();
+  ev.stopPropagation();
+  const startX = ev.clientX;
+  const startWidth = img.getBoundingClientRect().width;
+  const move = (e) => {
+    const width = Math.max(120, Math.round(startWidth + e.clientX - startX));
+    figureWidths.set(src, width);
+    img.style.width = `${width}px`;
+  };
+  const up = () => {
+    window.removeEventListener("pointermove", move);
+    window.removeEventListener("pointerup", up);
+  };
+  window.addEventListener("pointermove", move);
+  window.addEventListener("pointerup", up);
 }
 
 // ---------- theme ----------
