@@ -264,6 +264,7 @@ h4 { font-size: .95rem; margin: 1em 0 .3em; }
 .lead { color: var(--muted); max-width: 60ch; }
 .disclaimer { margin-top: 40px; color: var(--muted); font-size: .8rem; max-width: 70ch; }
 
+.text-version { margin: 4px 0 8px; font-size: .8rem; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 10px; }
 .chip {
   padding: 1px 8px;

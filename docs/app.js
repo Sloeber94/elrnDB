@@ -330,7 +330,8 @@ function renderPage() {
     return;
   }
   document.title = `${node.code ? node.code + " " : ""}${node.title} · ${meta.model}`;
-  const header = `${breadcrumbs(node)}<h1>${node.code ? `<span class="code">${esc(node.code)}</span>` : ""}${esc(node.title)}</h1>${chips(node)}`;
+  const header = `${breadcrumbs(node)}<h1>${node.code ? `<span class="code">${esc(node.code)}</span>` : ""}${esc(node.title)}</h1>${chips(node)}` +
+    `<p class="text-version"><a href="ai/t/${node.id}.html">Text version (for AI tools and screen readers)</a></p>`;
   if (!node.visible) {
     page.innerHTML = `${header}<div class="notice"><p>This topic is not available for the selected
       engine or production period.</p><button id="reset" class="button">Show all engines and periods</button></div>`;

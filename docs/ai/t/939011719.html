@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E4010 INSTRUMENT PANEL - FUNCTIONAL DESCRIPTION · ALFA 159</title>
+<meta name="description" content="functional description (how the circuit works). engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods. Electrical equipment &gt; 1 ELECTRICAL FUNCTIONS &gt; E40 INSTRUMENT PANEL &gt; E4010 INSTRUMENT PANEL &gt; E4010 INSTRUMENT PANEL - FUNCTIONAL DESCRIPTION">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">ALFA 159 workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="939002878.html">Electrical equipment</a> › <a href="939011440.html">1 ELECTRICAL FUNCTIONS</a> › <a href="939011711.html">E40 INSTRUMENT PANEL</a> › <a href="939003103.html">E4010 INSTRUMENT PANEL</a> › <span>E4010 INSTRUMENT PANEL - FUNCTIONAL DESCRIPTION</span></nav>
+<h1><span class="code">E4010</span> INSTRUMENT PANEL - FUNCTIONAL DESCRIPTION</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; 1 ELECTRICAL FUNCTIONS &gt; E40 INSTRUMENT PANEL &gt; E4010 INSTRUMENT PANEL &gt; E4010 INSTRUMENT PANEL - FUNCTIONAL DESCRIPTION</dd>
+<dt>Kind</dt><dd>functional description (how the circuit works)</dd>
+<dt>Applies to</dt><dd>engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB/#/939011719">https://sloeber94.github.io/elrnDB/#/939011719</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods</p><h2>FUNCTIONAL DESCRIPTION</h2><p>The ignition-operated power supply (INT) for the instrument panel E50 reaches pin 1 of connector A via the line for fuse F37 of the junction unit under the dashboard B2; the direct power supply reaches pin 2 of connector A via the fuse line F53 of the junction unit under the dashboard B2; pin 7 of connector A is earthed (earth controlled by the Body Computer M1).</p><p>The instrument panel E50 is connected from pins 3 and 4 of connector A with the Body Computer M1 and via the latter to the entire CAN: the signal reaches the electronic speedometer (from the ABS control unit M50) via the CAN: the same signal is replicated by pin 16 of M50 at pin 7 of connector A of the Body Computer M1.</p><p>The electronic rev counter receives the engine rpm signal received from the engine management control unit M10 via the CAN.</p><p>The km reset button for the trip meter, located in the left panel H90, sends an earth signal to pin 7 of connector C of E50.</p><p>The fuel level gauge is controlled by means of signals coming from the level gauge located in the fuel pump assembly N40 - at pins 4 and 15 of connector D of the Body Computer M1 and from there via the CAN to the instrument panel E50.</p><p>The brake pad wear warning light is controlled on the basis of the signal that reaches pin 23 of connector B of the Body Computer M1 from the sensors for K20 and K21.</p><p>The insufficient brake fluid level/handbrake warning light is lit up by a signal from the handbrake switch I40 that reaches pin 14 of connector D of the Body Computer M1 or from the signal from the brake fluid level sensor K25 that reaches pin 18 of connector A of M1.</p><p>All these signals are transferred via the CAN to the instrument panel E50.</p><p>The engine oil level sensor K32 receives a power supply from the panel E50 from pin 17 of connector B and relays the signal to pin 18.</p><p>The centre module E20 is connected by means of a special serial line - from pin 1 - to the instrument panel node E50 pin 1 of connector C; the protected power supply reaches pin 3 of E20, whilst the reference earth reaches pin 2.</p><p>The dimmed power supply for the auxiliary instruments E20 leaves from pin 5 of connector C of E50.</p><p><a href="939002993.html">See E2535 CONTROL LIGHTS</a></p></section>
+<h2>Topics linked from this page (1)</h2><ul><li><a href="939002993.html">E2535 CONTROL LIGHTS</a> <span class="meta">chapter (index of subtopics) · all engines; all production periods; only with equipment: Low setup</span></li></ul>
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB/">https://sloeber94.github.io/elrnDB/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

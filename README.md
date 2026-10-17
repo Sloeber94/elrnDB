@@ -2,10 +2,17 @@
 
 **Open the site: https://sloeber94.github.io/elrnDB/**
 
-A searchable, filterable web version of the eLearn workshop manual (English),
+**For AI assistants (ChatGPT, Claude, Perplexity, Gemini, …):** paste this link into the chat:
+**https://sloeber94.github.io/elrnDB/llms.txt**
+
+It is the entry point to a plain-text version of the manual: every topic is its own page with its path,
+the vehicles it applies to, and links to and from related topics (wiring, connectors, components,
+procedures). Start with the guide at `ai/guide.html` if the assistant asks where to begin.
+
+A searchable, filterable web version of the eLearn workshop manual (English, all engines and variants),
 hosted by GitHub Pages from the `docs/` folder.
 
-## Using it
+## Using the interactive site
 
 - **Engine** and **production period** filters (sidebar) hide everything that does not apply.
 - **Highlight equipment** marks topics that depend on options (Station Wagon, 4x4, sunroof, …):
@@ -16,5 +23,6 @@ hosted by GitHub Pages from the `docs/` folder.
 - Click any picture or wiring diagram to zoom and pan.
 - Drag the sidebar edge to resize it (double-click resets), or hide it with «.
 - Filters and the current topic are kept in the URL, so links are shareable.
+- Each topic has a "Text version" link for AI tools and screen readers.
 
 To view it offline: `python -m http.server 8000 --directory docs`, then open http://localhost:8000.

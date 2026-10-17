@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E4080 TRIP COMPUTER - OPERATIONAL DESCRIPTION · ALFA 159</title>
+<meta name="description" content="functional description (how the circuit works). all engines; all production periods. Electrical equipment &gt; 1 ELECTRICAL FUNCTIONS &gt; E40 INSTRUMENT PANEL &gt; E4080 TRIP COMPUTER &gt; E4080 TRIP COMPUTER - OPERATIONAL DESCRIPTION">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">ALFA 159 workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="939002878.html">Electrical equipment</a> › <a href="939011440.html">1 ELECTRICAL FUNCTIONS</a> › <a href="939011711.html">E40 INSTRUMENT PANEL</a> › <a href="939011722.html">E4080 TRIP COMPUTER</a> › <span>E4080 TRIP COMPUTER - OPERATIONAL DESCRIPTION</span></nav>
+<h1><span class="code">E4080</span> TRIP COMPUTER - OPERATIONAL DESCRIPTION</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; 1 ELECTRICAL FUNCTIONS &gt; E40 INSTRUMENT PANEL &gt; E4080 TRIP COMPUTER &gt; E4080 TRIP COMPUTER - OPERATIONAL DESCRIPTION</dd>
+<dt>Kind</dt><dd>functional description (how the circuit works)</dd>
+<dt>Applies to</dt><dd>all engines; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB/#/939011724">https://sloeber94.github.io/elrnDB/#/939011724</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: all engines; all production periods</p><h2>FUNCTIONAL DESCRIPTION</h2><p>The ignition-operated power supply (INT) for the instrument panel E50 reaches pin 1 of connector A via the line for fuse F37 of the junction unit under the dashboard B2; the direct power supply reaches pin 2 of connector A via the fuse line F53 of the junction unit under the dashboard B2; pin 7 of connector A is earthed (earth controlled by the Body Computer M1).</p><p>The instrument panel E50 is connected from pins 3 and 4 of connector A to the Body Computer M1 and via the latter to the entire CAN: the signal for the electronic speedometer (from the ABS control unit M50) is received via the CAN: the same signal is replicated from pin 16 of M50 at pin 7 of connector A of the Body Computer M1.</p><p>The electronic rev counter receives the engine rpm signal received from the engine management control unit M10 via the CAN.</p><p>The fuel level gauge is controlled according to the signals coming from the level gauge located in the electric fuel pump assembly N40 - at pins 4 and 15 of connector D of the Body Computer M1 and from there via the CAN to the instrument panel E50.</p><p>The TRIP electronic module uses these signals to process information on instantaneous and average fuel consumption, range, average speed, Km travelled, duration etc.</p><p>The Trip Computer zeroing button, located in the steering column switch unit H5, sends an earth signal to pin 6 of connector A of E50.</p></section>
+
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB/">https://sloeber94.github.io/elrnDB/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>
