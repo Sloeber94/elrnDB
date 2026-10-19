@@ -280,7 +280,12 @@ function setExpanded(node, open) {
 function renderTree() {
   for (let n = state.current?.parent; n; n = n.parent) if (!userCollapsed.has(n.id)) expanded.add(n.id);
   if (state.current?.children?.length && !userCollapsed.has(state.current.id)) expanded.add(state.current.id);
-  $("#tree").replaceChildren(treeList(roots.filter((n) => n.visible)));
+  const list = treeList(roots.filter((n) => n.visible));
+  const home = document.createElement("li");
+  home.innerHTML = `<span class="twisty leaf"></span><a class="row${state.current ? "" : " active"}" href="#/" aria-label="Home">` +
+    `<span class="title">${label("Home")}</span></a>`;
+  list.prepend(home);
+  $("#tree").replaceChildren(list);
   $("#tree .row.active")?.scrollIntoView({ block: "nearest" });
 }
 
@@ -538,17 +543,21 @@ function childList(kids) {
     ? `<div class="children-bar"><span>${kids.length} subtopics</span>
          <button class="link-button" data-expand="all">Expand all</button>
          <button class="link-button" data-expand="none">Collapse all</button></div>`
-    : "") +
-    kids.map((k) => {
-      const sub = k.children.filter((c) => c.visible).length;
-      return `<details class="sub ${optionClass(k.o)}" data-id="${k.id}">
-        <summary>${k.code ? `<span class="code">${esc(k.code)}</span>` : ""}
-          <span class="title">${esc(k.title)}${variant(k)}</span>
-          ${sub ? `<span class="meta">${sub} subtopic${sub > 1 ? "s" : ""}</span>` : ""}
-          <a class="open" href="#/${k.id}" title="Open as page" aria-label="Open ${esc(k.title)} as page">&#8599;</a>
-        </summary>${chips(k, k.parent)}<div class="sub-body"></div></details>`;
-    }).join("");
+    : "") + kids.map((k) => topicDropdown(k)).join("");
   return wrap;
+}
+
+// A topic as a closed dropdown that loads its content when opened. `caption` replaces the title (the
+// manual's title is then shown as a note).
+function topicDropdown(k, caption = "") {
+  const sub = k.children.filter((c) => c.visible).length;
+  const name = `${k.code ? k.code + " " : ""}${k.title}`;
+  return `<details class="sub ${optionClass(k.o)}" data-id="${k.id}">
+    <summary>${!caption && k.code ? `<span class="code">${esc(k.code)}</span>` : ""}
+      <span class="title">${esc(caption || k.title)}${caption ? ` <small class="meta">${esc(name)}</small>` : variant(k)}</span>
+      ${sub ? `<span class="meta">${sub} subtopic${sub > 1 ? "s" : ""}</span>` : ""}
+      <a class="open" href="#/${k.id}" title="Open as page" aria-label="Open ${esc(k.title)} as page">&#8599;</a>
+    </summary>${chips(k, k.parent)}<div class="sub-body"></div></details>`;
 }
 
 function markLinks(root) {
@@ -591,14 +600,52 @@ function renderPage() {
   window.scrollTo(0, 0);
 }
 
+// Reference topics for the home page, found by section and title (so variants and filters apply).
+const REFERENCE = [
+  ["Fuses, relays and junction units", "Descriptions", /^INSTRUMENT\/GAUGE ELECTRICAL CIRCUITS$/],
+  ["Wire colour codes", "Electrical equipment", /^KEY$/],
+  ["Tightening torques", "Technical Data", /^TIGHTENING TORQUES$/],
+  ["Fluids and products", "Technical Data", /^PRODUCTS$/],
+  ["Special tools", "Technical Data", /^SPECIFIC TOOLING$/],
+  ["Identification, engine codes and general features", "Technical Data", /^CAR GENERAL FEATURES$/],
+  ["Programmed maintenance plan", null, /^PROGRAMMED MAINTENANCE PLAN$/],
+  ["Before you start: safety and battery disconnection", "Procedures", /^INTRODUCTION - MAINTENANCE$/],
+];
+
+// Most-referenced topics per section, ranked at build time (tree.json "popular").
+const POPULAR = [
+  ["Most used procedures", "Procedures"],
+  ["Most connected components and harnesses", "Electrical equipment"],
+  ["Most used checks", "Test"],
+];
+
 function renderHome(page) {
   document.title = `${meta.model} workshop manual`;
   const count = (n) => (n.visible ? 1 : 0) + n.children.reduce((s, c) => s + count(c), 0);
+  const group = (title, items) => items.length
+    ? `<details class="phase" open><summary>${esc(title)}</summary><div class="children">${items.join("")}</div></details>` : "";
+  const reference = REFERENCE.map(([caption, section, title]) => {
+    const node = nodes.find((n) => n.visible && (!section || n.section === section) && title.test(n.title));
+    return node ? topicDropdown(node, caption) : "";
+  }).filter(Boolean);
+  const popular = POPULAR.map(([title, section]) =>
+    group(title, (meta.popular?.[section] || []).map((id) => byId.get(id)).filter((n) => n?.visible).map((n) => topicDropdown(n))));
   page.innerHTML = `<h1>${esc(meta.model)} workshop manual</h1>
-    <p class="lead">Choose an engine and production period in the sidebar to show only what applies to your car.
-      Equipment options stay visible and are highlighted.</p>
-    <div class="cards">${roots.filter((n) => n.visible).map((n) =>
-      `<a class="card" href="#/${n.id}"><strong>${esc(n.title)}</strong><span>${count(n) - 1} topics</span></a>`).join("")}</div>
+    <p class="lead">The complete workshop manual, filtered for your car. Pick your engine and production period in the
+      sidebar, and tick your equipment to highlight what applies to it.</p>
+    <details class="phase" open><summary>What this site does</summary><ul class="features">
+      <li><strong>Shows only what applies to your car:</strong> engine and production period hide every other variant.</li>
+      <li><strong>Procedures in order:</strong> Removing and Refitting, with every operation they call nested in place, each once.</li>
+      <li><strong>Wiring:</strong> connector pinouts with decoded wire colours, wiring diagrams and component locations.
+        Click a picture to zoom; drag it to resize.</li>
+      <li><strong>Fault diagnosis and tests</strong> as step tables, plus torques, specifications, products and tools.</li>
+      <li><strong>Search</strong> by chapter code and title, or through the full text.</li>
+      <li><strong>For AI assistants:</strong> a text version of the whole manual, starting at <a href="llms.txt">llms.txt</a>.</li>
+    </ul></details>
+    ${group("Reference", reference)}
+    ${popular.join("")}
+    <details class="phase" open><summary>Sections</summary><div class="cards">${roots.filter((n) => n.visible).map((n) =>
+      `<a class="card" href="#/${n.id}"><strong>${esc(n.title)}</strong><span>${count(n) - 1} topics</span></a>`).join("")}</div></details>
     <p class="disclaimer">${esc(meta.disclaimer)}</p>`;
 }
 
