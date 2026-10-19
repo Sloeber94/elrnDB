@@ -74,3 +74,9 @@ that hold across the whole manual, with no per-chapter cases.
     closing it (Esc or ×) resets the size.
 - **Theme:** System / Light / Dark, with high contrast for workshop use.
 - **Text version:** each topic links to its text version (`ai/t/<id>.html`).
+- **Home** (top of the sidebar, `#/`): what the site does, then nested dropdowns that open in place:
+  - a *Reference* list of topics found by section and title (`REFERENCE` in `app.js`): fuses and
+    junction units, wire colour key, torques, products, tools, identification, maintenance plan,
+    safety/battery disconnection
+  - the most-referenced procedures, components and checks (`popular` in `tree.json`)
+  - the section cards

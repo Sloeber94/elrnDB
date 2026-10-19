@@ -41,6 +41,8 @@ Additional information › Cable color code › Key*. It is read from the databa
   Each node is `[id, parentIndex, code, title, engineMask, periodMask, optionMask,
   [[engineMask, periodMask] per distinct block], contentSize]`, listed in document order, so parents
   come before their children.
+- `tree.json` also has `popular`: for Procedures, Electrical equipment and Test, the 10 most-referenced topics
+  (counted as how many other topics link to them; variants count together).
 - `t/<id>.json`: `[[engineMask, periodMask, optionMask, html], ...]`, one entry per content block.
 - `search.json`: plain text per node index, loaded on the first content search.
 - Bitmasks:
