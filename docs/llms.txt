@@ -7,7 +7,7 @@ Start with the guide, then follow links. Use the lookups to jump from a componen
 ## Start here
 - [Guide: how the manual is organised, code systems, wire colours](https://sloeber94.github.io/elrnDB/ai/guide.html)
 - [Component index: component -> pinouts, replacement procedures, references](https://sloeber94.github.io/elrnDB/ai/lookup/components.html)
-- [Fuse index: fuse -> every circuit description that names it](https://sloeber94.github.io/elrnDB/ai/lookup/fuses.html)
+- [Fuse and relay index: rating, junction unit and every circuit that names it](https://sloeber94.github.io/elrnDB/ai/lookup/fuses.html)
 - [Operation index: operation or test code -> topic](https://sloeber94.github.io/elrnDB/ai/lookup/operations.html)
 - [All sections](https://sloeber94.github.io/elrnDB/ai/index.html)
 
@@ -18,6 +18,12 @@ Start with the guide, then follow links. Use the lookups to jump from a componen
 - [Test](https://sloeber94.github.io/elrnDB/ai/t/939010170.html): test / check procedure
 - [Procedures](https://sloeber94.github.io/elrnDB/ai/t/939010354.html): repair procedure (removal / refitting; the operation number is the code)
 - [Electrical equipment](https://sloeber94.github.io/elrnDB/ai/t/939002878.html): 
+
+## Background notes
+- [fuses.md](https://sloeber94.github.io/elrnDB/ai/notes/fuses.md): fuses, relays and junction units: where they are, ratings, F-35 = F35, fuse F35 is not lamp F035
+- [data-model.md](https://sloeber94.github.io/elrnDB/ai/notes/data-model.md): wire colour codes, connector-body colours, how pinouts describe every wire, what only the diagrams add
+- [diagnosis-essentials.md](https://sloeber94.github.io/elrnDB/ai/notes/diagnosis-essentials.md): what to check before any fault diagnosis, with where the manual covers it
+- [rendering-rules.md](https://sloeber94.github.io/elrnDB/ai/notes/rendering-rules.md): how the manual is structured: Removing/Refitting parts, Op. calls between procedures, variants
 
 ## Optional
 - [Interactive site](https://sloeber94.github.io/elrnDB/)

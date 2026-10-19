@@ -292,7 +292,8 @@ h4 { font-size: .95rem; margin: 1em 0 .3em; }
 /* ---------- content ---------- */
 
 /* Full width for tables, figures and subtopics; prose keeps a readable line length. */
-.content p, .content ul, .lead { max-width: 100ch; }
+.content p, .content .para, .content ul, .lead { max-width: 100ch; }
+.content .para { margin: .45em 0; }
 td p, th p { max-width: none; }
 .block { border-left: 3px solid transparent; padding-left: 0; }
 .content p { margin: .45em 0; }
@@ -316,7 +317,7 @@ a.unavailable { color: var(--other); text-decoration: line-through; }
 table { border-collapse: collapse; font-size: .88rem; min-width: 50%; }
 th, td { border: 1px solid var(--line); padding: 4px 8px; vertical-align: top; text-align: left; }
 th { background: var(--hover); font-weight: 600; }
-td p, th p { margin: 0; }
+td p, th p, td .para, th .para { margin: 0; }
 
 figure { margin: 1em 0; }
 figure img {

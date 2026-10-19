@@ -36,6 +36,7 @@ async function init() {
     byId.set(node.id, node);
     if (node.parentIndex < 0) roots.push(node);
     else { node.parent = nodes[node.parentIndex]; node.parent.children.push(node); }
+    node.section = node.parent ? node.parent.section : node.title;
   }
   document.title = `${meta.model} workshop manual`;
   $("#model").dataset.label = $("#model-wide").dataset.label = `${meta.model} workshop manual`;
@@ -166,11 +167,6 @@ function bindEvents() {
   });
 
   $("#page").addEventListener("click", (e) => {
-    const jump = e.target.closest("a.jump");
-    if (jump) {
-      e.preventDefault();
-      jump.closest(".content")?.querySelector(`[data-step="${jump.dataset.jump}"]`)?.scrollIntoView({ behavior: "smooth" });
-    }
     const opTool = e.target.closest(".op-tools a");
     if (opTool) {  // navigate or open a new tab; do not toggle the dropdown
       e.preventDefault();
@@ -192,7 +188,7 @@ function bindEvents() {
     const details = e.target;
     if (details.matches("details.sub") && details.open && !details.dataset.loaded) {
       details.dataset.loaded = "1";
-      renderBody($(".sub-body", details), byId.get(details.dataset.id));
+      renderTopic($(".sub-body", details), byId.get(details.dataset.id), topContext());
     }
     if (details.open) { fitFigures(details); details._load?.(); }
   }, true);
@@ -311,70 +307,143 @@ function content(node) {
   return contentCache.get(node.id);
 }
 
-// ---------- procedure bodies ----------
-// A procedure has a Removing part and a Refitting part. Each operation it calls is expanded where it is
-// first called in that part; removing and refitting are tracked separately. An operation's own Removing and
-// Refitting sections are both shown, and the one that is not current stays collapsed until opened.
-// Refitting calls that the main Refitting list already contains are not expanded inside other operations,
-// so the main list keeps the manual's refit order.
+// ---------- topic bodies ----------
+// One renderer for pages, subtopics and called procedures, built on three rules found in the data:
+//  1. Parts: a block may start with a part marker (Removing or Refitting; always its first element).
+//     An unmarked block continues the part of the block before it; blocks before the first marker
+//     belong to no part. Repeated Removing/Refitting units in one topic are variants (engines, bodies).
+//  2. Calls: every link to a Procedures topic ("Op. …") is a call to that procedure, wherever it stands:
+//     on its own line, inside a sentence or in a table cell.
+//  3. Applicability: every block has its own engine and period masks.
+// A topic shows its unpartitioned blocks first, then a Removing and a Refitting section for the parts its
+// visible blocks have. Calls are expanded in place, in the part they occur in. Inside a part, a call is
+// shown as a one-line reference instead when, for a car that could need both, the same procedure was already
+// expanded earlier in that part, or an enclosing procedure lists it itself in that part (it does it there,
+// in its own order). A call that would loop is always a reference.
 
-const phaseCache = new Map();
+const PARTS = { removing: "removal", refitting: "refit" };
+const PART_LABEL = { removal: "Removing", refit: "Refitting" };
+const PART_DONE = { none: "listed", removal: "removed", refit: "refitted" };
+const parsedCache = new Map();
 
-// Stored blocks, split into the Removing and Refitting parts. The part is followed across blocks in manual
-// order, because one part can span several variant blocks. Cached without the engine filter; applied in phaseHtml.
-function phaseBlocks(node) {
-  if (!phaseCache.has(node.id)) {
-    phaseCache.set(node.id, content(node).then((blocks) => {
-      // No markers at all: a single-part operation (e.g. "Refer to ..."), which applies to both parts.
-      const marked = blocks.some(([, , , html]) => /data-step="(removing|refitting)"/.test(html));
-      let phase = "removal";
-      const result = blocks.map(([e, d, o, html]) => {
+// Blocks of a topic with their part, cached independently of the filters.
+function parsedBlocks(node) {
+  if (!parsedCache.has(node.id)) {
+    parsedCache.set(node.id, content(node).then((blocks) => {
+      let part = "none";
+      return blocks.map(([e, d, o, html]) => {
         const root = document.createElement("div");
         root.innerHTML = html;
-        const own = { removal: "", refit: "" };
-        if (!marked) own.removal = own.refit = html;
-        else for (const el of [...root.children]) {
-          if (el.matches('h3[data-step="removing"]')) phase = "removal";
-          else if (el.matches('h3[data-step="refitting"]')) phase = "refit";
-          else if (!el.matches("a.jump")) own[phase] += el.outerHTML;
+        const marker = root.firstElementChild;
+        if (marker?.matches("h3.step") && PARTS[marker.dataset.step]) {
+          part = PARTS[marker.dataset.step];
+          for (const el of root.querySelectorAll(":scope > h3.step, :scope > a.jump")) el.remove();
         }
-        return { e, d, o, own, raw: html };
+        return { e, d, o, part, html: root.innerHTML };
       });
-      result.marked = marked;
-      return result;
     }));
   }
-  return phaseCache.get(node.id);
+  return parsedCache.get(node.id);
 }
 
-// Removing / Refitting HTML for the selected engine and period.
-async function phaseHtml(node) {
-  const blocks = await phaseBlocks(node);
-  const parts = { removal: "", refit: "", raw: "", marked: blocks.marked };
-  for (const { e, d, o, own, raw } of blocks) {
-    parts.raw += raw;
-    if (!fits(e, d)) continue;
-    for (const key of ["removal", "refit"]) {
-      if (own[key]) parts[key] += `<section class="block ${optionClass(o)}">${chips({ e, d, o }, node)}${own[key]}</section>`;
-    }
-  }
-  return parts;
+// The procedure a link calls, or null.
+function callTarget(a) {
+  const target = byId.get(a.getAttribute("href").slice(2));
+  return target?.section === "Procedures" ? target : null;
 }
 
-// A paragraph that holds only an "Op." link is a call to another procedure.
-function opLinkId(p) {
-  const links = p.querySelectorAll("a");
-  const a = links[0];
-  if (links.length !== 1 || p.textContent.trim() !== a.textContent.trim()) return null;
-  const href = a.getAttribute("href") || "";
-  return href.startsWith("#/") && a.textContent.trim().startsWith("Op.") ? href.slice(2) : null;
-}
-
-// Operation ids called directly in an HTML fragment (not inside an operation).
-function directCalls(html) {
+function callsIn(html) {
   const div = document.createElement("div");
   div.innerHTML = html;
-  return [...div.querySelectorAll("p")].filter((p) => !p.closest("td, th")).map(opLinkId).filter(Boolean);
+  return [...div.querySelectorAll('a[href^="#/"]')].map(callTarget).filter(Boolean);
+}
+
+// Fresh context for a page or a subtopic: no calling part, the selected filters, nothing expanded yet.
+function topContext() {
+  return { part: null, e: engineMask(), d: periodMask(), chain: [], seen: { none: [], removal: [], refit: [] } };
+}
+
+async function renderTopic(container, node, ctx) {
+  const blocks = (await parsedBlocks(node)).filter((b) => fits(b.e, b.d));
+  const partOf = (b) => (b.part === "none" ? ctx.part || "none" : b.part);  // unpartitioned blocks run in the caller's part
+  const masksOf = (b) => ({ e: ctx.e & b.e, d: ctx.d & b.d });
+  const frame = { node, calls: { none: [], removal: [], refit: [] } };
+  for (const b of blocks) for (const t of callsIn(b.html)) frame.calls[partOf(b)].push({ id: t.id, ...masksOf(b) });
+  const inner = { ...ctx, chain: [...ctx.chain, frame] };
+
+  const holder = document.createElement("div");
+  holder.className = "content";
+  container.replaceChildren(holder);
+  const renderBlocks = async (target, list) => {
+    for (const b of list) {
+      const section = document.createElement("section");
+      section.className = "block";
+      section.innerHTML = chips(b, node) + b.html;
+      target.append(section);
+      await expandCalls(section, partOf(b), masksOf(b), inner);
+    }
+    fitFigures(target);
+  };
+
+  await renderBlocks(holder, blocks.filter((b) => b.part === "none"));
+  for (const part of ["removal", "refit"]) {
+    const list = blocks.filter((b) => b.part === part);
+    if (!list.length) continue;
+    const section = document.createElement("details");
+    section.className = `phase ${part}`;
+    section.innerHTML = `<summary>${PART_LABEL[part]}</summary><div class="phase-body"></div>`;
+    holder.append(section);
+    section._load = () => { section._load = null; return renderBlocks(section.querySelector(".phase-body"), list); };
+    section.open = !ctx.part || ctx.part === part;  // a page shows both parts; a call opens the part it is called for
+    if (section.open) await section._load();
+  }
+  markLinks(container);
+  const kids = node.children.filter((c) => c.visible);
+  if (kids.length) container.append(childList(kids));
+}
+
+async function expandCalls(element, part, masks, ctx) {
+  const same = (id) => (x) => x.id === id && (x.e & masks.e) && (x.d & masks.d);
+  for (const a of [...element.querySelectorAll('a[href^="#/"]')]) {
+    const target = callTarget(a);
+    if (!target) continue;
+    // A link that fills its paragraph is replaced with the paragraph. A link inside a sentence or a table
+    // cell is replaced on its own; its paragraph becomes a block so the dropdown can sit inside it.
+    const host = a.parentElement;
+    const alone = host.matches("p") && host.textContent.trim() === a.textContent.trim();
+    const spot = alone ? host : a;
+    if (!alone && host.matches("p")) {
+      const block = document.createElement("div");
+      block.className = "para";
+      block.append(...host.childNodes);
+      host.replaceWith(block);
+    }
+    if (!target.visible) { if (alone) spot.remove(); continue; }  // not for this car; an inline link stays, struck through
+    const title = esc(a.textContent.trim());
+    // Removing or refitting something twice is meaningless, so repeats are folded inside a part. Outside a
+    // part a repeated call is usually the reverse action (disconnect, later reconnect), so it stays.
+    const repeat = ctx.chain.some((f) => f.node === target)
+      || (part !== "none" && (ctx.seen[part].some(same(target.id))
+        || ctx.chain.slice(0, -1).some((f) => f.calls[part].some(same(target.id)))));
+    if (repeat) { spot.replaceWith(seenLine(target.id, title, part)); continue; }
+    ctx.seen[part].push({ id: target.id, ...masks });
+    spot.replaceWith(await callElement(target, title, part, masks, ctx));
+  }
+  groupSeen(element);
+}
+
+async function callElement(target, title, part, masks, ctx) {
+  const details = document.createElement("details");
+  details.className = "op";
+  details.dataset.id = target.id;
+  const chip = part === "none" ? "" : `<span class="op-phase">${part === "removal" ? "removing" : "refitting"}</span>`;
+  details.innerHTML = `<summary><span class="op-title">${title}</span>${chip}${opTools(target.id)}</summary><div class="op-body"></div>`;
+  const load = () => renderTopic(details.querySelector(".op-body"), target, { ...ctx, part, ...masks });
+  // Inside a part, repeats are folded in reading order, so the call is expanded now. Outside a part nothing
+  // is folded, so it loads when first opened (pages with many calls, such as component tables, stay fast).
+  if (part === "none") details._load = () => { details._load = null; return load(); };
+  else await load();
+  return details;
 }
 
 function opTools(id) {
@@ -382,21 +451,21 @@ function opTools(id) {
     `<a class="op-tab" href="#/${id}" title="Open in new tab" aria-label="Open in new tab">&#10697;</a></span>`;
 }
 
-function seenLine(id, title, label) {
+function seenLine(id, title, part) {
   const p = document.createElement("p");
   p.className = "op-seen";
-  p.innerHTML = `<span class="op-title">${title}</span>${opTools(id)}<small>already ${label} in this procedure</small>`;
+  p.innerHTML = `<span class="op-title">${title}</span>${opTools(id)}<small>already ${PART_DONE[part]} in this procedure</small>`;
   return p;
 }
 
-// Consecutive "already" lines become one collapsed line with a count.
+// Consecutive references become one collapsed line with a count.
 function groupSeen(container) {
   let run = [];
   const flush = () => {
     if (run.length > 1) {
       const group = document.createElement("details");
       group.className = "seen-group";
-      group.innerHTML = `<summary>${run.length} operations already listed in this procedure</summary>`;
+      group.innerHTML = `<summary>${run.length} operations already in this procedure</summary>`;
       run[0].before(group);
       run.forEach((el) => group.append(el));
     }
@@ -409,99 +478,8 @@ function groupSeen(container) {
   flush();
 }
 
-// One operation called from `ctx.phase`. Its current part is open; the other part loads when opened.
-async function buildOp(target, title, ctx) {
-  const parts = await phaseHtml(target);
-  const details = document.createElement("details");
-  details.className = "op";
-  details.dataset.id = target.id;
-  details.innerHTML = `<summary><span class="op-title">${title}</span><span class="op-phase">${ctx.phase === "removal" ? "removing" : "refitting"}</span>${opTools(target.id)}</summary><div class="op-body"></div>`;
-  const body = details.querySelector(".op-body");
-  if (!parts.marked) {
-    body.innerHTML = parts[ctx.phase];
-    await expandCalls(body, ctx.phase, { ...ctx, owner: target, depth: ctx.depth + 1 });
-    fitFigures(body);
-    return details;
-  }
-  for (const phase of ["removal", "refit"]) {
-    if (!parts[phase]) continue;
-    const section = document.createElement("details");
-    section.className = `phase ${phase}`;
-    section.open = phase === ctx.phase;
-    section.innerHTML = `<summary>${phase === "removal" ? "Removing" : "Refitting"}</summary><div class="phase-body"></div>`;
-    body.append(section);
-    section._load = async () => {
-      const slot = section.querySelector(".phase-body");
-      if (slot.dataset.loaded) return;
-      slot.dataset.loaded = "1";
-      slot.innerHTML = parts[phase];
-      await expandCalls(slot, phase, { ...ctx, phase, owner: target, depth: ctx.depth + 1 });
-      fitFigures(slot);
-    };
-    if (section.open) await section._load();
-  }
-  return details;
-}
-
-// Expand the calls in one part of `container`, depth first.
-async function expandCalls(container, phase, ctx) {
-  const label = phase === "removal" ? "removing" : "refitting";
-  for (const p of [...container.querySelectorAll("p")]) {
-    if (p.closest("td, th")) continue;
-    const id = opLinkId(p);
-    const target = id && byId.get(id);
-    if (!target || id === ctx.owner.id) continue;
-    const title = esc(p.textContent.trim());
-    const inMainRefit = phase === "refit" && ctx.depth > 0 && ctx.reserved.has(id);
-    if (ctx.done[phase].has(id) || inMainRefit) {
-      p.replaceWith(seenLine(id, title, label));
-      continue;
-    }
-    ctx.done[phase].add(id);
-    if (!target.visible) { p.remove(); continue; }  // not for the selected engine or period
-    const parts = await phaseHtml(target);
-    if (!parts[phase]) continue;
-    p.replaceWith(await buildOp(target, title, { ...ctx, phase }));
-  }
-  groupSeen(container);
-}
-
-async function renderBody(container, node) {
-  const parts = await phaseHtml(node);
-  if (!parts.marked) {
-    const blocks = (await content(node)).filter(([e, d]) => fits(e, d));
-    container.innerHTML = `<div class="content">${blocks.map(([e, d, o, body]) =>
-      `<section class="block ${optionClass(o)}">${chips({ e, d, o }, node)}${body}</section>`).join("")}</div>`;
-  } else {
-    const holder = document.createElement("div");
-    holder.className = "content";
-    container.replaceChildren(holder);
-    const shared = {
-      done: { removal: new Set(), refit: new Set() },
-      reserved: new Set(directCalls(parts.refit)),
-      owner: node,
-      depth: 0,
-    };
-    for (const phase of ["removal", "refit"]) {
-      if (!parts[phase]) continue;
-      const section = document.createElement("details");
-      section.className = `phase ${phase}`;
-      section.open = true;
-      section.innerHTML = `<summary>${phase === "removal" ? "Removing" : "Refitting"}</summary><div class="phase-body">${parts[phase]}</div>`;
-      holder.append(section);
-      const slot = section.querySelector(".phase-body");
-      await expandCalls(slot, phase, { ...shared, phase });
-      fitFigures(slot);
-    }
-  }
-  markLinks(container);
-  fitFigures(container);
-  const kids = node.children.filter((c) => c.visible);
-  if (kids.length) container.append(childList(kids));
-}
-
-// Connector and wiring drawings: natural size, but never wider than the table below them.
-// Diagrams: as wide as the table below them, unless the user resized them (kept for the session).
+// ---------- images ----------
+// Diagrams are as wide as the table below them; drag an image to resize it (kept until the viewer closes).
 const figureWidths = new Map();
 
 function fitFigures(root) {
@@ -556,9 +534,6 @@ function applyTheme(mode) {
 function childList(kids) {
   const wrap = document.createElement("div");
   wrap.className = "children";
-  const small = kids.length <= 6 && kids.every((k) => !k.children.some((c) => c.visible)) &&
-    kids.reduce((sum, k) => sum + k.size, 0) <= 12000;
-  const autoOpen = false;  // subtopics always start collapsed
   wrap.innerHTML = (kids.length > 1
     ? `<div class="children-bar"><span>${kids.length} subtopics</span>
          <button class="link-button" data-expand="all">Expand all</button>
@@ -566,7 +541,7 @@ function childList(kids) {
     : "") +
     kids.map((k) => {
       const sub = k.children.filter((c) => c.visible).length;
-      return `<details class="sub ${optionClass(k.o)}" data-id="${k.id}"${autoOpen ? " open" : ""}>
+      return `<details class="sub ${optionClass(k.o)}" data-id="${k.id}">
         <summary>${k.code ? `<span class="code">${esc(k.code)}</span>` : ""}
           <span class="title">${esc(k.title)}${variant(k)}</span>
           ${sub ? `<span class="meta">${sub} subtopic${sub > 1 ? "s" : ""}</span>` : ""}
@@ -611,7 +586,7 @@ function renderPage() {
     return;
   }
   page.innerHTML = `${header}<div class="body"></div>`;
-  renderBody($(".body", page), node).then(() => page.focus({ preventScroll: true }));
+  renderTopic($(".body", page), node, topContext()).then(() => page.focus({ preventScroll: true }));
   page.scrollTo?.(0, 0);
   window.scrollTo(0, 0);
 }

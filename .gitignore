@@ -4,6 +4,10 @@
 pipeline/
 source/
 
+# Local documentation (the AI-relevant notes are copied to docs/ai/notes by the build)
+notes/
+CLAUDE.md
+
 # Old repository files and build outputs (local only)
 archive/
 
