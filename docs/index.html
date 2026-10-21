@@ -96,10 +96,11 @@ const card = (m) => {
   return m.live ? `<a class="model" href="${esc(m.path)}">${body}</a>` : `<div class="model soon" aria-disabled="true">${body}</div>`;
 };
 
+// The list changes when a model is published; always ask the server whether it is newer (cheap when it is not).
 (async () => {
   const target = document.getElementById("brands");
   try {
-    const models = await (await fetch("models.json")).json();
+    const models = await (await fetch("models.json", { cache: "no-cache" })).json();
     const brands = new Map();
     for (const m of models) {
       if (!brands.has(m.brand)) brands.set(m.brand, { name: m.brand_name, list: [] });
