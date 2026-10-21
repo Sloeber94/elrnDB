@@ -1,6 +1,6 @@
-# ALFA 159 workshop manual (text version)
+# Alfa 159 workshop manual (text version)
 
-> Official eLearn workshop manual for the ALFA 159, English. Engines: 1.8, 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V. Production periods: Up to 12/05, From 01/06. Each topic is a separate HTML page with its path, applicability, and links to and from related topics.
+> Official eLearn workshop manual for the Alfa 159, English. Engines: 1.8, 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V. Production periods: Up to 12/05, From 01/06. Each topic is a separate HTML page with its path, applicability, and links to and from related topics.
 
 Start with the guide, then follow links. Use the lookups to jump from a component, fuse or operation code to its pages.
 

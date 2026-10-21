@@ -4,8 +4,8 @@
 
 | Brand | Models |
 |---|---|
-| Alfa Romeo | [147](https://sloeber94.github.io/elrnDB-a147/en/), [159](https://sloeber94.github.io/elrnDB/alfa/159/en/), [Brera](https://sloeber94.github.io/elrnDB-aBrr/en/), [GT](https://sloeber94.github.io/elrnDB-aGt/en/) |
-| Fiat | [Doblò](https://sloeber94.github.io/elrnDB-fDbl/en/), [Multipla](https://sloeber94.github.io/elrnDB-fMltpl/en/), [Panda](https://sloeber94.github.io/elrnDB-fPnd/en/), [Ulysse](https://sloeber94.github.io/elrnDB-fUlss/en/) |
+| Alfa Romeo | [147](https://sloeber94.github.io/elrnDB-a147/en/), [156](https://sloeber94.github.io/elrnDB-a156/en/), [159](https://sloeber94.github.io/elrnDB/alfa/159/en/), [166](https://sloeber94.github.io/elrnDB-a166/en/), [Brera](https://sloeber94.github.io/elrnDB-aBrr/en/), [Brera/Spider](https://sloeber94.github.io/elrnDB-aBrrSpdr/en/), [GT](https://sloeber94.github.io/elrnDB-aGt/en/) |
+| Fiat | [500](https://sloeber94.github.io/elrnDB-f500/en/), [Bravo](https://sloeber94.github.io/elrnDB-fBrv/en/), [Croma](https://sloeber94.github.io/elrnDB-fCrm/en/), [Doblò](https://sloeber94.github.io/elrnDB-fDbl/en/), [Ducato](https://sloeber94.github.io/elrnDB-fDct/en/), [Idea](https://sloeber94.github.io/elrnDB-fId/en/), [Multipla](https://sloeber94.github.io/elrnDB-fMltpl/en/), [Panda](https://sloeber94.github.io/elrnDB-fPnd/en/), [Stilo](https://sloeber94.github.io/elrnDB-fStl/en/), [Ulysse](https://sloeber94.github.io/elrnDB-fUlss/en/) |
 | Lancia | [Thesis](https://sloeber94.github.io/elrnDB-lThss/en/), [Ypsilon](https://sloeber94.github.io/elrnDB-lYpsln/en/) |
 
 **For AI assistants (ChatGPT, Claude, Perplexity, Gemini, …):** paste this link into the chat:
