@@ -3,63 +3,119 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Workshop manual</title>
+<title>Workshop manuals</title>
+<script>
+  // Old links to the Alfa 159 (…/elrnDB/#/<topic id>) forward to its new address.
+  if (/^#\/\d/.test(location.hash)) location.replace("alfa/159/en/" + location.hash);
+  try {
+    const theme = JSON.parse(localStorage.getItem("theme"));
+    if (theme && theme !== "system") document.documentElement.setAttribute("data-theme", theme);
+  } catch { /* private mode */ }
+</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='2' y='2' width='12' height='12' rx='2' fill='%23b3121f'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="shared/app.css">
+<style>
+  .hero {
+    padding: 44px 16px 36px;
+    background: linear-gradient(135deg, #15181d 0%, #232832 60%, #3a1418 100%);
+    color: #f3f4f6;
+  }
+  .hero-inner, .start { max-width: 1120px; margin: 0 auto; }
+  .hero h1 { margin: 0 0 8px; font-size: clamp(1.6rem, 4vw, 2.3rem); letter-spacing: .01em; }
+  .hero h1::before {
+    content: ""; display: inline-block; width: 16px; height: 16px; margin-right: 12px;
+    border-radius: 3px; background: #d4212f; vertical-align: .05em;
+  }
+  .hero p { margin: 0; max-width: 62ch; color: #c3c9d3; }
+  .hero .stats { margin-top: 14px; font-size: .88rem; color: #9aa3b0; }
+
+  .start { padding: 8px 16px 80px; }
+  .brand-head {
+    display: block; height: 72px; margin: 32px 0 14px; border-radius: 10px; overflow: hidden;
+    background: var(--panel); box-shadow: 0 2px 10px rgba(0, 0, 0, .12);
+  }
+  .brand-head img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: left center; }
+  .models { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+  .model {
+    display: flex; flex-direction: column; overflow: hidden;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 10px; color: var(--text);
+    transition: transform .15s, box-shadow .15s, border-color .15s;
+  }
+  .model:hover { text-decoration: none; transform: translateY(-3px); border-color: var(--accent);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .14); }
+  /* The disc's own photo (system/model.jpg): small pictures on white, so they sit on a white panel in both themes. */
+  .model.soon { opacity: .55; cursor: default; }
+  .model.soon:hover { transform: none; border-color: var(--line); box-shadow: none; }
+  .model.soon:hover .art img { transform: none; }
+  .model .art {
+    display: flex; align-items: center; justify-content: center; height: 150px; padding: 12px;
+    background: #fff;
+  }
+  .model .art img { display: block; max-width: 100%; max-height: 100%; width: auto; height: 126px; object-fit: contain;
+    transition: transform .25s; }
+  .model:hover .art img { transform: scale(1.04); }
+  .model .info { display: grid; gap: 2px; padding: 8px 16px 14px; border-top: 1px solid var(--line); }
+  .model strong { font-size: 1.15rem; }
+  .model strong small { margin-left: 6px; font-size: .75rem; font-weight: 600; color: var(--muted); letter-spacing: .06em; }
+  .model span { color: var(--muted); font-size: .85rem; }
+  @media (max-width: 600px) {
+    .brand-head { height: 56px; }
+    .models { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .model .art { height: 110px; padding: 8px; }
+    .model .art img { height: 92px; }
+    .model .info { padding: 6px 10px 10px; }
+    .model strong { font-size: 1rem; }
+    .model span { font-size: .78rem; }
+  }
+</style>
 </head>
 <body>
-<header class="topbar">
-  <button id="menu" class="icon-button" aria-label="Toggle navigation">&#9776;</button>
-  <a class="brand" href="#/"><span id="model"></span></a>
+<header class="hero">
+  <div class="hero-inner">
+    <h1>Workshop manuals</h1>
+    <p>Official eLearn workshop manuals, searchable and filtered for your car: procedures in order, wiring with
+      decoded colours, fault diagnosis and specifications. Pick a model.</p>
+    <p class="stats" id="stats"></p>
+  </div>
 </header>
+<main class="start">
+  <div id="brands"><p class="loading">Loading…</p></div>
+</main>
+<script>
+"use strict";
+const esc = (value) => String(value).replace(/[&<>"]/g, (c) => `&${{ "&": "amp", "<": "lt", ">": "gt", '"': "quot" }[c]};`);
+const number = (n) => n.toLocaleString("en");
+// The discs spell names in capitals ("BRERA", "DOBLÒ"); words longer than three letters are shown in title case.
+const display = (name) => name.replace(/\p{L}{4,}/gu, (w) => w === w.toUpperCase() ? w[0] + w.slice(1).toLowerCase() : w);
 
-<aside id="sidebar" class="sidebar">
-  <div class="sidebar-head">
-    <a class="brand wide" href="#/"><span id="model-wide"></span></a>
-    <button class="icon-button collapse" data-nav-toggle title="Hide sidebar" aria-label="Hide sidebar">&laquo;</button>
-  </div>
+// A model whose own site is not published yet is shown, but not linked.
+const card = (m) => {
+  const body = `${m.picture ? `<div class="art"><img src="${esc(m.picture)}" alt="${esc(m.brand_name)} ${esc(display(m.model_name))}" loading="lazy"></div>` : ""}
+    <div class="info"><strong>${esc(display(m.model_name))}<small>${esc(m.language.toUpperCase())}</small></strong>
+      <span>${m.live ? `${number(m.topics)} topics · ${m.engines} engine${m.engines === 1 ? "" : "s"}` : "Coming soon"}</span></div>`;
+  return m.live ? `<a class="model" href="${esc(m.path)}">${body}</a>` : `<div class="model soon" aria-disabled="true">${body}</div>`;
+};
 
-  <section class="filters">
-    <label><span data-label="Engine"></span><select id="engine"></select></label>
-    <label><span data-label="Production"></span><select id="period"></select></label>
-    <label><span data-label="Theme"></span><select id="theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select></label>
-    <details id="equipment">
-      <summary><span data-label="Highlight equipment "></span><span id="equipment-count"></span></summary>
-      <p class="hint"><span class="swatch match"></span><span data-label="matches your car"></span>
-        <span class="swatch other"></span><span data-label="other equipment"></span></p>
-      <div id="options"></div>
-      <button id="clear-options" class="link-button" type="button" data-label="Clear" aria-label="Clear"></button>
-    </details>
-  </section>
-
-  <div class="search">
-    <input id="search" type="search" autocomplete="off" aria-label="Search">
-    <div id="scope" class="scope" role="radiogroup" aria-label="Search in">
-      <label><input type="radio" name="scope" value="titles" checked><span data-label="Chapters"></span></label>
-      <label><input type="radio" name="scope" value="text"><span data-label="Content"></span></label>
-    </div>
-  </div>
-  <div class="tree-tools"><button id="expand-all" class="link-button" type="button">Expand all</button> · <button id="collapse-all" class="link-button" type="button">Collapse all</button></div>
-  <nav id="tree" class="tree" aria-label="Contents"></nav>
-  <div id="results" class="results" hidden></div>
-  <div id="resizer" class="resizer" title="Drag to resize, double-click to reset"></div>
-</aside>
-<button class="show-nav" data-nav-toggle title="Show sidebar" aria-label="Show sidebar">&raquo;</button>
-
-<main id="page" class="page" tabindex="-1"><p class="loading">Loading…</p></main>
-
-<div id="viewer" class="viewer" hidden>
-  <div class="viewer-bar">
-    <span id="viewer-title"></span>
-    <button data-zoom="in" aria-label="Zoom in">+</button>
-    <button data-zoom="out" aria-label="Zoom out">&minus;</button>
-    <button data-zoom="fit">Fit</button>
-    <a id="viewer-open" target="_blank" rel="noopener">Open</a>
-    <button data-zoom="close" aria-label="Close">&times;</button>
-  </div>
-  <div id="stage" class="stage"><img id="viewer-img" alt=""></div>
-</div>
-
-<script src="app.js"></script>
+(async () => {
+  const target = document.getElementById("brands");
+  try {
+    const models = await (await fetch("models.json")).json();
+    const brands = new Map();
+    for (const m of models) {
+      if (!brands.has(m.brand)) brands.set(m.brand, { name: m.brand_name, list: [] });
+      brands.get(m.brand).list.push(m);
+    }
+    const live = models.filter((m) => m.live);
+    document.getElementById("stats").textContent = `${live.length} models · ${new Set(live.map((m) => m.brand)).size} brands · ` +
+      `${number(live.reduce((s, m) => s + m.topics, 0))} topics` + (live.length < models.length ? ` · ${models.length - live.length} coming soon` : "");
+    target.innerHTML = [...brands].map(([slug, { name, list }]) => `<section>
+      <h2 class="brand-head"><img src="shared/art/brands/${esc(slug)}.svg" alt="${esc(name)}"
+        onerror="this.replaceWith(document.createTextNode(this.alt))"></h2>
+      <div class="models">${list.map(card).join("")}</div></section>`).join("");
+  } catch {
+    target.innerHTML = `<p class="error">The list of models could not be loaded.</p>`;
+  }
+})();
+</script>
 </body>
 </html>

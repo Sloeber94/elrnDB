@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E5070 PARTICLE FILTER SYSTEM - FUNCTIONAL DESCRIPTION · ALFA 159</title>
+<meta name="description" content="functional description (how the circuit works). engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods. Electrical equipment &gt; 1 ELECTRICAL FUNCTIONS &gt; E50 ENGINE CONTROL AND MANAGEMENT SYSTEMS &gt; E5070 PARTICLE FILTER SYSTEM &gt; E5070 PARTICLE FILTER SYSTEM - FUNCTIONAL DESCRIPTION">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">ALFA 159 workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="939002878.html">Electrical equipment</a> › <a href="939011440.html">1 ELECTRICAL FUNCTIONS</a> › <a href="939011732.html">E50 ENGINE CONTROL AND MANAGEMENT SYSTEMS</a> › <a href="939011783.html">E5070 PARTICLE FILTER SYSTEM</a> › <span>E5070 PARTICLE FILTER SYSTEM - FUNCTIONAL DESCRIPTION</span></nav>
+<h1><span class="code">E5070</span> PARTICLE FILTER SYSTEM - FUNCTIONAL DESCRIPTION</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Electrical equipment &gt; 1 ELECTRICAL FUNCTIONS &gt; E50 ENGINE CONTROL AND MANAGEMENT SYSTEMS &gt; E5070 PARTICLE FILTER SYSTEM &gt; E5070 PARTICLE FILTER SYSTEM - FUNCTIONAL DESCRIPTION</dd>
+<dt>Kind</dt><dd>functional description (how the circuit works)</dd>
+<dt>Applies to</dt><dd>engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB/alfa/159/en/#/939011785">https://sloeber94.github.io/elrnDB/alfa/159/en/#/939011785</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: engines: 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V; all production periods</p><h2>FUNCTIONAL DESCRIPTION</h2><p>Engine management control unit M10 controls and governs the entire electronic ignition and injection system.</p><p>The ignition-operated power supply (15/54) arrives via a line protected by fuse F16 of the engine compartment junction unit B1 at pin 28 of connector A of M10 .</p><p>Pins 2, 4 and 6 of connector A of M10 are earthed.</p><p>Main injection relay T9 of B1 controls the entire system: it is energized by an earth signal from pin 72 of connector A of engine control unit M10 and then forwards a power supply:</p><p>- to pin 1 of connector A of the control unit, via the line of fuse F17 of B1 ;</p><p>- to pin 5 of connector A of the control unit, via the line of fuse F22 of B1 ;</p><p>- to the solenoid valves L30, L36, L64, to the throttle N75, to the control unit M15, via the line from fuse F11 of B1.</p><p>The engine management control unit M10 receives signals from the different sensors thereby keeping all the engine operating parameters in check, in particular there are three specific sensors for the management of the operation of the particle filter.</p><p>The FAP differential pressure sensor K187 receives a power supply from the control unit M10 from pin 44 of connector A and a reference earth from pin 37 of connector A and sends a signal proportional to the pressure to pin 36 of connector A of M10.</p><p>The downstream catalyzer temperature sensor K188 receives a reference earth from pin 35 of connector A of the control unit M10 and supplies a signal proportional to the temperature measured at pin 34 of connector A of control unit M10.</p><p>The particle filter temperature sensor K189 receives a reference earth from pin 33 of connector A of the control unit M10 and supplies a signal proportional to the temperature measured at pin 32 of connector A of control unit M10.</p><p>The control unit is then connected via the CAN - pins 83-84 and 61-64 of connector A of M10 - to the Body Computer M1 and to the instrument panel E50 thereby controlling the switching on of the filter blocked warning light and the displays in the panel.</p><p>The control unit M10 is connected directly to the instrument panel E50 through a signal that comes out of pin 71 of connector A of M10 that is connected to the EOBD warning light.</p><p>The autodiagnostic data can be read by connecting to connector C of the Body Computer M1 - pin 7: it receives signals from pin 25 of connector A of control unit M10 via the special diagnostic line, through which the command for the forced regeneration using the diagnostic equipment (Examiner) also &quot;passes&quot;.</p></section>
+
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB/alfa/159/en/">https://sloeber94.github.io/elrnDB/alfa/159/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>

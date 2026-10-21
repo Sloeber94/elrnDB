@@ -21,3 +21,7 @@ venv/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# Local experiments
+compression-test/
+publish/

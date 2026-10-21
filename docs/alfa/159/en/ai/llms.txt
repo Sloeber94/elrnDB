@@ -1,0 +1,30 @@
+# ALFA 159 workshop manual (text version)
+
+> Official eLearn workshop manual for the ALFA 159, English. Engines: 1.8, 1.9 JTS, 2.2 JTS, 3.2 JTS, 1.9 JTD 8V, 1.9 JTD 16V, 2.4 JTD 20V. Production periods: Up to 12/05, From 01/06. Each topic is a separate HTML page with its path, applicability, and links to and from related topics.
+
+Start with the guide, then follow links. Use the lookups to jump from a component, fuse or operation code to its pages.
+
+## Start here
+- [Guide: how the manual is organised, code systems, wire colours](https://sloeber94.github.io/elrnDB/alfa/159/en/ai/guide.html)
+- [Component index: component -> pinouts, replacement procedures, references](https://sloeber94.github.io/elrnDB/alfa/159/en/ai/lookup/components.html)
+- [Fuse and relay index: rating, junction unit and every circuit that names it](https://sloeber94.github.io/elrnDB/alfa/159/en/ai/lookup/fuses.html)
+- [Operation index: operation or test code -> topic](https://sloeber94.github.io/elrnDB/alfa/159/en/ai/lookup/operations.html)
+- [All sections](https://sloeber94.github.io/elrnDB/alfa/159/en/ai/index.html)
+
+## Sections
+- [Technical Data](https://sloeber94.github.io/elrnDB/alfa/159/en/ai/t/939003183.html): technical data / specifications
+- [Descriptions](https://sloeber94.github.io/elrnDB/alfa/159/en/ai/t/939003411.html): system description
+- [Fault diagnosis](https://sloeber94.github.io/elrnDB/alfa/159/en/ai/t/939003553.html): fault diagnosis table (symptom -> numbered test steps)
+- [Test](https://sloeber94.github.io/elrnDB/alfa/159/en/ai/t/939010170.html): test / check procedure
+- [Procedures](https://sloeber94.github.io/elrnDB/alfa/159/en/ai/t/939010354.html): repair procedure (removal / refitting; the operation number is the code)
+- [Electrical equipment](https://sloeber94.github.io/elrnDB/alfa/159/en/ai/t/939002878.html): 
+
+## Background notes
+- [data-model.md](https://sloeber94.github.io/elrnDB/alfa/159/en/ai/notes/data-model.md): wire colour codes, connector-body colours, how pinouts describe every wire, what only the diagrams add
+- [rendering-rules.md](https://sloeber94.github.io/elrnDB/alfa/159/en/ai/notes/rendering-rules.md): how the manual is structured: Removing/Refitting parts, Op. calls between procedures, variants
+- [fuses.md](https://sloeber94.github.io/elrnDB/alfa/159/en/ai/notes/fuses.md): fuses, relays and junction units: where they are, ratings, F-35 = F35, fuse F35 is not lamp F035
+- [diagnosis-essentials.md](https://sloeber94.github.io/elrnDB/alfa/159/en/ai/notes/diagnosis-essentials.md): what to check before any fault diagnosis, with where the manual covers it
+
+## Optional
+- [Interactive site](https://sloeber94.github.io/elrnDB/alfa/159/en/)
+- [All models](https://sloeber94.github.io/elrnDB/llms.txt)

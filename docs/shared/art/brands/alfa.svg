@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" preserveAspectRatio="xMinYMid slice" role="img" aria-label="ALFA ROMEO">
+<defs><linearGradient id="bg-alfa" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#6d0c14"/><stop offset="1" stop-color="#b3121f"/></linearGradient></defs>
+<rect width="900" height="120" fill="url(#bg-alfa)"/>
+<path d="M430,120 L570,0" stroke="#fff" stroke-width="26" opacity="0.05"/><path d="M490,120 L630,0" stroke="#fff" stroke-width="10" opacity="0.07"/><path d="M530,120 L670,0" stroke="#fff" stroke-width="4" opacity="0.09"/><path d="M600,120 L740,0" stroke="#fff" stroke-width="40" opacity="0.04"/><path d="M680,120 L820,0" stroke="#fff" stroke-width="8" opacity="0.08"/><path d="M720,120 L860,0" stroke="#fff" stroke-width="3" opacity="0.1"/>
+<path d="M0,104 L900,92" stroke="#fff" stroke-width="1.5" opacity=".25"/>
+<text x="36" y="72" fill="#fff" font-family="Segoe UI, system-ui, -apple-system, Roboto, sans-serif" font-size="40"
+      font-weight="700" letter-spacing="9">ALFA ROMEO</text>
+</svg>
