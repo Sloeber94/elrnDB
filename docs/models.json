@@ -48,10 +48,10 @@
   "topics": 3306,
   "repo": "elrnDB-aBrr",
   "url": "https://sloeber94.github.io/elrnDB-aBrr/en/",
-  "live": false,
+  "live": true,
   "path": "/elrnDB-aBrr/en/",
   "picture": "shared/cars/alfa-brera.jpg",
-  "ai": false
+  "ai": true
  },
  {
   "brand": "alfa",
@@ -66,10 +66,10 @@
   "topics": 3518,
   "repo": "elrnDB-aGt",
   "url": "https://sloeber94.github.io/elrnDB-aGt/en/",
-  "live": false,
+  "live": true,
   "path": "/elrnDB-aGt/en/",
   "picture": "shared/cars/alfa-gt.jpg",
-  "ai": false
+  "ai": true
  },
  {
   "brand": "fiat",
@@ -84,10 +84,10 @@
   "topics": 4353,
   "repo": "elrnDB-fDbl",
   "url": "https://sloeber94.github.io/elrnDB-fDbl/en/",
-  "live": false,
+  "live": true,
   "path": "/elrnDB-fDbl/en/",
   "picture": "shared/cars/fiat-doblo.jpg",
-  "ai": false
+  "ai": true
  },
  {
   "brand": "fiat",
@@ -102,10 +102,10 @@
   "topics": 5111,
   "repo": "elrnDB-fMltpl",
   "url": "https://sloeber94.github.io/elrnDB-fMltpl/en/",
-  "live": false,
+  "live": true,
   "path": "/elrnDB-fMltpl/en/",
   "picture": "shared/cars/fiat-multipla.jpg",
-  "ai": false
+  "ai": true
  },
  {
   "brand": "fiat",
@@ -120,10 +120,10 @@
   "topics": 3037,
   "repo": "elrnDB-fPnd",
   "url": "https://sloeber94.github.io/elrnDB-fPnd/en/",
-  "live": false,
+  "live": true,
   "path": "/elrnDB-fPnd/en/",
   "picture": "shared/cars/fiat-panda.jpg",
-  "ai": false
+  "ai": true
  },
  {
   "brand": "fiat",
@@ -138,10 +138,10 @@
   "topics": 3888,
   "repo": "elrnDB-fUlss",
   "url": "https://sloeber94.github.io/elrnDB-fUlss/en/",
-  "live": false,
+  "live": true,
   "path": "/elrnDB-fUlss/en/",
   "picture": "shared/cars/fiat-ulysse.jpg",
-  "ai": false
+  "ai": true
  },
  {
   "brand": "lancia",
@@ -174,9 +174,9 @@
   "topics": 2606,
   "repo": "elrnDB-lYpsln",
   "url": "https://sloeber94.github.io/elrnDB-lYpsln/en/",
-  "live": false,
+  "live": true,
   "path": "/elrnDB-lYpsln/en/",
   "picture": "shared/cars/lancia-ypsilon.jpg",
-  "ai": false
+  "ai": true
  }
 ]

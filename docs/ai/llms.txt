@@ -5,7 +5,14 @@
 ## Models
 - [Alfa 147 (English)](https://sloeber94.github.io/elrnDB-a147/en/llms.txt): 3900 topics, 5 engines
 - [Alfa 159 (English)](https://sloeber94.github.io/elrnDB/alfa/159/en/llms.txt): 4026 topics, 7 engines
+- [Alfa Brera (English)](https://sloeber94.github.io/elrnDB-aBrr/en/llms.txt): 3306 topics, 3 engines
+- [Alfa GT (English)](https://sloeber94.github.io/elrnDB-aGt/en/llms.txt): 3518 topics, 4 engines
+- [Fiat Doblò (English)](https://sloeber94.github.io/elrnDB-fDbl/en/llms.txt): 4353 topics, 6 engines
+- [Fiat Multipla (English)](https://sloeber94.github.io/elrnDB-fMltpl/en/llms.txt): 5111 topics, 2 engines
+- [Fiat Panda (English)](https://sloeber94.github.io/elrnDB-fPnd/en/llms.txt): 3037 topics, 3 engines
+- [Fiat Ulysse (English)](https://sloeber94.github.io/elrnDB-fUlss/en/llms.txt): 3888 topics, 4 engines
 - [Lancia Thesis (English)](https://sloeber94.github.io/elrnDB-lThss/en/llms.txt): 4944 topics, 6 engines
+- [Lancia Ypsilon (English)](https://sloeber94.github.io/elrnDB-lYpsln/en/llms.txt): 2606 topics, 4 engines
 
 ## Optional
 - [Interactive site: choose a model](https://sloeber94.github.io/elrnDB/)
