@@ -58,6 +58,8 @@
   .model strong { font-size: 1.15rem; }
   .model strong small { margin-left: 6px; font-size: .75rem; font-weight: 600; color: var(--muted); letter-spacing: .06em; }
   .model span { color: var(--muted); font-size: .85rem; }
+  .credits { margin: 40px 0 0; color: var(--muted); font-size: .78rem; }
+  .credits a { color: inherit; text-decoration: underline; }
   @media (max-width: 600px) {
     .brand-head { height: 56px; }
     .models { grid-template-columns: 1fr 1fr; gap: 10px; }
@@ -80,6 +82,7 @@
 </header>
 <main class="start">
   <div id="brands"><p class="loading">Loading…</p></div>
+  <p id="credits" class="credits"></p>
 </main>
 <script>
 "use strict";
@@ -90,7 +93,8 @@ const display = (name) => name.replace(/\p{L}{4,}/gu, (w) => w === w.toUpperCase
 
 // A model whose own site is not published yet is shown, but not linked.
 const card = (m) => {
-  const body = `${m.picture ? `<div class="art"><img src="${esc(m.picture)}" alt="${esc(m.brand_name)} ${esc(display(m.model_name))}" loading="lazy"></div>` : ""}
+  const credit = m.picture_credit ? ` title="Photo: ${esc(m.picture_credit.author)}, ${esc(m.picture_credit.license)}"` : "";
+  const body = `${m.picture ? `<div class="art"><img src="${esc(m.picture)}" alt="${esc(m.brand_name)} ${esc(display(m.model_name))}"${credit} loading="lazy"></div>` : ""}
     <div class="info"><strong>${esc(display(m.model_name))}<small>${esc(m.language.toUpperCase())}</small></strong>
       <span>${m.live ? `${number(m.topics)} topics · ${m.engines} engine${m.engines === 1 ? "" : "s"}` : "Coming soon"}</span></div>`;
   return m.live ? `<a class="model" href="${esc(m.path)}">${body}</a>` : `<div class="model soon" aria-disabled="true">${body}</div>`;
@@ -113,6 +117,13 @@ const card = (m) => {
       <h2 class="brand-head"><img src="shared/art/brands/${esc(slug)}.svg" alt="${esc(name)}"
         onerror="this.replaceWith(document.createTextNode(this.alt))"></h2>
       <div class="models">${list.map(card).join("")}</div></section>`).join("");
+    // Photos that do not come from the disc are freely licensed and credited here.
+    const credited = models.filter((m) => m.picture_credit);
+    document.getElementById("credits").innerHTML = credited.length ? "Photo credits: " + credited.map((m) => {
+      const c = m.picture_credit;
+      return `${esc(m.brand_name)} ${esc(display(m.model_name))}: <a href="${esc(c.source)}">${esc(c.author)}</a>, ` +
+        `<a href="${esc(c.license_url)}">${esc(c.license)}</a>, via Wikimedia Commons`;
+    }).join(" · ") : "";
   } catch {
     target.innerHTML = `<p class="error">The list of models could not be loaded.</p>`;
   }

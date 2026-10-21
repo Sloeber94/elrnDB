@@ -228,8 +228,16 @@
   "topics": 2585,
   "repo": "elrnDB-fId",
   "url": "https://sloeber94.github.io/elrnDB-fId/en/",
+  "picture_credit": {
+   "author": "Vauxford",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:2004_Fiat_Idea_Eleganza_1.4_Front.jpg",
+   "note": "2004 Fiat Idea Eleganza 1.4 (first series, before the 2008 facelift); the disc has no system/model.jpg"
+  },
   "live": true,
   "path": "/elrnDB-fId/en/",
+  "picture": "shared/cars/fiat-idea.jpg",
   "ai": true
  },
  {
